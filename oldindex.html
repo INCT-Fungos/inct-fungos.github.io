@@ -7,6 +7,9 @@
     
     <style>
         /* --- Configuração Geral --- */
+        html {
+            scroll-behavior: smooth;
+        }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             margin: 0;
@@ -19,13 +22,17 @@
             margin: 0 auto;
             padding: 20px;
         }
+        /* Alvo para links de âncora, compensando a altura do header fixo */
+        section[id] {
+            scroll-margin-top: 80px;
+        }
         h1, h2, h3, h4 {
             color: #333;
         }
         h2 {
             border-bottom: 3px solid #004a91; /* Cor inspirada no logo */
             padding-bottom: 10px;
-            margin-top: 20px; /* Reduced margin-top for tabs */
+            margin-top: 40px;
         }
         h3 {
             color: #006fce;
@@ -47,59 +54,51 @@
             margin: 40px 0;
         }
 
-        /* --- Header (Logo) --- */
+        /* --- Header e Navegação --- */
         header {
             background-color: #ffffff;
             border-bottom: 1px solid #ddd;
-            padding: 10px 20px;
-            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
-        header .logo {
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+        nav .logo {
             height: 50px;
             width: auto;
         }
-
-        /* --- Navigation Tabs --- */
-        nav {
-            background: #34495e;
-            overflow: hidden;
-            border-radius: 0; /* Full width */
-            text-align: center; /* Center the buttons */
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
         }
-        nav button {
-            background-color: #34495e;
-            border: none;
-            color: white;
-            padding: 14px 20px;
-            cursor: pointer;
-            font-size: 16px;
-            transition: background-color 0.3s;
-            outline: none;
-            float: none; /* Allow centering */
-            display: inline-block; /* Allow centering */
-        }
-        nav button:hover {
-            background-color: #4a6580;
-        }
-        nav button.active {
-            background-color: #004a91; /* Using the logo-inspired color */
-        }
-
-        /* --- Tab Content --- */
-        .tab-content {
-            display: none;
-            padding: 20px 0;
-            animation: fadeIn 0.5s;
-        }
-        .tab-content.active {
+        nav ul li a {
+            padding: 0 15px;
+            text-decoration: none;
+            color: #555;
+            font-weight: 500;
+            line-height: 70px;
             display: block;
         }
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
+        nav ul li a:hover,
+        nav ul li a.active {
+            color: #004a91;
+            border-bottom: 3px solid #004a91;
+            margin-bottom: -3px; /* Compensa a borda */
         }
-
+        
         /* --- Seção do Banner --- */
         .banner {
             background-image: url('img/banner.jpeg');
@@ -112,7 +111,9 @@
             justify-content: center;
             text-align: center;
             position: relative;
+            margin-top: 70px; /* Altura do header */
         }
+        /* Overlay escuro para legibilidade do texto */
         .banner::before {
             content: '';
             position: absolute;
@@ -202,34 +203,6 @@
             border-radius: 8px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.08);
         }
-        
-        /* --- Table Styles (for Team tab) --- */
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-            margin-bottom: 30px;
-            background: #fff;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-            overflow: hidden; /* For rounded corners on shadow */
-            border-radius: 8px;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 12px 15px;
-            text-align: left;
-        }
-        th {
-            background-color: #f4f4f4;
-            color: #333;
-            font-weight: 600;
-        }
-        tbody tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-        tbody tr:hover {
-            background-color: #f1f1f1;
-        }
 
         /* --- Footer --- */
         footer {
@@ -245,19 +218,63 @@
 
         /* --- Responsividade --- */
         @media (max-width: 900px) {
+            nav {
+                padding: 0 10px;
+            }
+            nav ul {
+                display: none; /* Esconde o menu em telas menores - JS seria necessário para um menu "hamburger" */
+                /* Solução simples sem JS: permitir rolagem */
+                /*
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+                width: calc(100% - 70px);
+                */
+            }
+            /* Para esta demo, vamos apenas esconder o menu complexo */
+            
             .banner-content h1 {
                 font-size: 2.5rem;
             }
         }
         
         @media (max-width: 768px) {
-            nav button {
-                width: 100%; /* Stack tabs on small screens */
-                text-align: left;
+            /* Em telas menores, o menu "hamburger" é o ideal, mas requer JS. */
+            /* Vamos simplificar o header */
+            nav {
+                flex-direction: column;
+                height: auto;
+                padding: 10px;
             }
+            nav .logo {
+                margin-bottom: 10px;
+            }
+            nav ul {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                width: 100%;
+                background: #f4f4f4;
+            }
+            nav ul li a {
+                line-height: 50px;
+                padding: 0 10px;
+                font-size: 0.9rem;
+            }
+            nav ul li a:hover,
+            nav ul li a.active {
+                border-bottom: 2px solid #004a91;
+                margin-bottom: -2px;
+            }
+            
             .banner {
+                margin-top: 130px; /* Ajuste para novo tamanho do header */
                 height: 300px;
             }
+            section[id] {
+                scroll-margin-top: 140px;
+            }
+            
             .committee-member {
                 flex-direction: column;
                 align-items: center;
@@ -267,47 +284,37 @@
                 text-align: center;
             }
         }
-        
-        /* For tables on small screens */
-        @media (max-width: 600px) {
-            table {
-                display: block;
-                overflow-x: auto; /* Allow horizontal scrolling for tables */
-                white-space: nowrap;
-            }
-        }
 
     </style>
 </head>
 <body>
 
     <header>
-        <a href="#"><img src="img/Fungos_BR.png" alt="INCT-Fungos Logo" class="logo"></a>
+        <nav>
+            <a href="#home"><img src="img/Fungos_BR.png" alt="INCT-Fungos Logo" class="logo"></a>
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#committee">Committee</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#institutions">Institutions</a></li>
+                <li><a href="#documents">Documents</a></li>
+                <li><a href="#dataportal">DataPortal</a></li>
+                <li><a href="#neomycologist">NeoMycologist</a></li>
+                <li><a href="#outreach">Outreach</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav>
-        <button class="tab-link active" onclick="openTab(event, 'home')">Home</button>
-        <button class="tab-link" onclick="openTab(event, 'committee')">Committee</button>
-        <button class="tab-link" onclick="openTab(event, 'team')">Team</button>
-        <button class="tab-link" onclick="openTab(event, 'institutions')">Institutions</button>
-        <button class="tab-link" onclick="openTab(event, 'documents')">Documents</button>
-        <button class="tab-link" onclick="openTab(event, 'dataportal')">DataPortal</button>
-        <button class="tab-link" onclick="openTab(event, 'neomycologist')">NeoMycologist</button>
-        <button class="tab-link" onclick="openTab(event, 'outreach')">Outreach</button>
-        <button class="tab-link" onclick="openTab(event, 'contact')">Contact</button>
-    </nav>
-    
-    <div id="banner-container">
-        <section class="banner">
-            <div class="banner-content">
-                <h1>INCT-Fungos</h1>
-            </div>
-        </section>
-    </div>
+    <section class="banner">
+        <div class="banner-content">
+            <h1>INCT-Fungos</h1>
+        </div>
+    </section>
 
     <main>
 
-        <div id="home" class="tab-content active">
+        <section id="home">
             <img src="img/Fungos_BR.png" alt="INCT-Fungos Logo" class="logo-home">
             <h2>INCT Fungos do Brasil</h2>
             
@@ -316,9 +323,9 @@
             <p>Foi pensando nesse contexto que pesquisadores de várias universidades e instituições de pesquisa do Brasil, tanto da área de micologia como das áreas de bioinformática, bioquímica, biologia molecular, evolução, comunicação e tecnologia da informação criaram um Instituto Nacional de Ciência e Tecnologia (INCT - FUNGOS_BR). A proposta é financiada pelo Conselho Nacional de Desenvolvimento Científico e Tecnológico (<a href="https://cnpq.br" target="_blank" rel="noopener noreferrer">CNPq</a>) e pelo Ministério da Ciência, Tecnologia e Inovação (<a href="https://www.gov.br/mcti/pt-br" target="_blank" rel="noopener noreferrer">MCTI</a>). Tal instituto será um centro de excelência nacional e internacional em micologia para elucidar a biodiversidade, genômica, funcionalidade ecossistêmica, prospecção de bioinsumos, conservação e aplicações de fungos, e organismos semelhantes, nos biomas brasileiros, associados ou não às consequências de ações antrópicas. Tal iniciativa centralizada na UFRN, conta com a participação de pesquisadores de outras 37 instituições do país e 6 instituições estrangeiras, com o objetivo de colocar o Brasil em uma posição de destaque no conhecimento e no uso racional e sustentável de sua biodiversidade fúngica.</p>
             
             <p>O INCT_Fungos unificará os pesquisadores e a infraestrutura considerável nas áreas de micologia e genômica no país, criando uma rede nacional, com interface internacional, de especialistas para promover o uso sustentável dos fungos e sua aplicação biotecnológica. O centro físico e lógico dessa rede será na Universidade Federal do Rio Grande do Norte (<a href="https://ufrn.br" target="_blank" rel="noopener noreferrer">UFRN</a>), com o estabelecimento de um banco de preservação de espécies fúngicas, integrando dados taxonômicos, evolutivos, filogeográficos, genômicos, funcionais e ambientais (metagenomas e metatranscriptomas) interligados com coleções biológicas institucionais, assim como a sede do portal de análises bioinformática e de material educacional para popularização do conhecimento científico junto à sociedade, centros de preservação ambiental e fomento do ensino nos níveis básico, tecnológico e superior. Os recursos aprovados também serão utilizados para a formação de discentes de graduação e pós-graduação e para promover interações e colaborações científicas eficientes em âmbito nacional e internacional. Essa base nacional de conhecimento também irá gerar dados para utilização em modelos de inteligência artificial, cujos resultados e análises serão disponibilizados de forma interativa para pesquisadores da biodiversidade brasileira.</p>
-        </div>
+        </section>
 
-        <div id="committee" class="tab-content">
+        <section id="committee">
             <h2>Management Committee</h2>
 
             <h3>Coordination</h3>
@@ -441,272 +448,62 @@
                 </div>
             </div>
 
-        </div>
+        </section>
         
-        <div id="team" class="tab-content">
+        <section id="team">
             <h2>Team</h2>
+            <div class="placeholder">
+                <p>Conteúdo sobre a equipe será adicionado aqui.</p>
+            </div>
+        </section>
 
-            <h3>Administrative Staff</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Nome</th>
-                        <th>Formação</th>
-                        <th>Instituição</th>
-                        <th>Áreas de Atuação</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><a href="http://lattes.cnpq.br/7387460499971895" target="_blank" rel="noopener noreferrer"><strong>Danielle Karla Alves da Silva</strong></a></td>
-                        <td>Doutorado</td>
-                        <td>UFPE</td>
-                        <td>Botânica Aplicada, Fungos Micorrizicos.</td>
-                    </tr>
-                    <tr>
-                        <td><a href="http://lattes.cnpq.br/3882637962783909" target="_blank" rel="noopener noreferrer"><strong>Irani da Silva de Morais</strong></a></td>
-                        <td>Doutorado</td>
-                        <td>Centro de Pesquisa Agroflorestal da Amazônia Ocidental - CPAA-AM-Brasil</td>
-                        <td>-</td>
-                    </tr>
-                    <tr>
-                        <td><a href="http://lattes.cnpq.br/9353769923577373" target="_blank" rel="noopener noreferrer"><strong>Laise de Holanda</strong></a></td>
-                        <td>Doutorado</td>
-                        <td>UFPE</td>
-                        <td>Taxonomia de Criptógamos, Ecologia de Myxomycetes, Etnobotânica, Micologia, Taxonomia de Fanerógamos.</td>
-                    </tr>
-                </tbody>
-            </table>
-        
-            <h3>Research Colaborators from Brazil</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Nome</th>
-                        <th>Formação</th>
-                        <th>Instituição</th>
-                        <th>Áreas de Atuação</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><a href="http://lattes.cnpq.br/4915501841631022" target="_blank" rel="noopener noreferrer"><strong>Adriana Oliveira Medeiros</strong></a></td>
-                        <td>Doutorado</td>
-                        <td>Universidade Federal da Bahia - UFBA</td>
-                        <td>Ecologia de Ecossistemas, Microbiologia Ambiental, Biologia e Fisiologia dos Microorganismos, Microbiologia Aplicada.</td>
-                    </tr>
-                    <tr>
-                        <td><a href="http://lattes.cnpq.br/7524655663585223" target="_blank" rel="noopener noreferrer"><strong>Adriana de Mello Gugliotta</strong></a></td>
-                        <td>Doutorado</td>
-                        <td>Instituto de Pesquisas Ambientais-IPA-SP</td>
-                        <td>Taxonomia de Fungos, Botânica Aplicada, Microbiologia Aplicada.</td>
-                    </tr>
-                    <tr>
-                        <td><a href="http://lattes.cnpq.br/4150370898980718" target="_blank" rel="noopener noreferrer"><strong>Anderson Messias Rodrigues</strong></a></td>
-                        <td>Doutorado, PQ2</td>
-                        <td>Universidade Federal de São Paulo-UNIFESP-SP</td>
-                        <td>Genética Molecular e de Microorganismos, Micologia Médica, Epidemiologia, Biologia Molecular, Proteínas, Doenças Infecciosas e Parasitárias.</td>
-                    </tr>
-                    <tr>
-                        <td><a href="http://lattes.cnpq.br/4167081362896236" target="_blank" rel="noopener noreferrer"><strong>André Luiz Cabral Monteiro de Azevedo Santiago</strong></a></td>
-                        <td>Doutorado, PQ2</td>
-                        <td>Universidade Federal de Pernambuco - UFPE</td>
-                        <td>Taxonomia de Criptógamos, Microbiologia, Ecologia, Genética</td>
-                    </tr>
-                    <tr>
-                        <td><a href="http://lattes.cnpq.br/8499987875894209" target="_blank" rel="noopener noreferrer"><strong>Antonia Queiroz Lima de Souza</strong></a></td>
-                        <td>Doutorado</td>
-                        <td>Universidade Federal do Amazonas-UFAM</td>
-                        <td>Biologia Geral, Genética, Genética Humana e Médica, Genética Molecular e de Microorganismos, Microbiologia Aplicada, Mutagênese.</td>
-                    </tr>
-                </tbody>
-            </table>
-        
-            <h3>International Researchers</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Nome</th>
-                        <th>Formação</th>
-                        <th>Instituição</th>
-                        <th>Áreas de Atuação</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Caio Ambrósio Leal Dutra</strong></td>
-                        <td>Ph.D.</td>
-                        <td>University of Copenhagen - UK, Dinamarca</td>
-                        <td>Biologia Molecular, Bioinformatica, Micologia, Evolução.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Haiyan Li</strong></td>
-                        <td>Ph.D.</td>
-                        <td>Kunming University of Science and Technology-KMUST, China</td>
-                        <td>-</td>
-                    </tr>
-                </tbody>
-            </table>
-        
-            <h3>International Colaborators</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Nome</th>
-                        <th>Formação</th>
-                        <th>Instituição</th>
-                        <th>Áreas de Atuação</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Gerald F Bills</strong></td>
-                        <td>Ph.D.</td>
-                        <td>The State University of New Jersey - Newark-RUTGERS - USA</td>
-                        <td>-</td>
-                    </tr>
-                    <tr>
-                        <td><strong>James Francis White Junior</strong></td>
-                        <td>Ph.D.</td>
-                        <td>The State University of New Jersey - Newark-RUTGERS - USA</td>
-                        <td>-</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Janusz Andrzej Blaszkowski</strong></td>
-                        <td>Ph.D.</td>
-                        <td>West Pomeranian University of Technology-ZUT, Polônia</td>
-                        <td>Fitossanidade, Micologia.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Rafael Felipe Castañeda Ruiz</strong></td>
-                        <td>Ph.D.</td>
-                        <td>Universidade de Havana-UH, Cuba</td>
-                        <td>Taxonomia de Criptógamos, Microbiologia</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Surendra Kumar Gond</strong></td>
-                        <td>Ph.D.</td>
-                        <td>Banaras Hindu University - BHU, Índia</td>
-                        <td>-</td>
-                    </tr>
-                </tbody>
-            </table>
-        
-            <h3>Colaborators</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Nome</th>
-                        <th>Formação</th>
-                        <th>Instituição</th>
-                        <th>Áreas de Atuação</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><a href="http://lattes.cnpq.br/5458428959193259" target="_blank" rel="noopener noreferrer"><strong>Heloysa Farias da Silva</strong></a></td>
-                        <td>Mestrado</td>
-                        <td>UFRN-RN-Brasil</td>
-                        <td>Botânica, Taxonomia de Criptógamos, Micologia.</td>
-                    </tr>
-                    <tr>
-                        <td><a href="http://lattes.cnpq.br/0548719219872814" target="_blank" rel="noopener noreferrer"><strong>Kairo Dourado Barbosa</strong></a></td>
-                        <td>Mestrado</td>
-                        <td>UFRN-RN-Brasil</td>
-                        <td>Taxonomia, Sistemática e Evolução de Fungos.</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-        <div id="institutions" class="tab-content">
+        <section id="institutions">
             <h2>Institutions</h2>
             <div class="placeholder">
                 <p>Conteúdo sobre as instituições parceiras será adicionado aqui.</p>
             </div>
-        </div>
+        </section>
 
-        <div id="documents" class="tab-content">
+        <section id="documents">
             <h2>Documents</h2>
             <div class="placeholder">
                 <p>Documentos e publicações serão listados aqui.</p>
             </div>
-        </div>
+        </section>
         
-        <div id="dataportal" class="tab-content">
+        <section id="dataportal">
             <h2>DataPortal</h2>
             <div class="placeholder">
                 <p>O portal de dados será acessível por aqui.</p>
             </div>
-        </div>
+        </section>
 
-        <div id="neomycologist" class="tab-content">
+        <section id="neomycologist">
             <h2>NeoMycologist</h2>
             <div class="placeholder">
                 <p>Informações para novos micologistas e estudantes aqui.</p>
             </div>
-        </div>
+        </section>
 
-        <div id="outreach" class="tab-content">
+        <section id="outreach">
             <h2>Outreach</h2>
             <div class="placeholder">
                 <p>Conteúdo de divulgação científica e extensão aqui.</p>
             </div>
-        </div>
+        </section>
 
-        <div id="contact" class="tab-content">
+        <section id="contact">
             <h2>Contact</h2>
             <div class="placeholder">
                 <p>Informações de contato serão adicionadas aqui.</p>
             </div>
-        </div>
+        </section>
 
     </main>
 
     <footer>
         <p>&copy; 2025 INCT-Fungos. Todos os direitos reservados.</p>
     </footer>
-
-    <script>
-        // --- Tab Navigation Function ---
-        function openTab(evt, tabName) {
-            // Get all elements with class="tab-content" and hide them
-            var tabcontent = document.getElementsByClassName("tab-content");
-            for (var i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-                tabcontent[i].classList.remove("active");
-            }
-
-            // Get all elements with class="tab-link" and remove the class "active"
-            var tablinks = document.getElementsByClassName("tab-link");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].classList.remove("active");
-            }
-
-            // Show the current tab, and add an "active" class to the button that opened the tab
-            document.getElementById(tabName).style.display = "block";
-            document.getElementById(tabName).classList.add("active");
-            evt.currentTarget.classList.add("active");
-            
-            // --- CUSTOM: Show/Hide Banner ---
-            // Hide the banner if the tab is NOT 'home', show it if it IS 'home'
-            var banner = document.getElementById('banner-container');
-            if (tabName === 'home') {
-                banner.style.display = 'block';
-            } else {
-                banner.style.display = 'none';
-            }
-        }
-
-        // --- Run functions on page load ---
-        document.addEventListener('DOMContentLoaded', function() {
-            // Set the "Home" tab to be active by default
-            document.getElementById('home').style.display = 'block';
-            
-            // Show the banner by default (since Home is default)
-            document.getElementById('banner-container').style.display = 'block';
-        });
-    </script>
 
 </body>
 </html>
