@@ -1,5 +1,18 @@
 # Members
 
+## Comitê Gestor
+
+| Nome | Formação | Instituição | Áreas de Atuação |
+| :--- | :--- | :--- | :--- |
+| [**Adriana Mayumi Yano-Melo**](http://lattes.cnpq.br/9076184948422530) | Doutorado | Univasf | Ecologia Aplicada de Fungos Micorrizicos, Microbiologia do solo. |
+| [**Bruno Tomio Goto**](http://lattes.cnpq.br/5968043766728580) | Doutorado | UFRN | Taxonomia de Fungos Micorrizicos Arbusculares, Ecologia, Microbiologia do solo, Taxonomia e Sistemática de Fungos. |
+| [**Gilvan Ferreira da Silva**](http://lattes.cnpq.br/1000535673605322) | PHD | Embrapa Amazônia Ocidental | Genômica de Microrganismos. |
+| [**João Paulo Matos Santos Lima**]( https://lattes.cnpq.br/3289758851760692) | Doutorado | UFRN | Bioinformática, Genômica e Biologia de Sistemas. |
+| [**Marcela Eugenia da Silva Caceres**](lattes.cnpq.br/3801791273361463) | Doutorado | UFS | Liquenologia. |
+| [**Marcos Antônio Soares**](http://lattes.cnpq.br/3256599670262972) | Doutorado | UFMT | Ecologia de comunidades de microrganismos, Biotecnologia aplicada. |
+| [**Reginaldo Gonçalves de Lima Neto**](http://lattes.cnpq.br/9993875563206244) | Doutorado | UFPE | Micologia Médica. |
+| [**Sebastian Faustino Pereira**](http://lattes.cnpq.br/9535930866943798) | Doutorado | UFRN | Comunicação, Educação, Tecnologias. |
+
 ## Administrative Staff
 
 | Nome | Formação | Instituição | Áreas de Atuação |
