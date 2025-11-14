@@ -55,13 +55,35 @@
 | [**Juliana Luiza Rocha de Lima**](http://lattes.cnpq.br/3936453061007933) | Doutorado | Universidade Federal do Rio Grande do Norte / Centro de Biociências-UFRN | Micologia. |
 | [**Juliano Lemos Bicas**](http://lattes.cnpq.br/5009735328331739) | Doutorado | Universidade Estadual de Campinas-UNICAMP | Bioquímica de alimentos, Microbiologia Industrial e de Fermentação, Aproveitamento de Subprodutos, Bioquímica dos Microorganismos, Compostos antimicrobianos, Microbiologia de Alimentos. |
 | [**Juliano Marcon Baltazar**](http://lattes.cnpq.br/8657253415860174) | Doutorado | Universidade Federal de São Carlos-UFSCAR | Taxonomia de Criptógamos, Taxonomia de Basidiomycetes, Aphyllophorales, Fungos Lignocelulíticos, Fungos Xilófilos, Taxonomia. |
-| [**Larissa Trierveiler Pereira**](http://lattes.cnpq.br/9814339348129868) | Doutorado | Centro de Ciências da Natureza da UFSCAR-CCN | MICOLOGIA, Microbiologia, Taxonomia de Fungos, Taxonomia de Criptógamos, Microbiologia Médica. |
+| [**Larissa Trierveiler Pereira**](http://lattes.cnpq.br/9814339348129868) | Doutorado | Centro de Ciências da Natureza da UFSCAR-CCN | Micologia, Microbiologia, Taxonomia de Fungos, Taxonomia de Criptógamos, Microbiologia Médica. |
 | [**Leonor Costa Maia**](http://lattes.cnpq.br/6736575837409659) | Doutorado | Universidade Federal de Pernambuco / Departamento de Micologia-UFPE | Botânica Aplicada, Microbiologia Aplicada, Taxonomia de Criptógamos, MICOLOGIA, Microbiologia Agrícola, Fitopatologia. |
-| [**Lidiane Alves dos Santos**](http://lattes.cnpq.br/0802685182305749) | Doutorado | Fundação Universidade Federal de Sergipe-FUFSE | Não especificado. |
+| [**Lidiane Alves dos Santos**](http://lattes.cnpq.br/0802685182305749) | Doutorado | Fundação Universidade Federal de Sergipe-FUFSE | - |
 | [**Loise Araujo Costa**](http://lattes.cnpq.br/1180868247154571) | Doutorado | Universidade Federal da Paraíba-UFPB | Biologia e Fisiologia dos Microorganismos, Micologia, Taxonomia de fungos, Ecologia de fungos. |
 | [**Lucas Leonardo da Silva**](http://lattes.cnpq.br/7973565633480507) | Doutorado | Universidade Estadual de Goiás-UEG | Biologia Geral, Microbiologia. |
 | [**Marcos Gervasio Pereira**](http://lattes.cnpq.br/3657759682534978) | Doutorado | Universidade Federal Rural do Rio de Janeiro / Departamento de Solos-UFRRJ | Gênese, Morfologia e Classificação dos Solos, Manejo e Conservação do Solo, Física do Solo, Química do Solo, Recuperação de Areas Degradadas, Florestamento e Reflorestamento. |
 | [**Maria Alice Neves**](http://lattes.cnpq.br/2304369067233033) | Doutorado | Universidade Federal de Santa Catarina / Departamento de Botânica-UFSC | Micologia, Macromicetes, Sistemática, Filogenia, Taxonomia de Criptógamos, Microbiologia. |
+| [**Maria Helena Alves**](http://lattes.cnpq.br/1435244573329987) | Doutorado | UNIVERSIDADE FEDERAL DO DELTA DO PARNAÍBA-UFDPar | Micologia, Microbiologia, Taxonomia de Criptógamos, Palinologia, Taxonomia de Fanerógamos. |
+| [**Nelson Menolli Junior**](http://lattes.cnpq.br/9159195563442447) | Doutorado | Instituto Federal de São Paulo / IFSP - Campus São Paulo-IFSP | Taxonomia e Sistemática de Fungos Basidiomicetos, Cultivo de Cogumelos Comestíveis, Genética Molecular e de Microorganismos. |
+| [**Olinto Liparini Pereira**](http://lattes.cnpq.br/8856812652169427) | Doutorado | Universidade Federal de Viçosa / Departamento de Fitopatologia-UFV | Micologia, Fitopatologia, Microbiologia e Bioquímica do Solo. |
+| [**Patricia Melchionna Albuquerque**](http://lattes.cnpq.br/1177407730126204) | Doutorado | Universidade do Estado do Amazonas-UEA | Bioprocessos, Microbiologia Aplicada, Biocatálise, Aproveitamento de Subprodutos, Engenharia de Alimentos, Engenharia Química. |
+| [**Patrick Cesar Alves Terrematte**](http://lattes.cnpq.br/4283045850342312) | Doutorado | Universidade Federal do Rio Grande do Norte / Instituto Metrópole Digital-UFRN | Aprendizagem de Máquina, Genética Humana e Médica, Bioinformática, Lógica, Computabilidade e Modelos de Computação. |
+| [**Patrícia Oliveira Fiuza**](http://lattes.cnpq.br/2590857295836560) | Doutorado | Universidade Federal da Bahia-UFBA | Biologia Geral, Micologia, Botânica, Microbiologia, Ecologia e Conservação. |
+| [**Renan Cipriano Moioli**](http://lattes.cnpq.br/3898958813303048) | Doutorado | Universidade do Estado do Rio Grande do Norte-UERN | Inteligência Computacional, Bioinformática, Neurociência Computacional, Modelagem de Fenômenos Biológicos, Processamento de Sinais Biológicos. |
+| [**Renan do Nascimento Barbosa**](http://lattes.cnpq.br/5330601215375810) | Doutorado | Universidade Federal de Pernambuco / Departamento de Micologia-UFPE | Parasitologia, Microbiologia. |
+| [**Rhavena Graziela Liotti**](http://lattes.cnpq.br/8935685390633972) | Doutorado | IFMT Campus Alta Floresta-IFMT ALT | Microbiologia, Microbiologia Ambiental, Microbiologia Industrial e de Fermentação, Protozoologia Parasitária Humana. |
+| [**Rhudson Henrique Santos Ferreira da Cruz**](http://lattes.cnpq.br/1679347120330619) | Doutorado | Universidade Federal do Oeste da Bahia / Centro das Ciências Biológicas e da Saúde-UFOB | Taxonomia, Sistemática e Evolução de Fungos, Ecologia de Fungos. |
+| [**Rogério Eiji Hanada**](http://lattes.cnpq.br/6208942675679254) | Doutorado | Instituto Nacional de Pesquisas da Amazônia-INPA | Micologia, Fitopatologia, Patologia da madeira. |
+| [**Rossana de Aguiar Cordeiro**](http://lattes.cnpq.br/1934399087822977) | Doutorado | Universidade Federal do Ceará / Departamento de Patologia-UFC | Micologia, Microbiologia Médica, Sensibilidade In Vitro a Antifúngicos, Epidemiologia Clínica das Doenças Infecciosas. |
+| [**Solange Xavier dos Santos**](http://lattes.cnpq.br/5471284872073952) | Doutorado | Universidade Estadual de Goiás-UEG | Micologia Básica e Aplicada, Microbiologia Industrial e de Fermentação, Taxonomia de Criptógamos, Enzimas Microbianas, Microbiologia e Entomologia Agrícola, Controle Biológico de Pragas. |
+| [**Sávio Torres de Farias**](http://lattes.cnpq.br/6717736083103462) | Doutorado | Universidade Federal da Paraíba / Departamento de Biologia Molecular-UFPB | Genética Teórica, Bioinformática. |
+| [**Tatiana Baptista Gibertoni**](http://lattes.cnpq.br/8535172322991148) | Doutorado PQ 1D | Universidade Federal de Pernambuco / Departamento de Micologia-UFPE | Taxonomia de Criptógamos. |
+| [**Tetsu Sakamoto**](http://lattes.cnpq.br/1342530085695810) | Doutorado | Universidade Federal do Rio Grande do Norte / Instituto Metrópole Digital-UFRN | Bioinformática, Biologia Molecular, Genética. |
+| [**Thalline Rafhaella Leite Cordeiro**](http://lattes.cnpq.br/1392239723885624) | Doutorado | Universidade Federal de Pernambuco / Departamento de Micologia-UFPE | Micologia, Microbiologia. |
+| [**Thiago Monteiro Araújo dos Santos**](http://lattes.cnpq.br/4397895982562841) | Doutorado | Northeastern University - NORTHEASTERN | Ecologia Microbiana, Genética Molecular e de Microorganismos, Microbiologia Industrial e Biotecnologia. |
+| [**Tiara Sousa Cabral**](http://lattes.cnpq.br/4030476865559301) | Doutorado | Universidade Federal do Amazonas-UFAM | Genética de Fungos, Filogenia Molecular. |
+| [**Virton Rodrigo Targino de Oliveira**](http://lattes.cnpq.br/4114023751436690) | Doutorado | Universidade Federal de Pernambuco / Departamento de Micologia-UFPE | - |
+| [**William Pietro de Souza**](http://lattes.cnpq.br/7141513484650579) | Doutorado | IFMT Campus Varze Grande-IFMT VGD | Microbiologia, Biotecnologia Ambiental e Recursos Naturais, Biodiversidade, Micologia, Tratamento Biológico de Residuos. |
+| [**Yumi Oki**](http://lattes.cnpq.br/3246501811171398) | Doutorado | Universidade Federal de Minas Gerais-UFMG | Ecologia, Zoologia, Zoologia, Botânica, Micologia. |
 
 
 ## International Researchers
@@ -88,8 +110,7 @@
 | [**Heloysa Farias da Silva**](http://lattes.cnpq.br/5458428959193259) | Mestrado | UFRN-RN-Brasil | Botânica, Taxonomia de Criptógamos, Micologia. |
 | [**Kairo Dourado Barbosa**](http://lattes.cnpq.br/0548719219872814) | Mestrado | UFRN-RN-Brasil | Taxonomia, Sistemática e Evolução de Fungos. |
 | [**Elaine Cristina Rodrigues do Nascimento**](http://lattes.cnpq.br/1545766433106164) | Mestrado | UFRN | Fosséis Fungícos, Paleomicologia, Taxonomia e Sistemática de Fungos. |
-| [**Jeferson Chagas da Cruz**](http://lattes.cnpq.br/1276048470816514) | Graduação | Centro de Pesquisa Agroflorestal da Amazônia Ocidental-CPAA-AM-Brasi | Genética, Genética Vegetal,
-Genética Molecular e de Microorganismos. |
+| [**Jeferson Chagas da Cruz**](http://lattes.cnpq.br/1276048470816514) | Graduação | Centro de Pesquisa Agroflorestal da Amazônia Ocidental-CPAA-AM-Brasi | Genética, Genética Vegetal, Genética Molecular e de Microorganismos. |
 | [**Joamir Barbosa Filho**](http://lattes.cnpq.br/0548719219872814) | Graduação | TRC AGROFLORESTAL-TRC LTDA-MT | Recursos Florestais e Engenharia Florestal |
 | [**Brena Coutinho Muniz**](http://lattes.cnpq.br/8929526919264019) | Mestrado | Universidade de Pernambuco / Instituto de Ciências Biológicas-UPE | Recursos Florestais e Engenharia Florestal | Micorrízas, Fisiologia Vegetal, Biotecnologia micorrízica. |
 | [**Caio Bezerra Barreto**](http://lattes.cnpq.br/8929526919264019) | Graduação | Universidade de Pernambuco / Instituto de Ciências Biológicas-UPE | - |
