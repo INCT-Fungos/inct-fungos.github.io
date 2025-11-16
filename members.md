@@ -107,14 +107,30 @@
 
 | Nome | Formação | Instituição | Áreas de Atuação |
 | :--- | :--- | :--- | :--- |
-| [**Heloysa Farias da Silva**](http://lattes.cnpq.br/5458428959193259) | Mestrado | UFRN-RN-Brasil | Botânica, Taxonomia de Criptógamos, Micologia. |
-| [**Kairo Dourado Barbosa**](http://lattes.cnpq.br/0548719219872814) | Mestrado | UFRN-RN-Brasil | Taxonomia, Sistemática e Evolução de Fungos. |
+| [**Brena Coutinho Muniz**](http://lattes.cnpq.br/8929526919264019) | Mestrado | Universidade de Pernambuco / Instituto de Ciências Biológicas-UPE | Micorrízas, Fisiologia Vegetal, Biotecnologia micorrízica. |
+| [**Eduarda Lins Falcão**](http://lattes.cnpq.br/8784701808588813) | Mestrado | Universidade de Pernambuco / Instituto de Ciências Biológicas-UPE | Biotecnologia Vegetal|
 | [**Elaine Cristina Rodrigues do Nascimento**](http://lattes.cnpq.br/1545766433106164) | Mestrado | UFRN | Fosséis Fungícos, Paleomicologia, Taxonomia e Sistemática de Fungos. |
+|[**Eric Bruno da Silva Santos**](http://lattes.cnpq.br/8477829949325876) | Mestrado | Universidade Federal de Mato Grosso / Departamento de Botônica e Ecologia-UFMT | - |
+| [**Heloysa Farias da Silva**](http://lattes.cnpq.br/5458428959193259) | Mestrado | UFRN-RN-Brasil | Botânica, Taxonomia de Criptógamos, Micologia. |
+| [**Jorge Renato Pinheiro Velloso**](http://lattes.cnpq.br/2202221257065622) | Mestrado | Universidade Federal do Pampa-UNIPAMPA-RS | Botânica |
+| [**Kairo Dourado Barbosa**](http://lattes.cnpq.br/0548719219872814) | Mestrado | UFRN-RN-Brasil | Taxonomia, Sistemática e Evolução de Fungos. |
+|**[Maria Isabela da Silva Figueiredo**](http://lattes.cnpq.br/5045321524608199) | Mestrado | Universidade Federal de Mato Grosso / Departamento de Botônica e Ecologia-UFMT | - |
+| [**Mariana Bessa de Queiroz**](http://lattes.cnpq.br/1123487761804905) | Mestrado | Universidade Federal do Rio Grande do Norte / Centro de Biociências-UFRN | Taxonomia e Sistemática de Fungos Micorrízicos Arbusculares |
+| [**Mateus Oliveira da Cruz**](http://lattes.cnpq.br/3921876619463315) | Mestrado | UNESP - Campus de FrancaUNESP | Fisiologia Geral |
+| [**Naasson Victor Laurentino de Oliveira**](http://lattes.cnpq.br/0955019581696336) | Mestrado | Universidade Federal do Rio Grande do Norte / Centro de Biociências-UFRN | Micologia |
+| [**Rita de Cássia Ribeiro da luz**](http://lattes.cnpq.br/8873896275386390) | Mestrado | Universidade de Pernambuco / Instituto de Ciências Biológicas-UPE | - |
+| [**Suzana Brito Gomes da Silva**](http://lattes.cnpq.br/2163914687389926) | Mestrado | Universidade Federal de Pernambuco / Departamento de Micologia-UFPE | Microbiologia, Micologia, Ecologia, Taxonomia. |
+| [**Victória Souza Alves**](http://lattes.cnpq.br/1710629042184713) | Mestrado | Universidade Federal da Bahia / Instituto de Biologia-UFBA | - |
+| [**André Santos de Aquino Alves Monte**](http://lattes.cnpq.br/6880805976285839) | Graduação | Universidade Federal do Rio Grande do Norte / Centro de Biociências-UFRN | Micologia, Biologia Geral |
+| [**Caio Bezerra Barreto**](http://lattes.cnpq.br/8929526919264019) | Graduação | Universidade de Pernambuco / Instituto de Ciências Biológicas-UPE | - |
+| [**Ivan Luiz Santos da Cruz**](http://lattes.cnpq.br/3399231276151666) | Graduação | Universidade Federal de Mato Grosso / Instituto de Biociências-UFMT | Microbiologia |
 | [**Jeferson Chagas da Cruz**](http://lattes.cnpq.br/1276048470816514) | Graduação | Centro de Pesquisa Agroflorestal da Amazônia Ocidental-CPAA-AM-Brasi | Genética, Genética Vegetal, Genética Molecular e de Microorganismos. |
 | [**Joamir Barbosa Filho**](http://lattes.cnpq.br/0548719219872814) | Graduação | TRC AGROFLORESTAL-TRC LTDA-MT | Recursos Florestais e Engenharia Florestal |
-| [**Brena Coutinho Muniz**](http://lattes.cnpq.br/8929526919264019) | Mestrado | Universidade de Pernambuco / Instituto de Ciências Biológicas-UPE | Recursos Florestais e Engenharia Florestal | Micorrízas, Fisiologia Vegetal, Biotecnologia micorrízica. |
-| [**Caio Bezerra Barreto**](http://lattes.cnpq.br/8929526919264019) | Graduação | Universidade de Pernambuco / Instituto de Ciências Biológicas-UPE | - |
-
-
-
+| [**Juliana De Moraes**](http://lattes.cnpq.br/1280060822511765) | Graduação | Universidade Federal de Mato Grosso / Departamento de Botônica e Ecologia-UFMT | Microbiologia, biotecnologia |
+| [**Juliana Rayssa Barros Felix**](http://lattes.cnpq.br/3279922019273895). | Graduação | Universidade Federal do Rio Grande do Norte / Centro de Biociências-UFRN | Micologia, Biologia Geral | Gênomica, Taxonomia e Ecologia de comunidades de Fungos Micorrizicos Arbusculares.
+| [**Mateus Santana Ribeiro**](http://lattes.cnpq.br/3241805459856002) | Graduação | Universidade Federal da Bahia-UFBA | Micologia, Taxonomia |
+| [**Alessandra De Azevedo Santos**](http://lattes.cnpq.br/7834850845429478) | Ensino Médio (2o grau) | Universidade Federal do Rio Grande do Norte / Centro de Biociências-UFRN | Micologia, Ecologia | 
+| [**Amanda Regis Assunção**](http://lattes.cnpq.br/7503281507302489) | Ensino Médio (2o grau) | Universidade Federal do Rio Grande do Norte / Centro de Biociências-UFRN | Botânica |
+| [**Hanna Carvalho Farias de Melo Lima**](http://lattes.cnpq.br/7789610683977040) | Ensino Médio (2o grau) | Universidade Federal do Rio Grande do Norte / Centro de Biociências-UFRN | Micologia, Ecologia |
+| [**Viviane Costa Monteiro da Silva**]() | Ensino Médio (2o grau) | Universidade Federal do Rio Grande do Norte / Centro de Biociências-UFRN | Micologia, Biologia Geral |
 
