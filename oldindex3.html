@@ -48,6 +48,9 @@
             margin: 40px 0;
         }
 
+        /* --- REMOVED Header (Logo) --- */
+        /* The old header style is no longer needed */
+
         /* --- Navigation Tabs (Updated) --- */
         nav {
             display: flex;
@@ -191,7 +194,7 @@
 
         /* --- Seções Placeholder --- */
         .placeholder {
-            min-height: 150px;
+            min-height: 300px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -200,7 +203,6 @@
             background: #fff;
             border-radius: 8px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-            margin-top: 20px;
         }
         
         /* --- Table Styles (for Team tab) --- */
@@ -229,24 +231,6 @@
         }
         tbody tr:hover {
             background-color: #f1f1f1;
-        }
-
-        /* --- Image Grid (for NeoMycologist) --- */
-        .image-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr); /* 2 columns */
-            gap: 15px;
-            margin-top: 20px;
-        }
-        .grid-item img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            transition: transform 0.2s;
-        }
-        .grid-item img:hover {
-            transform: scale(1.03);
         }
 
         /* --- Footer --- */
@@ -311,16 +295,12 @@
             }
         }
         
-        /* For tables and grids on small screens */
+        /* For tables on small screens */
         @media (max-width: 600px) {
             table {
                 display: block;
                 overflow-x: auto; /* Allow horizontal scrolling for tables */
                 white-space: nowrap;
-            }
-            /* Stack the 2x2 grid into a single column */
-            .image-grid {
-                grid-template-columns: 1fr;
             }
         }
 
@@ -1156,30 +1136,21 @@
         <div id="documents" class="tab-content">
             <h2>Documents</h2>
             <div class="placeholder">
-                <p>Documentos e publicações serão listados aqui.</p>
+                <p>Documentos, regimentos, regras de privacidade de dados, e publicações serão listados aqui.</p>
             </div>
         </div>
         
         <div id="dataportal" class="tab-content">
             <h2>DataPortal</h2>
-            
-            <div style="text-align: center; margin-bottom: 20px;">
-                <img src="img/NeoMyCO.png" alt="NeoMyCO Logo" style="max-width: 400px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-            </div>
-
             <div class="placeholder">
-                <p>O portal de dados será acessível por aqui.</p>
+                <p>O portal de dados NeoM<sup>AI</sup><sub>Y</sub>CO será acessível por aqui.</p>
             </div>
         </div>
 
         <div id="neomycologist" class="tab-content">
-            <h2>NeoMycologist Journal</h2>
-            
-            <div class="image-grid">
-                <div class="grid-item"><img src="img/NeoMycologist1.jpeg" alt="NeoMycologist Image 1"></div>
-                <div class="grid-item"><img src="img/NeoMycologist2.jpeg" alt="NeoMycologist Image 2"></div>
-                <div class="grid-item"><img src="img/NeoMycologist3.jpeg" alt="NeoMycologist Image 3"></div>
-                <div class="grid-item"><img src="img/NeoMycologist4.jpeg" alt="NeoMycologist Image 4"></div>
+            <h2>NeoMycologist</h2>
+            <div class="placeholder">
+                <p>NeoMycologist Journal.</p>
             </div>
         </div>
 
