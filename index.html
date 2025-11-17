@@ -29,6 +29,7 @@
         }
         h3 {
             color: #006fce;
+            margin-top: 30px;
         }
         a {
             color: #006fce;
@@ -47,25 +48,26 @@
             margin: 40px 0;
         }
 
-        /* --- Header (Logo) --- */
-        header {
-            background-color: #ffffff;
-            border-bottom: 1px solid #ddd;
+        /* --- REMOVED Header (Logo) --- */
+        /* The old header style is no longer needed */
+
+        /* --- Navigation Tabs (Updated) --- */
+        nav {
+            display: flex;
+            align-items: center;
             padding: 10px 20px;
-            text-align: center;
+            background: #34495e;
+            border-radius: 0; /* Full width */
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
-        header .logo {
+        nav .logo {
             height: 50px;
             width: auto;
+            flex-shrink: 0; /* Prevents logo from shrinking */
         }
-
-        /* --- Navigation Tabs --- */
-        nav {
-            background: #34495e;
-            overflow: hidden;
-            border-radius: 0; /* Full width */
-            text-align: center; /* Center the buttons */
+        nav .nav-links {
+            margin: 0 auto; /* Centers the div in the available space */
+            text-align: center;
         }
         nav button {
             background-color: #34495e;
@@ -245,14 +247,39 @@
 
         /* --- Responsividade --- */
         @media (max-width: 900px) {
+            /* On medium screens, allow nav links to wrap */
+            nav {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            nav .nav-links {
+                flex-basis: 100%;
+                order: 2; /* Put links below logo */
+            }
+            nav .logo {
+                order: 1; /* Put logo first */
+                margin-bottom: 10px;
+            }
+            
             .banner-content h1 {
                 font-size: 2.5rem;
             }
         }
         
         @media (max-width: 768px) {
+            /* On small screens, stack logo and buttons */
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav .logo {
+                margin-bottom: 10px;
+            }
+            nav .nav-links {
+                width: 100%;
+            }
             nav button {
-                width: 100%; /* Stack tabs on small screens */
+                width: 100%; /* Stack tabs */
                 text-align: left;
             }
             .banner {
@@ -281,20 +308,20 @@
 </head>
 <body>
 
-    <header>
-        <a href="#"><img src="img/Fungos_BR.png" alt="INCT-Fungos Logo" class="logo"></a>
-    </header>
-
     <nav>
-        <button class="tab-link active" onclick="openTab(event, 'home')">Home</button>
-        <button class="tab-link" onclick="openTab(event, 'committee')">Committee</button>
-        <button class="tab-link" onclick="openTab(event, 'team')">Team</button>
-        <button class="tab-link" onclick="openTab(event, 'institutions')">Institutions</button>
-        <button class="tab-link" onclick="openTab(event, 'documents')">Documents</button>
-        <button class="tab-link" onclick="openTab(event, 'dataportal')">DataPortal</button>
-        <button class="tab-link" onclick="openTab(event, 'neomycologist')">NeoMycologist</button>
-        <button class="tab-link" onclick="openTab(event, 'outreach')">Outreach</button>
-        <button class="tab-link" onclick="openTab(event, 'contact')">Contact</button>
+        <a href="#"><img src="img/Fungos_BR.png" alt="INCT-Fungos Logo" class="logo"></a>
+        
+        <div class="nav-links">
+            <button class="tab-link active" onclick="openTab(event, 'home')">Home</button>
+            <button class="tab-link" onclick="openTab(event, 'committee')">Committee</button>
+            <button class="tab-link" onclick="openTab(event, 'team')">Team</button>
+            <button class="tab-link" onclick="openTab(event, 'institutions')">Institutions</button>
+            <button class="tab-link" onclick="openTab(event, 'documents')">Documents</button>
+            <button class="tab-link" onclick="openTab(event, 'dataportal')">DataPortal</button>
+            <button class="tab-link" onclick="openTab(event, 'neomycologist')">NeoMycologist</button>
+            <button class="tab-link" onclick="openTab(event, 'outreach')">Outreach</button>
+            <button class="tab-link" onclick="openTab(event, 'contact')">Contact</button>
+        </div>
     </nav>
     
     <div id="banner-container">
@@ -519,9 +546,339 @@
                         <td>Universidade Federal do Amazonas-UFAM</td>
                         <td>Biologia Geral, Genética, Genética Humana e Médica, Genética Molecular e de Microorganismos, Microbiologia Aplicada, Mutagênese.</td>
                     </tr>
+                    <tr>
+                        <td><a href="http://lattes.cnpq.br/5626730758767685" target="_blank" rel="noopener noreferrer"><strong>Bianca Denise Barbosa da Silva</strong></a></td>
+                        <td>Doutorado</td>
+                        <td>Universidade Federal da Bahia-UFBA</td>
+                        <td>Botânica, Taxonomia de Criptógamos, Micologia.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://lattes.cnpq.br/5350879120540577" target="_blank" rel="noopener noreferrer"><strong>Camila Pinheiro Nobre</strong></a></td>
+                        <td>Doutorado</td>
+                        <td>Universidade Estadual do Maranhão-UEMA</td>
+                        <td>Microbiologia e Bioquímica do Solo.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://lattes.cnpq.br/6986086365325708" target="_blank" rel="noopener noreferrer"><strong>Daniel Augusto Schurt</strong></a></td>
+                        <td>Doutorado</td>
+                        <td>Empresa Brasileira de Pesquisa Agropecuária / EMBRAPA-DF</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://lattes.cnpq.br/7251618193690338" target="_blank" rel="noopener noreferrer"><strong>Danilo Batista Pinho</strong></a></td>
+                        <td>Doutorado</td>
+                        <td>Universidade de Brasília / Departamento de Fitopatologia-UnB</td>
+                        <td>Agronomia, Fitopatologia, Micologia.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://lattes.cnpq.br/7251618193690338" target="_blank" rel="noopener noreferrer"><strong>Diogo Henrique Costa de Rezende</strong></a></td>
+                        <td>Doutorado</td>
+                        <td>Universidade Federal do Ceará / Departamento de Biologia-UFC</td>
+                        <td>Micologia, Botânica,  Bioinformática, Conservação da Natureza, Microbiologia.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://lattes.cnpq.br/3573059727962827" target="_blank" rel="noopener noreferrer"><strong>Dirce Leimi Komura</strong></a></td>
+                        <td>Doutorado</td>
+                        <td>Instituto Federal de Educação, Ciência e Tecnologia do Amazonas-IFAM</td>
+                        <td>Micologia, Taxonomia de macrofungos, Glicídeos, Taxonomia de Fanerógamos, Bioquímica dos Microorganismos.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://lattes.cnpq.br/8784701808588813" target="_blank" rel="noopener noreferrer"><strong>Eduarda Lins Falcão</strong></a></td>
+                        <td>Mestrado</td>
+                        <td>Universidade de Pernambuco / Instituto de Ciências Biológicas-UPE</td>
+                        <td>Biotecnologia Vegetal.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://lattes.cnpq.br/6392519796667446" target="_blank" rel="noopener noreferrer"><strong>Elaine Malosso</strong></a></td>
+                        <td>Doutorado</td>
+                        <td>Universidade Federal de Pernambuco / Departamento de Micologia-UFPE</td>
+                        <td>Micologia, Ecologia, Taxonomia Molecular.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://lattes.cnpq.br/2384273331719764" target="_blank" rel="noopener noreferrer"><strong>Elerson Matos Rocha</strong></a></td>
+                        <td>Doutorado</td>
+                        <td>Fundação Oswaldo Cruz-FIOCRUZ</td>
+                        <td>Microbiologia, Parasitologia, Biotecnologia.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://lattes.cnpq.br/7181472061444803" target="_blank" rel="noopener noreferrer"><strong>Elisandro Ricardo Drechsler dos Santos</strong></a></td>
+                        <td>Doutorado</td>
+                        <td>Universidade Federal de Santa Catarina / Departamento de Botânica-UFSC</td>
+                        <td>Micologia, Sistemática e Filogenia de macrofungos, Ecologia e Biogeografia de Macrofungos, Inventário e Monitoramento da Diversidade de Macrofungos.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://lattes.cnpq.br/4183279549863845" target="_blank" rel="noopener noreferrer"><strong>Euziclei Gonzaga de Almeida</strong></a></td>
+                        <td>Doutorado</td>
+                        <td>Universidade Federal de Mato Grosso / Departamento de Botânica e Ecologia-UFMT</td>
+                        <td>Microbiologia, Biologia e Fisiologia dos Microorganismos, Biotecnologia.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://lattes.cnpq.br/6314571767850075" target="_blank" rel="noopener noreferrer"><strong>Felipe Wartchow</strong></a></td>
+                        <td>Doutorado</td>
+                        <td>Universidade Federal da Paraíba / Departamento de Sistemática e Ecologia-UFPB</td>
+                        <td>Micologia.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://lattes.cnpq.br/7965633320040387" target="_blank" rel="noopener noreferrer"><strong>Flavia Rodrigues Barbosa</strong></a></td>
+                        <td>Doutorado</td>
+                        <td>Universidade Federal de Mato Grosso-UFMT</td>
+                        <td>Taxonomia de Criptógamos.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://lattes.cnpq.br/5150261296353808" target="_blank" rel="noopener noreferrer"><strong>Francisco Adriano de Souza</strong></a></td>
+                        <td>Doutorado</td>
+                        <td>Empresa Brasileira de Pesquisa Agropecuária / Centro Nacional de Pesquisa de Milho e Sorgo-EMBRAPA</td>
+                        <td>Ecologia Molecular Microbiana, Genética Molecular e de Microorganismos, Microbiologia e Bioquímica do Solo, Micologia, Ecologia Aplicada, Biologia Molecular.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://lattes.cnpq.br/1170471698880208" target="_blank" rel="noopener noreferrer"><strong>Fábio Sérgio Barbosa da Silva</strong></a></td>
+                        <td>Doutorado</td>
+                        <td>Universidade de Pernambuco / Instituto de Ciências Biológicas-UPE</td>
+                        <td>Botânica Aplicada, Microbiologia Aplicada, Micologia.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://lattes.cnpq.br/3301704677133401" target="_blank" rel="noopener noreferrer"><strong>Genivaldo Alves da Silva</strong></a></td>
+                        <td>Doutorado</td>
+                        <td>Universidade Federal de Santa Catarina / Departamento de Botânica-UFSC</td>
+                        <td>Micologia, Biologia Molecular, Taxonomia Vegetal.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://lattes.cnpq.br/2066412407084475" target="_blank" rel="noopener noreferrer"><strong>Geraldo Wilson Afonso Fernandes</strong></a></td>
+                        <td>Doutorado</td>
+                        <td>Universidade Federal de Minas Gerais-UFMG</td>
+                        <td>Ecologia Evolutiva de Herbívoros Tropicais, Biodiversidade e Biogeografia de Insetos Galhadores, Recuperação de Áreas Degradadas, Ecologia de Ecossistemas, Mudanças Climáticas, Herbo-Chain: biodiversidade e fitoterápicos.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://lattes.cnpq.br/0867752063422356" target="_blank" rel="noopener noreferrer"><strong>Gustavo Henrique Jerônimo Alves</strong></a></td>
+                        <td>Doutorado</td>
+                        <td>Universidade Tecnológica Federal do Paraná / Campus Cornélio Procópio-UTFPR</td>
+                        <td>diversidade e Filogenia de fungos zoospóricos.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://lattes.cnpq.br/7710601501267719" target="_blank" rel="noopener noreferrer"><strong>Gustavo Souza Valladares</strong></a></td>
+                        <td>Doutorado</td>
+                        <td>Universidade Federal do Piauí / Departamento de Geografia e Historia-UFPI</td>
+                        <td>Gênese, Morfologia e Classificação dos Solos, Geografia Física, Geoprocessamento, Aptidão Agrícola das Terras, Geografia Regional, Manejo e Conservação do Solo.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://lattes.cnpq.br/5127803057876571" target="_blank" rel="noopener noreferrer"><strong>Ivaneide de Oliveira Nascimento</strong></a></td>
+                        <td>Doutorado</td>
+                        <td>Universidade Estadual do Maranhão / Centro de Ciências Exatas e Naturais-UEMA</td>
+                        <td>Fisiologia Vegetal, Manejo e Conservação do Solo, Microbiologia e Bioquímica do Solo, Fertilidade do Solo e Adubação, Biotecnologia, Interdisciplinar/Ciências Ambientais.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://lattes.cnpq.br/2274807668869430" target="_blank" rel="noopener noreferrer"><strong>Ivani Souza Mello</strong></a></td>
+                        <td>Doutorado</td>
+                        <td>UFMS - Campus do Pantanal-CPAN/UFMS</td>
+                        <td>Química Analítica, Química, Geociências, Biotecnologia.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://lattes.cnpq.br/4414741037704147" target="_blank" rel="noopener noreferrer"><strong>Jaqueline Alves Senabio</strong></a></td>
+                        <td>Doutorado</td>
+                        <td>IFMT Campus Alta Floresta-IFMT ALT</td>
+                        <td>Microbiologia, Botânica, Biologia Geral, Biotecnologia em Saúde Humana e Animal, Citologia e Biologia Celular, Biotecnologia Ambiental e Recursos Naturais.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://lattes.cnpq.br/0203148511472345" target="_blank" rel="noopener noreferrer"><strong>Jorge Teodoro de Souza</strong></a></td>
+                        <td>Doutorado</td>
+                        <td>Universidade Federal de Lavras / Departamento de Fitopatologia-UFLA</td>
+                        <td>Fitopatologia, Microbiologia Agrícola, Filogenetica Molecular.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://lattes.cnpq.br/3936453061007933" target="_blank" rel="noopener noreferrer"><strong>Juliana Luiza Rocha de Lima</strong></a></td>
+                        <td>Doutorado</td>
+                        <td>Universidade Federal do Rio Grande do Norte / Centro de Biociências-UFRN</td>
+                        <td>Micologia.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://lattes.cnpq.br/5009735328331739" target="_blank" rel="noopener noreferrer"><strong>Juliano Lemos Bicas</strong></a></td>
+                        <td>Doutorado</td>
+                        <td>Universidade Estadual de Campinas-UNICAMP</td>
+                        <td>Bioquímica de alimentos, Microbiologia Industrial e de Fermentação, Aproveitamento de Subprodutos, Bioquímica dos Microorganismos, Compostos antimicrobianos, Microbiologia de Alimentos.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://lattes.cnpq.br/8657253415860174" target="_blank" rel="noopener noreferrer"><strong>Juliano Marcon Baltazar</strong></a></td>
+                        <td>Doutorado</td>
+                        <td>Universidade Federal de São Carlos-UFSCAR</td>
+                        <td>Taxonomia de Criptógamos, Taxonomia de Basidiomycetes, Aphyllophorales, Fungos Lignocelulíticos, Fungos Xilófilos, Taxonomia.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://lattes.cnpq.br/9814339348129868" target="_blank" rel="noopener noreferrer"><strong>Larissa Trierveiler Pereira</strong></a></td>
+                        <td>Doutorado</td>
+                        <td>Centro de Ciências da Natureza da UFSCAR-CCN</td>
+                        <td>Micologia, Microbiologia, Taxonomia de Fungos, Taxonomia de Criptógamos, Microbiologia Médica.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://lattes.cnpq.br/6736575837409659" target="_blank" rel="noopener noreferrer"><strong>Leonor Costa Maia</strong></a></td>
+                        <td>Doutorado</td>
+                        <td>Universidade Federal de Pernambuco / Departamento de Micologia-UFPE</td>
+                        <td>Botânica Aplicada, Microbiologia Aplicada, Taxonomia de Criptógamos, MICOLOGIA, Microbiologia Agrícola, Fitopatologia.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://lattes.cnpq.br/0802685182305749" target="_blank" rel="noopener noreferrer"><strong>Lidiane Alves dos Santos</strong></a></td>
+                        <td>Doutorado</td>
+                        <td>Fundação Universidade Federal de Sergipe-FUFSE</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://lattes.cnpq.br/1180868247154571" target="_blank" rel="noopener noreferrer"><strong>Loise Araujo Costa</strong></a></td>
+                        <td>Doutorado</td>
+                        <td>Universidade Federal da Paraíba-UFPB</td>
+                        <td>Biologia e Fisiologia dos Microorganismos, Micologia, Taxonomia de fungos, Ecologia de fungos.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://lattes.cnpq.br/7973565633480507" target="_blank" rel="noopener noreferrer"><strong>Lucas Leonardo da Silva</strong></a></td>
+                        <td>Doutorado</td>
+                        <td>Universidade Estadual de Goiás-UEG</td>
+                        <td>Biologia Geral, Microbiologia.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://lattes.cnpq.br/3657759682534978" target="_blank" rel="noopener noreferrer"><strong>Marcos Gervasio Pereira</strong></a></td>
+                        <td>Doutorado</td>
+                        <td>Universidade Federal Rural do Rio de Janeiro / Departamento de Solos-UFRRJ</td>
+                        <td>Gênese, Morfologia e Classificação dos Solos, Manejo e Conservação do Solo, Física do Solo, Química do Solo, Recuperação de Areas Degradadas, Florestamento e Reflorestamento.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://lattes.cnpq.br/2304369067233033" target="_blank" rel="noopener noreferrer"><strong>Maria Alice Neves</strong></a></td>
+                        <td>Doutorado</td>
+                        <td>Universidade Federal de Santa Catarina / Departamento de Botânica-UFSC</td>
+                        <td>Micologia, Macromicetes, Sistemática, Filogenia, Taxonomia de Criptógamos, Microbiologia.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://lattes.cnpq.br/1435244573329987" target="_blank" rel="noopener noreferrer"><strong>Maria Helena Alves</strong></a></td>
+                        <td>Doutorado</td>
+                        <td>UNIVERSIDADE FEDERAL DO DELTA DO PARNAÍBA-UFDPar</td>
+                        <td>Micologia, Microbiologia, Taxonomia de Criptógamos, Palinologia, Taxonomia de Fanerógamos.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://lattes.cnpq.br/9159195563442447" target="_blank" rel="noopener noreferrer"><strong>Nelson Menolli Junior</strong></a></td>
+                        <td>Doutorado</td>
+                        <td>Instituto Federal de São Paulo / IFSP - Campus São Paulo-IFSP</td>
+                        <td>Taxonomia e Sistemática de Fungos Basidiomicetos, Cultivo de Cogumelos Comestíveis, Genética Molecular e de Microorganismos.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://lattes.cnpq.br/8856812652169427" target="_blank" rel="noopener noreferrer"><strong>Olinto Liparini Pereira</strong></a></td>
+                        <td>Doutorado</td>
+                        <td>Universidade Federal de Viçosa / Departamento de Fitopatologia-UFV</td>
+                        <td>Micologia, Fitopatologia, Microbiologia e Bioquímica do Solo.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://lattes.cnpq.br/1177407730126204" target="_blank" rel="noopener noreferrer"><strong>Patricia Melchionna Albuquerque</strong></a></td>
+                        <td>Doutorado</td>
+                        <td>Universidade do Estado do Amazonas-UEA</td>
+                        <td>Bioprocessos, Microbiologia Aplicada, Biocatálise, Aproveitamento de Subprodutos, Engenharia de Alimentos, Engenharia Química.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://lattes.cnpq.br/4283045850342312" target="_blank" rel="noopener noreferrer"><strong>Patrick Cesar Alves Terrematte</strong></a></td>
+                        <td>Doutorado</td>
+                        <td>Universidade Federal do Rio Grande do Norte / Instituto Metrópole Digital-UFRN</td>
+                        <td>Aprendizagem de Máquina, Genética Humana e Médica, Bioinformática, Lógica, Computabilidade e Modelos de Computação.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://lattes.cnpq.br/2590857295836560" target="_blank" rel="noopener noreferrer"><strong>Patrícia Oliveira Fiuza</strong></a></td>
+                        <td>Doutorado</td>
+                        <td>Universidade Federal da Bahia-UFBA</td>
+                        <td>Biologia Geral, Micologia, Botânica, Microbiologia, Ecologia e Conservação.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://lattes.cnpq.br/3898958813303048" target="_blank" rel="noopener noreferrer"><strong>Renan Cipriano Moioli</strong></a></td>
+                        <td>Doutorado</td>
+                        <td>Universidade do Estado do Rio Grande do Norte-UERN</td>
+                        <td>Inteligência Computacional, Bioinformática, Neurociência Computacional, Modelagem de Fenômenos Biológicos, Processamento de Sinais Biológicos.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://lattes.cnpq.br/5330601215375810" target="_blank" rel="noopener noreferrer"><strong>Renan do Nascimento Barbosa</strong></a></td>
+                        <td>Doutorado</td>
+                        <td>Universidade Federal de Pernambuco / Departamento de Micologia-UFPE</td>
+                        <td>Parasitologia, Microbiologia.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://lattes.cnpq.br/8935685390633972" target="_blank" rel="noopener noreferrer"><strong>Rhavena Graziela Liotti</strong></a></td>
+                        <td>Doutorado</td>
+                        <td>IFMT Campus Alta Floresta-IFMT ALT</td>
+                        <td>Microbiologia, Microbiologia Ambiental, Microbiologia Industrial e de Fermentação, Protozoologia Parasitária Humana.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://lattes.cnpq.br/1679347120330619" target="_blank" rel="noopener noreferrer"><strong>Rhudson Henrique Santos Ferreira da Cruz</strong></a></td>
+                        <td>Doutorado</td>
+                        <td>Universidade Federal do Oeste da Bahia / Centro das Ciências Biológicas e da Saúde-UFOB</td>
+                        <td>Taxonomia, Sistemática e Evolução de Fungos, Ecologia de Fungos.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://lattes.cnpq.br/6208942675679254" target="_blank" rel="noopener noreferrer"><strong>Rogério Eiji Hanada</strong></a></td>
+                        <td>Doutorado</td>
+                        <td>Instituto Nacional de Pesquisas da Amazônia-INPA</td>
+                        <td>Micologia, Fitopatologia, Patologia da madeira.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://lattes.cnpq.br/1934399087822977" target="_blank" rel="noopener noreferrer"><strong>Rossana de Aguiar Cordeiro</strong></a></td>
+                        <td>Doutorado</td>
+                        <td>Universidade Federal do Ceará / Departamento de Patologia-UFC</td>
+                        <td>Micologia, Microbiologia Médica, Sensibilidade In Vitro a Antifúngicos, Epidemiologia Clínica das Doenças Infecciosas.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://lattes.cnpq.br/5471284872073952" target="_blank" rel="noopener noreferrer"><strong>Solange Xavier dos Santos</strong></a></td>
+                        <td>Doutorado</td>
+                        <td>Universidade Estadual de Goiás-UEG</td>
+                        <td>Micologia Básica e Aplicada, Microbiologia Industrial e de Fermentação, Taxonomia de Criptógamos, Enzimas Microbianas, Microbiologia e Entomologia Agrícola, Controle Biológico de Pragas.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://lattes.cnpq.br/6717736083103462" target="_blank" rel="noopener noreferrer"><strong>Sávio Torres de Farias</strong></a></td>
+                        <td>Doutorado</td>
+                        <td>Universidade Federal da Paraíba / Departamento de Biologia Molecular-UFPB</td>
+                        <td>Genética Teórica, Bioinformática.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://lattes.cnpq.br/8535172322991148" target="_blank" rel="noopener noreferrer"><strong>Tatiana Baptista Gibertoni</strong></a></td>
+                        <td>Doutorado PQ 1D</td>
+                        <td>Universidade Federal de Pernambuco / Departamento de Micologia-UFPE</td>
+                        <td>Taxonomia de Criptógamos.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://lattes.cnpq.br/1342530085695810" target="_blank" rel="noopener noreferrer"><strong>Tetsu Sakamoto</strong></a></td>
+                        <td>Doutorado</td>
+                        <td>Universidade Federal do Rio Grande do Norte / Instituto Metrópole Digital-UFRN</td>
+                        <td>Bioinformática, Biologia Molecular, Genética.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://lattes.cnpq.br/1392239723885624" target="_blank" rel="noopener noreferrer"><strong>Thalline Rafhaella Leite Cordeiro</strong></a></td>
+                        <td>Doutorado</td>
+                        <td>Universidade Federal de Pernambuco / Departamento de Micologia-UFPE</td>
+                        <td>Micologia, Microbiologia.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://lattes.cnpq.br/4397895982562841" target="_blank" rel="noopener noreferrer"><strong>Thiago Monteiro Araújo dos Santos</strong></a></td>
+                        <td>Doutorado</td>
+                        <td>Northeastern University - NORTHEASTERN</td>
+                        <td>Ecologia Microbiana, Genética Molecular e de Microorganismos, Microbiologia Industrial e Biotecnologia.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://lattes.cnpq.br/4030476865559301" target="_blank" rel="noopener noreferrer"><strong>Tiara Sousa Cabral</strong></a></td>
+                        <td>Doutorado</td>
+                        <td>Universidade Federal do Amazonas-UFAM</td>
+                        <td>Genética de Fungos, Filogenia Molecular.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://lattes.cnpq.br/4114023751436690" target="_blank" rel="noopener noreferrer"><strong>Virton Rodrigo Targino de Oliveira</strong></a></td>
+                        <td>Doutorado</td>
+                        <td>Universidade Federal de Pernambuco / Departamento de Micologia-UFPE</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://lattes.cnpq.br/7141513484650579" target="_blank" rel="noopener noreferrer"><strong>William Pietro de Souza</strong></a></td>
+                        <td>Doutorado</td>
+                        <td>IFMT Campus Varze Grande-IFMT VGD</td>
+                        <td>Microbiologia, Biotecnologia Ambiental e Recursos Naturais, Biodiversidade, Micologia, Tratamento Biológico de Residuos.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://lattes.cnpq.br/3246501811171398" target="_blank" rel="noopener noreferrer"><strong>Yumi Oki</strong></a></td>
+                        <td>Doutorado</td>
+                        <td>Universidade Federal de Minas Gerais-UFMG</td>
+                        <td>Ecologia, Zoologia, Zoologia, Botânica, Micologia.</td>
+                    </tr>
                 </tbody>
             </table>
-        
+
             <h3>International Researchers</h3>
             <table>
                 <thead>
@@ -544,6 +901,12 @@
                         <td>Ph.D.</td>
                         <td>Kunming University of Science and Technology-KMUST, China</td>
                         <td>-</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://lattes.cnpq.br/9323565111390057" target="_blank" rel="noopener noreferrer"><strong>Ariadne Nóbrega Marinho Furtado</strong></a></td>
+                        <td>Doutorado</td>
+                        <td>Universita Di Cagliari-U.C-Itália</td>
+                        <td>Micologia, Taxonomia, Filogenia e Sistemática, Conservação, Biologia Estrutural, Anatomia Vegetal</td>
                     </tr>
                 </tbody>
             </table>
@@ -604,16 +967,160 @@
                 </thead>
                 <tbody>
                     <tr>
+                        <td><a href="http://lattes.cnpq.br/8929526919264019" target="_blank" rel="noopener noreferrer"><strong>Brena Coutinho Muniz</strong></a></td>
+                        <td>Mestrado</td>
+                        <td>Universidade de Pernambuco / Instituto de Ciências Biológicas-UPE</td>
+                        <td>Micorrízas, Fisiologia Vegetal, Biotecnologia micorrízica.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://lattes.cnpq.br/8784701808588813" target="_blank" rel="noopener noreferrer"><strong>Eduarda Lins Falcão</strong></a></td>
+                        <td>Mestrado</td>
+                        <td>Universidade de Pernambuco / Instituto de Ciências Biológicas-UPE</td>
+                        <td>Biotecnologia Vegetal</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://lattes.cnpq.br/1545766433106164" target="_blank" rel="noopener noreferrer"><strong>Elaine Cristina Rodrigues do Nascimento</strong></a></td>
+                        <td>Mestrado</td>
+                        <td>UFRN</td>
+                        <td>Fosséis Fungícos, Paleomicologia, Taxonomia e Sistemática de Fungos.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://lattes.cnpq.br/8477829949325876" target="_blank" rel="noopener noreferrer"><strong>Eric Bruno da Silva Santos</strong></a></td>
+                        <td>Mestrado</td>
+                        <td>Universidade Federal de Mato Grosso / Departamento de Botônica e Ecologia-UFMT</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
                         <td><a href="http://lattes.cnpq.br/5458428959193259" target="_blank" rel="noopener noreferrer"><strong>Heloysa Farias da Silva</strong></a></td>
                         <td>Mestrado</td>
                         <td>UFRN-RN-Brasil</td>
                         <td>Botânica, Taxonomia de Criptógamos, Micologia.</td>
                     </tr>
                     <tr>
+                        <td><a href="http://lattes.cnpq.br/2202221257065622" target="_blank" rel="noopener noreferrer"><strong>Jorge Renato Pinheiro Velloso</strong></a></td>
+                        <td>Mestrado</td>
+                        <td>Universidade Federal do Pampa-UNIPAMPA-RS</td>
+                        <td>Botânica</td>
+                    </tr>
+                    <tr>
                         <td><a href="http://lattes.cnpq.br/0548719219872814" target="_blank" rel="noopener noreferrer"><strong>Kairo Dourado Barbosa</strong></a></td>
                         <td>Mestrado</td>
                         <td>UFRN-RN-Brasil</td>
                         <td>Taxonomia, Sistemática e Evolução de Fungos.</td>
+                    </tr>
+                    <tr>
+                        <td><strong><a href="http://lattes.cnpq.br/5045321524608199" target="_blank" rel="noopener noreferrer">Maria Isabela da Silva Figueiredo</a></strong></td>
+                        <td>Mestrado</td>
+                        <td>Universidade Federal de Mato Grosso / Departamento de Botônica e Ecologia-UFMT</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://lattes.cnpq.br/1123487761804905" target="_blank" rel="noopener noreferrer"><strong>Mariana Bessa de Queiroz</strong></a></td>
+                        <td>Mestrado</td>
+                        <td>Universidade Federal do Rio Grande do Norte / Centro de Biociências-UFRN</td>
+                        <td>Taxonomia e Sistemática de Fungos Micorrízicos Arbusculares</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://lattes.cnpq.br/3921876619463315" target="_blank" rel="noopener noreferrer"><strong>Mateus Oliveira da Cruz</strong></a></td>
+                        <td>Mestrado</td>
+                        <td>UNESP - Campus de FrancaUNESP</td>
+                        <td>Fisiologia Geral</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://lattes.cnpq.br/0955019581696336" target="_blank" rel="noopener noreferrer"><strong>Naasson Victor Laurentino de Oliveira</strong></a></td>
+                        <td>Mestrado</td>
+                        <td>Universidade Federal do Rio Grande do Norte / Centro de Biociências-UFRN</td>
+                        <td>Micologia</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://lattes.cnpq.br/8873896275386390" target="_blank" rel="noopener noreferrer"><strong>Rita de Cássia Ribeiro da luz</strong></a></td>
+                        <td>Mestrado</td>
+                        <td>Universidade de Pernambuco / Instituto de Ciências Biológicas-UPE</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://lattes.cnpq.br/2163914687389926" target="_blank" rel="noopener noreferrer"><strong>Suzana Brito Gomes da Silva</strong></a></td>
+                        <td>Mestrado</td>
+                        <td>Universidade Federal de Pernambuco / Departamento de Micologia-UFPE</td>
+                        <td>Microbiologia, Micologia, Ecologia, Taxonomia.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://lattes.cnpq.br/1710629042184713" target="_blank" rel="noopener noreferrer"><strong>Victória Souza Alves</strong></a></td>
+                        <td>Mestrado</td>
+                        <td>Universidade Federal da Bahia / Instituto de Biologia-UFBA</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://lattes.cnpq.br/6880805976285839" target="_blank" rel="noopener noreferrer"><strong>André Santos de Aquino Alves Monte</strong></a></td>
+                        <td>Graduação</td>
+                        <td>Universidade Federal do Rio Grande do Norte / Centro de Biociências-UFRN</td>
+                        <td>Micologia, Biologia Geral</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://lattes.cnpq.br/8929526919264019" target="_blank" rel="noopener noreferrer"><strong>Caio Bezerra Barreto</strong></a></td>
+                        <td>Graduação</td>
+                        <td>Universidade de Pernambuco / Instituto de Ciências Biológicas-UPE</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://lattes.cnpq.br/3399231276151666" target="_blank" rel="noopener noreferrer"><strong>Ivan Luiz Santos da Cruz</strong></a></td>
+                        <td>Graduação</td>
+                        <td>Universidade Federal de Mato Grosso / Instituto de Biociências-UFMT</td>
+                        <td>Microbiologia</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://lattes.cnpq.br/1276048470816514" target="_blank" rel="noopener noreferrer"><strong>Jeferson Chagas da Cruz</strong></a></td>
+                        <td>Graduação</td>
+                        <td>Centro de Pesquisa Agroflorestal da Amazônia Ocidental-CPAA-AM-Brasi</td>
+                        <td>Genética, Genética Vegetal, Genética Molecular e de Microorganismos.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://lattes.cnpq.br/0548719219872814" target="_blank" rel="noopener noreferrer"><strong>Joamir Barbosa Filho</strong></a></td>
+                        <td>Graduação</td>
+                        <td>TRC AGROFLORESTAL-TRC LTDA-MT</td>
+                        <td>Recursos Florestais e Engenharia Florestal</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://lattes.cnpq.br/1280060822511765" target="_blank" rel="noopener noreferrer"><strong>Juliana De Moraes</strong></a></td>
+                        <td>Graduação</td>
+                        <td>Universidade Federal de Mato Grosso / Departamento de Botônica e Ecologia-UFMT</td>
+                        <td>Microbiologia, biotecnologia</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://lattes.cnpq.br/3279922019273895" target="_blank" rel="noopener noreferrer"><strong>Juliana Rayssa Barros Felix</strong></a></td>
+                        <td>Graduação</td>
+                        <td>Universidade Federal do Rio Grande do Norte / Centro de Biociências-UFRN</td>
+                        <td>Gênomica, Taxonomia e Ecologia de comunidades de Fungos Micorrizicos Arbusculares.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://lattes.cnpq.br/3241805459856002" target="_blank" rel="noopener noreferrer"><strong>Mateus Santana Ribeiro</strong></a></td>
+                        <td>Graduação</td>
+                        <td>Universidade Federal da Bahia-UFBA</td>
+                        <td>Micologia, Taxonomia</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://lattes.cnpq.br/7834850845429478" target="_blank" rel="noopener noreferrer"><strong>Alessandra De Azevedo Santos</strong></a></td>
+                        <td>Ensino Médio (2o grau)</td>
+                        <td>Universidade Federal do Rio Grande do Norte / Centro de Biociências-UFRN</td>
+                        <td>Micologia, Ecologia</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://lattes.cnpq.br/7503281507302489" target="_blank" rel="noopener noreferrer"><strong>Amanda Regis Assunção</strong></a></td>
+                        <td>Ensino Médio (2o grau)</td>
+                        <td>Universidade Federal do Rio Grande do Norte / Centro de Biociências-UFRN</td>
+                        <td>Botânica</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://lattes.cnpq.br/7789610683977040" target="_blank" rel="noopener noreferrer"><strong>Hanna Carvalho Farias de Melo Lima</strong></a></td>
+                        <td>Ensino Médio (2o grau)</td>
+                        <td>Universidade Federal do Rio Grande do Norte / Centro de Biociências-UFRN</td>
+                        <td>Micologia, Ecologia</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Viviane Costa Monteiro da Silva</strong></td>
+                        <td>Ensino Médio (2o grau)</td>
+                        <td>Universidade Federal do Rio Grande do Norte / Centro de Biociências-UFRN</td>
+                        <td>Micologia, Biologia Geral</td>
                     </tr>
                 </tbody>
             </table>
