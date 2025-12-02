@@ -140,7 +140,7 @@
         .banner {
             background-image: url('img/banner.jpeg');
             background-size: cover;
-            background-position: center;
+            background-position: center 30%;
             height: 450px;
             color: white;
             display: flex;
@@ -307,15 +307,54 @@
 
         /* --- Footer --- */
         footer {
-            background-color: #333;
+            background-color: #34495e;
             color: #ccc;
             text-align: center;
             padding: 30px 20px;
             margin-top: 40px;
         }
 
+        .footer-banner {
+            background-color: white;
+            padding: 20px 40px;
+            border-radius: 10px;
+            display: inline-block;
+            margin-bottom: 20px;
+            max-width: 90%;
+        }
+
+        .footer-logos {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            margin: 0;
+            /* Reset margin since banner handles it */
+        }
+
+        .footer-logos img {
+            width: auto;
+            transition: opacity 0.3s;
+        }
+
+        .footer-logos img:hover {
+            opacity: 1;
+        }
+
+        /* Row 1: Larger logos */
+        .footer-row:first-child img {
+            max-height: 80px;
+            margin: 0 15px;
+        }
+
+        /* Row 2: Largest logo (width base) */
+        .footer-row:last-child img {
+            max-height: 120px;
+        }
+
         footer p {
             margin: 0;
+            font-size: 0.9rem;
         }
 
         /* --- Responsividade --- */
@@ -401,7 +440,10 @@
 <body>
 
     <nav>
-        <a href="#"><img src="img/Fungos_BR.png" alt="INCT-Fungos Logo" class="logo"></a>
+        <div class="logo-container" style="display: flex; align-items: center; gap: 15px;">
+            <a href="#"><img src="img/INCT-geral.png" alt="INCT Logo" class="logo"></a>
+            <a href="#"><img src="img/Fungos_BR.png" alt="INCT-Fungos Logo" class="logo"></a>
+        </div>
 
         <div class="nav-links">
             <button class="tab-link active" onclick="openTab(event, 'home')">Home</button>
@@ -1703,7 +1745,18 @@
     </main>
 
     <footer>
-        <p>&copy; 2025 INCT-Fungos. Todos os direitos reservados.</p>
+        <div class="footer-banner">
+            <div class="footer-logos">
+                <div class="footer-row">
+                    <img src="img/LogoIMD-UFRN.png" alt="IMD UFRN Logo">
+                    <img src="img/biome-logo.png" alt="BioME Logo">
+                </div>
+                <div class="footer-row">
+                    <img src="img/Governo_MCT_logo60anos_INCT.jpg" alt="Governo MCTI INCT Logo">
+                </div>
+            </div>
+        </div>
+        <p>&copy; 2024 INCT-Fungos do Brasil. All rights reserved.</p>
     </footer>
 
     <script>
