@@ -3,8 +3,17 @@
 
 <head>
     <meta charset="UTF-8">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DD23ERJZMT"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-DD23ERJZMT');
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INCT-Fungos</title>
+    <title>INCT - Brazilian Fungi</title>
     <link rel="icon" type="image/png" href="img/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="img/favicon.svg" />
     <link rel="shortcut icon" href="img/favicon.ico" />
@@ -32,6 +41,8 @@
             <button class="tab-link" onclick="openTab(event, 'dataportal')">DataPortal</button>
             <button class="tab-link" onclick="openTab(event, 'neomycologist')">NeoMycologist</button>
             <button class="tab-link" onclick="openTab(event, 'outreach')">Outreach</button>
+            <button class="tab-link" onclick="openTab(event, 'surveys')">Surveys</button>
+            <button class="tab-link" onclick="openTab(event, 'calendar')">Calendar</button>
             <button class="tab-link" onclick="openTab(event, 'contact')">Contact</button>
         </div>
 
@@ -258,19 +269,21 @@
                 <div class="info">
                     <h4>Bruno Tomio Goto</h4>
                     <h5>Bio</h5>
-                    <p>Doutor em Biologia de Fungos pela Universidade Federal de Pernambuco (2005-2009), desenvolvendo
-                        as pesquisas no Laboratório de Micorrizas do Departamento de Micologia. Atualmente Professor
-                        Associado da Universidade Federal do Rio Grande do Norte na área de Botânica e Micologia com
-                        ênfase em Taxonomia e Sistemática de Fungos. Vice-coordenador do Programa de Pós-grduação em
-                        Sistemática e Evolução entre 2011 e 2014. Coordenador do Programa de Pós-graduação em
-                        Sistemática e Evolucão 2014 a 2018 (Conceito 5-Capes) e desenvolve sua pesquisa no Laboratório
-                        de Biologia de Micorrizas. É atual Segundo secretário da nova diretoria (Micologia em Expansão)
-                        da Sociedade Brasileira de Micologia gestão 2023-2027, e Editor-Chefe do Boletim Micobiota,
-                        revista de divulgação científica da Sociedade Brasileira de Micologia. Desenvolve pesquisas em
-                        taxonomia, filogenia, ecologia e evolução de Glomeromycota, atuando também em taxonomia e
-                        sistemática de Mucoromycota com ênfase em Endogonales. Já descreveu duas classes, duas ordens,
-                        três famílias, 21 gêneros e 46 espécies de fungos. Curador da área de Glomeromycota da
-                        iniciativa internacional Outline of Fungi (http://outlineoffungi.org).</p>
+                    <p>PhD in Fungal Biology from the Federal University of Pernambuco (2005-2009), conducting research
+                        at the
+                        Mycorrhiza Laboratory of the Department of Mycology. Currently Associate Professor at the
+                        Federal University of Rio Grande do Norte in the area of Botany and Mycology with emphasis on
+                        Taxonomy and Systematics of Fungi. Vice-coordinator of the Graduate Program in Systematics and
+                        Evolution between 2011 and 2014. Coordinator of the Graduate Program in Systematics and
+                        Evolution from 2014 to 2018 (Capes Concept 5) and develops his research at the Mycorrhiza
+                        Biology Laboratory. He is currently the Second Secretary of the new board (Mycology in
+                        Expansion) of the Brazilian Mycological Society for the 2023-2027 term, and Editor-in-Chief of
+                        the Boletim Micobiota, a scientific dissemination journal of the Brazilian Mycological Society.
+                        He conducts research in taxonomy, phylogeny, ecology, and evolution of Glomeromycota, also
+                        working on taxonomy and systematics of Mucoromycota with emphasis on Endogonales. He has
+                        described two classes, two orders, three families, 21 genera, and 46 species of fungi. Curator
+                        of the Glomeromycota area of the international initiative Outline of Fungi
+                        (http://outlineoffungi.org).</p>
                     <h5>Links</h5>
                     <ul>
                         <li><a href="http://lattes.cnpq.br/5968043766728580" target="_blank"
@@ -288,15 +301,15 @@
                 <div class="info">
                     <h4>Marcos Antônio Soares</h4>
                     <h5>Bio</h5>
-                    <p>Licenciado e bacharel em Ciências Biológicas, com mestrado e doutorado em genética de fungos
-                        filamentosos. Desde 2008, é professor na Universidade Federal de Mato Grosso (câmpus Cuiabá)
-                        atuando na área de Microbiologia. Coordena o grupo de pesquisa focado em microbiologia agrícola
-                        e ambiental, cujos trabalhos são desenvolvidos no Laboratório de Biotecnologia e Ecologia
-                        Microbiana (LABEM). O objetivo geral do LABEM é compreender a estrutura de comunidades
-                        microbianas ambientais e ou associadas a macroorganismos (plantas e animais), o papel funcional
-                        da microbiota, e desenvolver produtos e processos biotecnológicos com bactérias e fungos. O
-                        LABEM implementou diversos ensaios eco-toxicológicos e toxicológicos utilizando modelos
-                        biológicos.</p>
+                    <p>Licensed and Bachelor in Biological Sciences, with a master's and doctorate in genetics of
+                        filamentous fungi. Since 2008, he has been a professor at the Federal University of Mato Grosso
+                        (Cuiabá campus) working in the area of Microbiology. He coordinates the research group focused
+                        on agricultural and environmental microbiology, whose work is developed at the Laboratory of
+                        Biotechnology and Microbial Ecology (LABEM). The general objective of LABEM is to understand the
+                        structure of environmental microbial communities and/or those associated with macroorganisms
+                        (plants and animals), the functional role of the microbiota, and to develop biotechnological
+                        products and processes with bacteria and fungi. LABEM has implemented several eco-toxicological
+                        and toxicological assays using biological models.</p>
                     <h5>Links</h5>
                     <ul>
                         <li><a href="http://lattes.cnpq.br/3256599670262972" target="_blank"
@@ -315,19 +328,20 @@
                 <div class="info">
                     <h4>Gilvan Ferreira da Silva</h4>
                     <h5>Bio</h5>
-                    <p>Possui graduação em Ciências Biológicas pela Universidade Federal de Sergipe (1999), mestrado em
-                        Genética e Melhoramento de Plantas pela Universidade Federal de Lavras (2003) e doutorado em
-                        Microbiologia (Genética Molecular e de Microrganismos) pela Universidade Federal de Viçosa
-                        (2007), Pós-doutorado em genômica funcional pelo Plant Research International (PRI) - Wageningen
-                        University (2010) e em genômica aplicada pelo Rothamsted Research (UK) 2016. Atualmente é
-                        pesquisador A da Empresa Brasileira de Pesquisa Agropecuária - EMBRAPA. Coordenador do
-                        Laboratório de Biologia Molecular e Genômica da Embrapa Amazônia Ocidental. Tem experiência na
-                        área de Genética, com ênfase em Biologia Molecular, atuando principalmente nos seguintes temas:
-                        genômica, genes de patogenicidade, genes de resistência, interação planta-patógeno, diversidade
-                        e estrutura de população, genômica funcional (<em>gene Knockout</em> e <em>Knockdown</em>),
-                        edição gênica via CRISPR/Cas e mineração de genomas voltado a pesquisa e descoberta de compostos
-                        bioativos do metabolismo secundário em microrganismos. Bolsista Produtividade I do programa
-                        Produtividade em CT&I -Fapeam.</p>
+                    <p>He holds a degree in Biological Sciences from the Federal University of Sergipe (1999), a
+                        Master's in Genetics and Plant Breeding from the Federal University of Lavras (2003), and a PhD
+                        in Microbiology (Molecular Genetics and Microorganisms) from the Federal University of Viçosa
+                        (2007). He completed postdoctoral research in functional genomics at Plant Research
+                        International (PRI) - Wageningen University (2010) and in applied genomics at Rothamsted
+                        Research (UK) in 2016. Currently, he is a Researcher A at the Brazilian Agricultural Research
+                        Corporation - EMBRAPA. He coordinates the Molecular Biology and Genomics Laboratory at Embrapa
+                        Western Amazon. He has experience in Genetics, with an emphasis on Molecular Biology, working
+                        mainly on the following topics: genomics, pathogenicity genes, resistance genes, plant-pathogen
+                        interaction, population diversity and structure, functional genomics (<em>gene Knockout</em> and
+                        <em>Knockdown</em>), gene editing via CRISPR/Cas, and genome mining aimed at research and
+                        discovery of bioactive compounds from secondary metabolism in microorganisms. Productivity
+                        Fellow I of the Productivity in CT&I program - Fapeam.
+                    </p>
                     <h5>Links</h5>
                     <ul>
                         <li><a href="http://lattes.cnpq.br/1000535673605322" target="_blank"
@@ -343,18 +357,19 @@
                 <div class="info">
                     <h4>Adriana Mayumi Yano-Melo</h4>
                     <h5>Bio</h5>
-                    <p>Possui graduação em Ciências Biológicas pela Universidade Estadual Paulista Júlio de Mesquita
-                        Filho - Unesp (1990), mestrado em Criptógamos pela Universidade Federal de Pernambuco (1994) e
-                        doutorado em Ciências Biológicas pela Universidade Federal de Pernambuco (2002). Atualmente é
-                        professora titular da Universidade Federal do Vale do São Francisco (Univasf). Participa como
-                        professora permanente do Programa de Pós-graduação em Biologia Fungos da Universidade Federal de
-                        Pernambuco e do Curso de Pós-graduação em Agronomia/Produção Vegetal da Univasf. Atuou no
-                        período de 2012 a 2021 como Editor Associado da revista Acta Botanica Brasilica e no período de
-                        2015 a 2019 como membro da Comissão de Assessoramento da Câmara de Ciências Biológicas da
-                        Facepe, retornando a esta câmara em novembro de 2023. Tem experiência na área de Botânica e
-                        Microbiologia, com ênfase em Botânica Aplicada e Microbiologia do Solo, atuando principalmente
-                        nos seguintes temas: ecologia, aplicação e produção de fungos micorrízicos arbusculares, uso de
-                        FMA na mitigação de estresse abiótico no semiárido e produção de mudas.</p>
+                    <p>She holds a degree in Biological Sciences from Universidade Estadual Paulista Júlio de Mesquita
+                        Filho - Unesp
+                        (1990), a master's degree in Cryptogams from the Federal University of Pernambuco (1994), and a
+                        doctorate in Biological Sciences from the Federal University of Pernambuco (2002). She is
+                        currently a full professor at the Federal University of Vale do São Francisco (Univasf). She
+                        participates as a permanent professor in the Graduate Program in Fungal Biology at the Federal
+                        University of Pernambuco and in the Graduate Program in Agronomy/Plant Production at Univasf.
+                        She served as Associate Editor of the journal Acta Botanica Brasilica from 2012 to 2021 and as a
+                        member of the Advisory Committee of the Biological Sciences Chamber of Facepe from 2015 to 2019,
+                        returning to this chamber in November 2023. She has experience in Botany and Microbiology, with
+                        an emphasis on Applied Botany and Soil Microbiology, working mainly on the following topics:
+                        ecology, application and production of arbuscular mycorrhizal fungi, use of AMF in mitigating
+                        abiotic stress in the semi-arid region, and seedling production.</p>
                     <h5>Links</h5>
                     <ul>
                         <li><a href="http://lattes.cnpq.br/9076184948422530" target="_blank"
@@ -370,14 +385,14 @@
                 <div class="info">
                     <h4>João Paulo Matos Santos Lima</h4>
                     <h5>Bio</h5>
-                    <p>Biólogo, Especialista em Bioinformática, Mestre e Doutor em Bioquímica. Tem experiência na área
-                        de Bioquímica, Biologia Molecular e Bioinformática. Tem como principal linha de pesquisa
-                        Evolução de Moléculas e Vias Metabólicas, utilizando abordagens da Bioinformática/Bioinformática
-                        Estrutural e da Filogenia Molecular. Atualmente, é Professor Titular do Departamento de
-                        Bioquímica, Centro de Biociências da Universidade Federal do Rio Grande do Norte, membro
-                        permanente do Programa de Pós-Graduação em Bioinformática (PPg-Bioinfo-IMD/UFRN), pesquisador
-                        (P.I.) do Centro Multiusuário de Bioinformática (CMB/IMD/UFRN) e pesquisador associado do
-                        Instituto de Medicina Tropical do RN (IMT-RN).</p>
+                    <p>Biologist, Specialist in Bioinformatics, Master and PhD in Biochemistry. He has experience in
+                        Biochemistry, Molecular Biology, and Bioinformatics. His main line of research is the Evolution
+                        of Molecules and Metabolic Pathways, using Bioinformatics/Structural Bioinformatics and
+                        Molecular Phylogeny approaches. Currently, he is a Full Professor at the Department of
+                        Biochemistry, Biosciences Center of the Federal University of Rio Grande do Norte, a permanent
+                        member of the Graduate Program in Bioinformatics (PPg-Bioinfo-IMD/UFRN), a researcher (P.I.) at
+                        the Bioinformatics Multiusers Center (CMB/IMD/UFRN), and an associate researcher at the
+                        Institute of Tropical Medicine of RN (IMT-RN).</p>
                     <h5>Links</h5>
                     <ul>
                         <li><a href="https://lattes.cnpq.br/3289758851760692" target="_blank"
@@ -395,15 +410,16 @@
                 <div class="info">
                     <h4>Marcela Eugenia da Silva Caceres</h4>
                     <h5>Bio</h5>
-                    <p>Bacharelado em Ciências Biológicas pela Universidade Federal de Pernambuco, Mestrado em Biologia
-                        de Fungos pela Universidade Federal de Pernambuco e Doutorado em Ciências Naturais pela
-                        Universidade de Bayreuth, Alemanha, na área de Liquenologia. Atua como docente do núcleo
-                        permanente do Programa de Pós-graduação em Biologia de Fungos da Universidade Federal de
-                        Pernambuco e do Programa de Pós-graduação em Ciências Naturais da Universidade Federal de
-                        Sergipe. Líder do Grupo Taxonomia e Ecologia de Liquens. Atua nas áreas de taxonomia de fungos
-                        liquenizados (liquens), ecologia e conservação de fungos liquenizados corticícolas e foliícolas
-                        da Mata Atlântica, Amazônia e Semi-árido. Atualmente é Professora Titular do Departamento de
-                        Bologia, da Universidade Federal de Sergipe (UFS).</p>
+                    <p>Bachelor in Biological Sciences from the Federal University of Pernambuco, Master in Fungal
+                        Biology
+                        from the Federal University of Pernambuco, and PhD in Natural Sciences from the University of
+                        Bayreuth, Germany, in the area of Lichenology. She works as a professor in the permanent core of
+                        the Graduate Program in Fungal Biology at the Federal University of Pernambuco and the Graduate
+                        Program in Natural Sciences at the Federal University of Sergipe. Leader of the Lichen Taxonomy
+                        and Ecology Group. She works in the areas of taxonomy of lichenized fungi (lichens), ecology,
+                        and conservation of corticolous and foliicolous lichenized fungi of the Atlantic Forest, Amazon,
+                        and Semi-arid regions. Currently, she is a Full Professor at the Department of Biology, Federal
+                        University of Sergipe (UFS).</p>
                     <h5>Links</h5>
                     <ul>
                         <li><a href="https://lattes.cnpq.br/3801791273361463" target="_blank"
@@ -419,23 +435,23 @@
                 <div class="info">
                     <h4>Reginaldo Gonçalves de Lima Neto</h4>
                     <h5>Bio</h5>
-                    <p>Professor Adjunto da Área Acadêmica de Medicina Tropical do Centro de Ciências Médicas da
-                        Universidade Federal de Pernambuco. Bacharel em Ciências Biológicas pela Universidade Federal de
-                        Pernambuco. Mestre e Doutor em Biologia de Fungos pela Universidade Federal de Pernambuco com
-                        período sanduíche na Universidade do Minho, Portugal. Pós-Doutorado concluído através do
-                        Programa Nacional de Pós-Doutorado (PNPD Institucional CAPES/UFPE processo 2.793/2011).
-                        Professor Visitante na Universidade de Nantes, França, em 2023. Coordenador do PPG em Medicina
-                        Tropical da UFPE (2023-2027). Membro Permanente do PPG em Biologia de Fungos (PPGBF/UFPE).
-                        Coordenador do Laboratório Multiusuário em Pesquisa e Diagnóstico em Doenças Tropicais da UFPE.
-                        Micologista da Residência Médica em Dermatologia do Hospital das Clínicas/UFPE. Membro do Núcleo
-                        gestor do Laboratório Multiusuário de Segurança Biológica nível 3 da UFPE. Membro do corpo
-                        editorial do periódico The Open Microbiology Journal (1874-2858). Possui experiência na área de
-                        Microbiologia Médica, com ênfase no Diagnóstico por métodos proteômicos pela técnica de
-                        MALDI-TOF MS; Testes de Sensibilidade a Antimicrobianos e Detecção de proteínas de
-                        resistência/virulência microbianas por espectrometria de massas. Atua ainda em temas
-                        relacionados a Saúde Pública com ênfase em Limpeza e Desinfecção de Superfícies Fixas em
-                        Unidades de Saúde e em Auditoria em Sistemas de Saúde. É líder do grupo de pesquisa "Proteômica
-                        de microrganismos, processos infecciosos e neoplásicos".</p>
+                    <p>Adjunct Professor in the Academic Area of Tropical Medicine at the Center for Medical Sciences of
+                        the
+                        Federal University of Pernambuco. Bachelor in Biological Sciences from the Federal University of
+                        Pernambuco. Master and PhD in Fungal Biology from the Federal University of Pernambuco with a
+                        sandwich period at the University of Minho, Portugal. Post-doctorate completed through the
+                        National Post-Doctorate Program (PNPD Institutional CAPES/UFPE process 2.793/2011). Visiting
+                        Professor at the University of Nantes, France, in 2023. Coordinator of the PPG in Tropical
+                        Medicine at UFPE (2023-2027). Permanent Member of the PPG in Fungal Biology (PPGBF/UFPE).
+                        Coordinator of the Multiuser Laboratory for Research and Diagnosis in Tropical Diseases at UFPE.
+                        Mycologist of the Medical Residency in Dermatology at the Hospital das Clínicas/UFPE. Member of
+                        the management core of the Level 3 Biological Safety Multiuser Laboratory at UFPE. Member of the
+                        editorial board of The Open Microbiology Journal (1874-2858). Has experience in Medical
+                        Microbiology, with emphasis on Diagnosis by proteomic methods using the MALDI-TOF MS technique;
+                        Antimicrobial Susceptibility Testing and Detection of microbial resistance/virulence proteins by
+                        mass spectrometry. Also works on topics related to Public Health with emphasis on Cleaning and
+                        Disinfection of Fixed Surfaces in Health Units and Health Systems Audit. Leader of the research
+                        group "Proteomics of microorganisms, infectious and neoplastic processes".</p>
                     <h5>Links</h5>
                     <ul>
                         <li><a href="http://lattes.cnpq.br/9993875563206244" target="_blank"
@@ -451,23 +467,24 @@
                 <div class="info">
                     <h4>Sebastian Faustino Pereira</h4>
                     <h5>Bio</h5>
-                    <p>Doutorado em Educação pela UFRN (2010), Mestrado em Ciências Sociais pela mesma instituição
-                        (2006), Especialização em Jornalismo Cultural (FIP/PB, 2003) e Graduação em Comunicação Social
-                        (Habilitação Jornalismo) pela Universidade Estadual da Paraíba (2002). Professor Associado do
-                        Departamento de Comunicação (UFRN). Autor dos livros: Homo Midas e o político mitiático na folia
-                        do rei nu (2009); Comunicação e Educação: diálogos possíveis (2012, organizador); e publicação
-                        dos artigos: Comunicação e educação: a rádio na escola e a escola no rádio na obra Pedagogia
-                        Crítica da Mídia (2009) e Rádio Escolar como experiência dialógica na obra Comunicação e
-                        Educação: diálogos possíveis (2012), e Nestor Garcia Canclini, na obra Clássicos da Comunicação
-                        - Os teóricos: de Peirce a Canclini (Editora Vozes). Professor do Mestrado Profissional em
-                        Gestão de Processos Institucionais - MPGPI/UFRN. Chefe do Departamento de Comunicação Social
-                        2012-2014 e reeleito 2014-2016. Eleito Vice-Diretor do Centro de Ciências Humanas, Letras e
-                        Artes quadriênio 2015-2019. Superintende de Comunicação da UFRN (desde junho de 2019).Membro do
-                        Grupo de Trabalho de Combatre à Desinformação do Supremo Tribunal Federal - STF (desde
-                        2024).Eleito Representante das emissoras de televisão universitária no Comitê de Participação
-                        Social, Diversidade e Inclusão - CPADI, da EBC (2025-2026). Representante Adjunto da Região
-                        Nordeste no Colegiado de Gestores das Instituições de Ensino Superior - COGECOM (2024-2025).
-                        Representante da UFRN no Fórum do Sistema Brasileiro de Televisão Digital - SBTVD.</p>
+                    <p>PhD in Education from UFRN (2010), Master in Social Sciences from the same institution (2006),
+                        Specialization in Cultural Journalism (FIP/PB, 2003), and Graduation in Social Communication
+                        (Journalism Qualification) from the State University of Paraíba (2002). Associate Professor at
+                        the Department of Communication (UFRN). Author of the books: Homo Midas e o político mitiático
+                        na folia do rei nu (2009); Comunicação e Educação: diálogos possíveis (2012, organizer); and
+                        publication of the articles: Comunicação e educação: a rádio na escola e a escola no rádio in
+                        the work Pedagogia Crítica da Mídia (2009) and Rádio Escolar como experiência dialógica in the
+                        work Comunicação e Educação: diálogos possíveis (2012), and Nestor Garcia Canclini, in the work
+                        Clássicos da Comunicação - Os teóricos: de Peirce a Canclini (Editora Vozes). Professor of the
+                        Professional Master's in Management of Institutional Processes - MPGPI/UFRN. Head of the
+                        Department of Social Communication 2012-2014 and re-elected 2014-2016. Elected Vice-Director of
+                        the Center for Human Sciences, Letters and Arts for the 2015-2019 quadrennium. Superintendent of
+                        Communication at UFRN (since June 2019). Member of the Working Group to Combat Disinformation of
+                        the Supreme Federal Court - STF (since 2024). Elected Representative of university television
+                        stations in the Committee for Social Participation, Diversity and Inclusion - CPADI, of EBC
+                        (2025-2026). Deputy Representative of the Northeast Region in the Collegiate of Managers of
+                        Higher Education Institutions - COGECOM (2024-2025). Representative of UFRN in the Brazilian
+                        Digital Television System Forum - SBTVD.</p>
                     <h5>Links</h5>
                     <ul>
                         <li><a href="http://lattes.cnpq.br/9535930866943798" target="_blank"
@@ -1315,10 +1332,29 @@
             </div>
         </div>
 
+        <div id="surveys" class="tab-content">
+            <h2>Surveys</h2>
+            <div style="display: flex; justify-content: center;">
+                <iframe
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSd2QAKR_EOlftRl2IchDcR3IzsQhA0wJ-nABrr8z5fdjArQ8w/viewform?embedded=true"
+                    width="640" height="2536" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            </div>
+        </div>
+
+        <div id="calendar" class="tab-content">
+            <h2>Calendar - Public Events</h2>
+            <div style="display: flex; justify-content: center;">
+                <iframe
+                    src="https://calendar.google.com/calendar/embed?src=c_b453f3f96ad9ea3e8f902f9170972fbc0ed88a0c467f51717f19d0efe79a7c76%40group.calendar.google.com&ctz=America%2FRecife"
+                    style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+            </div>
+        </div>
+
         <div id="contact" class="tab-content">
             <h2>Contact</h2>
-            <div class="placeholder">
-                <p>Contact information will be added here.</p>
+            <div class="contact-info" style="text-align: center; font-size: 1.2em;">
+                <p>&#9993; <a href="mailto:inct-fungos@imd.ufrn.br">inct-fungos@imd.ufrn.br</a></p>
+                <p>&#9993; <a href="mailto:bruno.goto@ufrn.br">bruno.goto@ufrn.br</a></p>
             </div>
         </div>
 
