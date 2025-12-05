@@ -388,7 +388,7 @@ footer p {
     .banner-content h1 {
         font-size: 2.5rem;
     }
-    
+
     .lang-switch {
         order: 0;
         width: 100%;
@@ -447,4 +447,154 @@ footer p {
     .image-grid {
         grid-template-columns: 1fr;
     }
+}
+
+/* --- Institutions Infographic --- */
+.infographic-dashboard {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    gap: 20px;
+}
+
+.stat-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    min-width: 200px;
+    border-top: 4px solid #004a91;
+    transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-card .number {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #004a91;
+    margin-bottom: 5px;
+}
+
+.stat-card .label {
+    font-size: 1.1rem;
+    color: #555;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.region-container {
+    margin-bottom: 50px;
+}
+
+.region-title {
+    background-color: #004a91;
+    color: white;
+    padding: 15px;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 0;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+}
+
+.region-title .icon {
+    margin-right: 15px;
+    font-size: 1.8rem;
+}
+
+.institution-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-top: none;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.inst-card {
+    background: #fdfdfd;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 15px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.inst-card:hover {
+    border-color: #006fce;
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.inst-card h4 {
+    margin: 0 0 10px 0;
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.inst-card .sub-info {
+    font-size: 0.9rem;
+    color: #666;
+    font-style: italic;
+}
+
+.country-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.country-group {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.country-flag {
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.country-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #004a91;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
+}
+
+.country-inst-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.country-inst-list li {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    padding-bottom: 8px;
+    border-bottom: 1px dashed #eee;
+}
+
+.country-inst-list li:last-child {
+    border-bottom: none;
 }
