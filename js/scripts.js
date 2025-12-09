@@ -63,3 +63,27 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 });
+
+// --- NeoMycologist Subtab Navigation ---
+function openNeoTab(evt, tabName) {
+    // Get all elements with class="nm-subtab-content" and hide them
+    var subtabs = document.getElementsByClassName("nm-subtab-content");
+    for (var i = 0; i < subtabs.length; i++) {
+        subtabs[i].style.display = "none";
+    }
+
+    // Get all elements with class="nm-nav-btn" and remove the class "active"
+    var subtabLinks = document.getElementsByClassName("nm-nav-btn");
+    for (var i = 0; i < subtabLinks.length; i++) {
+        subtabLinks[i].classList.remove("active");
+    }
+
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    var target = document.getElementById(tabName);
+    if (target) {
+        target.style.display = "block";
+    }
+    if (evt && evt.currentTarget) {
+        evt.currentTarget.classList.add("active");
+    }
+}
