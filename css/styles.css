@@ -57,43 +57,51 @@ hr {
 nav {
     display: flex;
     align-items: center;
-    padding: 10px 20px;
+    padding: 0 15px;
     background: #34495e;
     border-radius: 0;
-    /* Full width */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    flex-wrap: wrap;
-    /* Allow wrapping */
-    justify-content: center;
-    /* Center items when wrapped */
+    justify-content: space-between;
+    /* Space out logo and links */
+    flex-wrap: nowrap;
+    /* Try to keep on one line */
+}
+
+nav .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 20px;
 }
 
 nav .logo {
-    height: 50px;
+    height: 40px;
+    /* Smaller logos */
     width: auto;
     flex-shrink: 0;
-    /* Prevents logo from shrinking */
 }
 
 nav .nav-links {
-    margin: 0 auto;
-    /* Centers the div in the available space */
-    text-align: center;
+    display: flex;
+    /* Use flex for links too */
+    flex-wrap: wrap;
+    /* Allow links to wrap if needed */
+    justify-content: center;
 }
 
 nav button {
     background-color: #34495e;
     border: none;
     color: white;
-    padding: 14px 20px;
+    padding: 10px 15px;
+    /* More compact padding */
     cursor: pointer;
-    font-size: 16px;
+    font-size: 14px;
+    /* Slightly smaller font */
     transition: background-color 0.3s;
     outline: none;
-    float: none;
-    /* Allow centering */
-    display: inline-block;
-    /* Allow centering */
+    white-space: nowrap;
+    /* Prevent text wrap in buttons */
 }
 
 nav button:hover {
