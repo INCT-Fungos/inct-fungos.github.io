@@ -27,6 +27,16 @@ function openTab(evt, tabName) {
 
         if (evt && evt.currentTarget) {
             evt.currentTarget.classList.add("active");
+
+            // Check if the clicked button is inside a dropdown content
+            // If so, also add 'active' to the parent dropdown button
+            var parentDropdown = evt.currentTarget.closest('.dropdown');
+            if (parentDropdown) {
+                var dropBtn = parentDropdown.querySelector('.dropbtn');
+                if (dropBtn) {
+                    dropBtn.classList.add("active");
+                }
+            }
         }
 
         // --- CUSTOM: Show/Hide Banner ---
@@ -56,6 +66,15 @@ document.addEventListener('DOMContentLoaded', function () {
         for (var i = 0; i < buttons.length; i++) {
             if (buttons[i].getAttribute('onclick').includes("'" + hash + "'")) {
                 buttons[i].classList.add('active');
+
+                // Also highlight parent if it's a sub-item
+                var parentDropdown = buttons[i].closest('.dropdown');
+                if (parentDropdown) {
+                    var dropBtn = parentDropdown.querySelector('.dropbtn');
+                    if (dropBtn) {
+                        dropBtn.classList.add("active");
+                    }
+                }
             }
         }
     } else {

@@ -34,11 +34,18 @@
 
         <div class="nav-links">
             <button class="tab-link active" onclick="openTab(event, 'home')">Home</button>
-            <button class="tab-link" onclick="openTab(event, 'about')">About the Project</button>
-            <button class="tab-link" onclick="openTab(event, 'committee')">Committee</button>
-            <button class="tab-link" onclick="openTab(event, 'team')">Team</button>
-            <button class="tab-link" onclick="openTab(event, 'institutions')">Institutions</button>
-            <button class="tab-link" onclick="openTab(event, 'documents')">Documents</button>
+
+            <div class="dropdown">
+                <button class="tab-link dropbtn" onclick="openTab(event, 'about')">About the Project <span
+                        class="arrow">&#9662;</span></button>
+                <div class="dropdown-content">
+                    <button class="tab-link" onclick="openTab(event, 'committee')">Committee</button>
+                    <button class="tab-link" onclick="openTab(event, 'team')">Team</button>
+                    <button class="tab-link" onclick="openTab(event, 'institutions')">Institutions</button>
+                    <button class="tab-link" onclick="openTab(event, 'documents')">Documents</button>
+                </div>
+            </div>
+
             <button class="tab-link" onclick="openTab(event, 'dataportal')">DataPortal</button>
             <button class="tab-link" onclick="openTab(event, 'neomycologist')">NeoMycologist</button>
             <button class="tab-link" onclick="openTab(event, 'outreach')">Divulgação</button>
