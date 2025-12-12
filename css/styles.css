@@ -63,7 +63,9 @@ nav {
     /* Full width */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     flex-wrap: wrap;
-    justify-content: space-between;
+    /* Allow wrapping */
+    justify-content: center;
+    /* Center items when wrapped */
 }
 
 nav .logo {
@@ -599,4 +601,17 @@ footer p {
 
 .country-inst-list li:last-child {
     border-bottom: none;
+}
+
+/* --- Responsive Iframes --- */
+iframe {
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+
+    /* Ensure iframes scale down on mobile */
+    iframe {
+        width: 100% !important;
+    }
 }
