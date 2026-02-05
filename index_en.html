@@ -34,11 +34,18 @@
 
         <div class="nav-links">
             <button class="tab-link active" onclick="openTab(event, 'home')">Home</button>
-            <button class="tab-link" onclick="openTab(event, 'about')">About the Project</button>
-            <button class="tab-link" onclick="openTab(event, 'committee')">Committee</button>
-            <button class="tab-link" onclick="openTab(event, 'team')">Team</button>
-            <button class="tab-link" onclick="openTab(event, 'institutions')">Institutions</button>
-            <button class="tab-link" onclick="openTab(event, 'documents')">Documents</button>
+
+            <div class="dropdown">
+                <button class="tab-link dropbtn" onclick="openTab(event, 'about')">About the Project <span
+                        class="arrow">&#9662;</span></button>
+                <div class="dropdown-content">
+                    <button class="tab-link" onclick="openTab(event, 'committee')">Committee</button>
+                    <button class="tab-link" onclick="openTab(event, 'team')">Team</button>
+                    <button class="tab-link" onclick="openTab(event, 'institutions')">Institutions</button>
+                    <button class="tab-link" onclick="openTab(event, 'documents')">Documents</button>
+                </div>
+            </div>
+
             <button class="tab-link" onclick="openTab(event, 'dataportal')">DataPortal</button>
             <button class="tab-link" onclick="openTab(event, 'neomycologist')">NeoMycologist</button>
             <button class="tab-link" onclick="openTab(event, 'outreach')">Outreach</button>
@@ -1686,22 +1693,19 @@
                     <div class="nm-nav-buttons">
                         <button class="nm-nav-btn active" onclick="openNeoTab(event, 'nm-intro')">Neo
                             Mycologist</button>
-                        <button class="nm-nav-btn"
-                            onclick="openNeoTab(event, 'nm-a-comprehensive-and-forward-looking-scope')">A Comprehensive
-                            and Forward-Looking Scope</button>
-                        <button class="nm-nav-btn" onclick="openNeoTab(event, 'nm-we-invite-innovation')">We Invite
-                            Innovation</button>
+                        <button class="nm-nav-btn" onclick="openNeoTab(event, 'nm-scope')">Scope
+                        </button>
+
                         <button class="nm-nav-btn" onclick="openNeoTab(event, 'nm-financial-support')">Financial
                             support</button>
                         <button class="nm-nav-btn" onclick="openNeoTab(event, 'nm-submissions')">Submissions</button>
-                        <button class="nm-nav-btn"
-                            onclick="openNeoTab(event, 'nm-manuscript-preparation---general-guidelines')">Manuscript
-                            Preparation – General Guidelines</button>
+                        <button class="nm-nav-btn" onclick="openNeoTab(event, 'nm-author-guidelines')">Author
+                            Guidelines</button>
                         <button class="nm-nav-btn" onclick="openNeoTab(event, 'nm-review-process')">Review
                             Process</button>
                         <button class="nm-nav-btn"
-                            onclick="openNeoTab(event, 'nm-ethical-publishing-guidelines')">Ethical Publishing
-                            Guidelines</button>
+                            onclick="openNeoTab(event, 'nm-ethical-publishing-guidelines')">Ethical
+                            Publishing Guidelines</button>
                     </div>
                 </div>
                 <div class="nm-content-area">
@@ -1709,19 +1713,25 @@
                         <img src="img/NM.svg" class="nm-decoration-icon" alt="Decoration">
                         <h2>Neo Mycologist</h2>
                         <p>It is with great enthusiasm that the international scientific community anticipates the
-                            launch, in 2026, of <em>Neo Mycologist</em> – a new and vibrant scientific journal dedicated
-                            to the publication of innovative and disruptive studies in the fascinating Fungi-like
-                            organisms.</p>
+                            launch, in 2026,
+                            of <em>Neo Mycologist</em> – a new and vibrant scientific journal dedicated to the
+                            publication of
+                            innovative and disruptive studies in the fascinating Fungi-like organisms.</p>
                         <p><em>Neo Mycologist</em> arises from the need for an international forum that not only honors
-                            the foundations of mycology but also embraces the cutting edge of modern methodologies and
-                            interdisciplinary frontiers. Our goal is to be the premier platform for research that
-                            challenges the <em>status quo</em> and redefines our understanding of fungal biology and
-                            their planetary importance.</p>
+                            the
+                            foundations of mycology but also embraces the cutting edge of modern methodologies and
+                            interdisciplinary
+                            frontiers. Our goal is to be the premier platform for research that challenges the
+                            <em>status quo</em>
+                            and redefines our understanding of fungal biology and their planetary importance.
+                        </p>
                         <p><em>Neo Mycologist</em> is an electronic, peer-reviewed journal edited by INCT-Fungi/CNPq and
-                            supported by UFRN and the Brazilian Society of Mycology (SBMy), dedicated to publishing
-                            high-quality research in fungal biology. This open-access platform serves as a resource for
-                            the global mycology community, ensuring broad dissemination and visibility. Authors retain
-                            full copyright of their work.</p>
+                            supported
+                            by UFRN, dedicated to publishing high-quality research in
+                            fungal biology. This open-access platform serves as a resource for the global mycology
+                            community,
+                            ensuring broad dissemination and visibility. Authors retain full copyright of their work.
+                        </p>
                         <p><strong>Key Features:</strong></p>
                         <ul>
                             <li>Peer-reviewed research articles and monographs;</li>
@@ -1738,51 +1748,63 @@
                         <ul>
                             <li>Thematic and special issue volumes are featured periodically.</li>
                         </ul>
+                        <h2>We Invite Innovation</h2>
+                        <p>As a truly international journal, <em>Neo Mycologist</em> is committed to excellence,
+                            scientific rigor,
+                            and transparency in the peer-review process. We invite researchers, academics, and
+                            scientists from
+                            around the globe to submit their most innovative and disruptive work.</p>
+                        <p>Join us in shaping the future of mycology, bringing to light the potential and the invaluable
+                            role that
+                            fungi play on our planet. <em>Neo Mycologist</em> is more than a journal. It is a movement
+                            for a new and
+                            bold exploration of the Fungal Kingdom.</p>
                         <p>The submission of manuscripts for publications in <em>Neo Mycologist</em> is made EXCLUSIVELY
-                            through the site <a href="https://www.mycosphere.org/submissions.php"
-                                target="_blank">submission page</a> (the link will be available soon!) and must be
-                            prepared in accordance with the instructions.</p>
-                        <div class="nm-footer-icons">
-                            <img src="img/13.svg" class="nm-footer-icon" alt="Icon 13">
-                            <img src="img/14.svg" class="nm-footer-icon" alt="Icon 14">
-                            <img src="img/15.svg" class="nm-footer-icon" alt="Icon 15">
-                            <img src="img/16.svg" class="nm-footer-icon" alt="Icon 16">
-                            <img src="img/17.svg" class="nm-footer-icon" alt="Icon 17">
-                            <img src="img/18.svg" class="nm-footer-icon" alt="Icon 18">
-                        </div>
+                            through the
+                            site <a href="https://inct-fungos.github.io/" target="_blank">submission page</a> (the link
+                            will be available soon!) and must be prepared in accordance with the instructions.</p>
                     </div>
-                    <div id="nm-a-comprehensive-and-forward-looking-scope" class="nm-subtab-content"
-                        style="display:none;">
+                    <div id="nm-scope" class="nm-subtab-content" style="display:none;">
                         <img src="img/13.svg" class="nm-decoration-icon" alt="Decoration">
                         <h2>A Comprehensive and Forward-Looking Scope</h2>
                         <h3>Scope</h3>
                         <p><em>Neo Mycologist</em> is an international journal dedicated to publishing high-quality
-                            research across all areas of mycology, integrating classical and modern approaches. The
-                            journal welcomes studies on fungal diversity, systematics, evolution, genetics, ecology,
-                            physiology, biotechnology, bioinformatics, medical and plant-associated fungi.</p>
+                            research across
+                            all areas of mycology, integrating classical and modern approaches. The journal welcomes
+                            studies on
+                            fungal diversity, systematics, evolution, genetics, ecology, physiology, biotechnology,
+                            bioinformatics,
+                            medical and plant-associated fungi.</p>
                         <p>We particularly encourage manuscripts that combine morphological, molecular, ecological, and
-                            evolutionary perspectives, including descriptions of new taxa, phylogenetic and genomic
-                            analyses, fungal interactions, applied mycology, and emerging frontiers in fungal research.
-                        </p>
+                            evolutionary
+                            perspectives, including descriptions of new taxa, phylogenetic and genomic analyses, fungal
+                            interactions, applied mycology, and emerging frontiers in fungal research.</p>
                         <p><em>Neo Mycologist</em> aims to serve as a platform for rigorous, forward-looking studies
-                            that advance our understanding of fungi and their roles in natural, agricultural, and
-                            clinical systems.</p>
+                            that advance
+                            our understanding of fungi and their roles in natural, agricultural, and clinical systems.
+                        </p>
                         <p>Recognizing the immense complexity and global significance of fungi, <em>Neo Mycologist</em>
-                            features an ambitious and comprehensive editorial scope, committed to publishing
-                            high-quality research across the entire spectrum of mycology. We encourage submissions
-                            covering both classical and emerging areas, structured under the following major themes:</p>
+                            features an
+                            ambitious and comprehensive editorial scope, committed to publishing high-quality research
+                            across the
+                            entire spectrum of mycology. We encourage submissions covering both classical and emerging
+                            areas,
+                            structured under the following major themes:</p>
                         <h4>1. Systematics, Taxonomy, and Phylogeny (Fungal Diversity)</h4>
                         <ul>
                             <li>Description of New Species: Identification, description, and nomenclature of fungi
-                                (including yeasts, molds, and mushrooms).</li>
+                                (including
+                                yeasts, molds, and mushrooms).</li>
                         </ul>
                         <ul>
                             <li>Molecular Phylogeny: Using DNA data (gene and genome sequencing) to determine
-                                evolutionary relationships and classification of fungal groups.</li>
+                                evolutionary
+                                relationships and classification of fungal groups.</li>
                         </ul>
                         <ul>
                             <li>Fungal Evolution: Studies on the origin, diversification, and evolutionary history of
-                                the Fungal Kingdom.</li>
+                                the Fungal
+                                Kingdom.</li>
                         </ul>
                         <h4>2. Genetics, Genomics, and Molecular Biology</h4>
                         <ul>
@@ -1790,17 +1812,20 @@
                         </ul>
                         <ul>
                             <li>Genetics and Gene Regulation: Research on the function of specific genes, mechanisms of
-                                expression control, and transcription factors.</li>
+                                expression
+                                control, and transcription factors.</li>
                         </ul>
                         <ul>
                             <li>Biotechnology and Genetic Engineering: Development of genetically modified fungi for the
-                                production of enzymes, fuels, or bioactive compounds.</li>
+                                production
+                                of enzymes, fuels, or bioactive compounds.</li>
                         </ul>
                         <ul>
                             <li>Bioinformatics and AI applications to understand Fungi Biology: Fungi databases and
-                                knowledge-bases, training datasets and AI models applied to Fungi, Systems Biology and
-                                Computational Modeling of molecules and proccess, cheminformatics of fungal ligands and
-                                drugs.</li>
+                                knowledge-bases,
+                                training datasets and AI models applied to Fungi, Systems Biology and Computational
+                                Modeling of
+                                molecules and proccess, cheminformatics of fungal ligands and drugs.</li>
                         </ul>
                         <h4>3. Ecology and Fungal Interactions</h4>
                         <ul>
@@ -1808,7 +1833,8 @@
                         </ul>
                         <ul>
                             <li>Biogeochemical Cycles: The role of fungi in the decomposition of organic matter, and the
-                                carbon and nutrient cycles (saprophytic fungi).</li>
+                                carbon and
+                                nutrient cycles (saprophytic fungi).</li>
                         </ul>
                         <ul>
                             <li>Community Ecology: Distribution, abundance, and diversity of fungi in different
@@ -1820,11 +1846,13 @@
                         </ul>
                         <ul>
                             <li>Antifungal Resistance: Study of new resistance mechanisms and the development of new
-                                therapies and drugs.</li>
+                                therapies and
+                                drugs.</li>
                         </ul>
                         <ul>
                             <li>Diagnosis: Innovation in laboratory methods for rapid and accurate identification of
-                                fungal infections.</li>
+                                fungal
+                                infections.</li>
                         </ul>
                         <h4>5. Phytopathology and Agriculture</h4>
                         <ul>
@@ -1841,49 +1869,28 @@
                         <h4>6. Physiology, Biochemistry, and Metabolism</h4>
                         <ul>
                             <li>Fungal Metabolism: Study of biochemical pathways, including enzyme production, carbon,
-                                and nitrogen metabolism.</li>
+                                and nitrogen
+                                metabolism.</li>
                         </ul>
                         <ul>
                             <li>Secondary Metabolites: Identification and characterization of chemical compounds
-                                produced by fungi, such as antibiotics, pigments, and bioactive substances.</li>
+                                produced by fungi,
+                                such as antibiotics, pigments, and bioactive substances.</li>
                         </ul>
                         <ul>
                             <li>Morphology and Cell Structure: Research on hyphal growth, spore formation, and fungal
-                                cell structures.</li>
+                                cell
+                                structures.</li>
                         </ul>
                         <hr>
                     </div>
-                    <div id="nm-we-invite-innovation" class="nm-subtab-content" style="display:none;">
-                        <img src="img/14.svg" class="nm-decoration-icon" alt="Decoration">
-                        <h2>We Invite Innovation</h2>
-                        <p>As a truly international journal, <em>Neo Mycologist</em> is committed to excellence,
-                            scientific rigor, and transparency in the peer-review process. We invite researchers,
-                            academics, and scientists from around the globe to submit their most innovative and
-                            disruptive work.</p>
-                        <p>Join us in shaping the future of mycology, bringing to light the potential and the invaluable
-                            role that fungi play on our planet. <em>Neo Mycologist</em> is more than a journal. It is a
-                            movement for a new and bold exploration of the Fungal Kingdom.</p>
-                        <p><em>Neo Mycologist</em> is a promising new Journal and will be Indexed in the following
-                            databses:</p>
-                        <ul>
-                            <li>CAB International.</li>
-                        </ul>
-                        <ul>
-                            <li>DOAJ - Diretory of Open Access Journals.</li>
-                        </ul>
-                        <ul>
-                            <li>SciELO - Scientific Eletronic Library Online.</li>
-                        </ul>
-                        <ul>
-                            <li>Web of Science.</li>
-                        </ul>
-                    </div>
+
                     <div id="nm-financial-support" class="nm-subtab-content" style="display:none;">
                         <img src="img/15.svg" class="nm-decoration-icon" alt="Decoration">
                         <h2>Financial support</h2>
                         <p>Currently this publication is supported by the INCT - Brazilian Fungi Project funded by
-                            Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq) (proc.409181/2024-2),
-                            UFRN, IMD and SBMy.</p>
+                            Conselho Nacional
+                            de Desenvolvimento Científico e Tecnológico (CNPq) (proc.409181/2024-2), UFRN, IMD.</p>
                         <p>We eagerly await your contribution in 2026!</p>
                     </div>
                     <div id="nm-submissions" class="nm-subtab-content" style="display:none;">
@@ -1893,40 +1900,48 @@
                         <p>Neo Mycologist invites submissions across a range of formats, including review articles (e.g.
                             bibliometric analysis), original research papers, methodological studies, ecological and
                             biotechnological studies, taxonomic contributions (e.g., monographs, reviews, species
-                            descriptions), and fungal-related checklists. All submissions must be written in English,
-                            the journal's official language.</p>
+                            descriptions), and
+                            fungal-related checklists. All submissions must be written in English, the journal's
+                            official language.
+                        </p>
                         <h3>Plagiarism</h3>
                         <p>Authors are advised to utilize plagiarism-checking tools before submission. Manuscripts with
-                            plagiarism levels over 30% will be automatically rejected.</p>
+                            plagiarism
+                            levels over 30% will be automatically rejected.</p>
                         <h3>Preprints</h3>
                         <p><em>Neo Mycologist</em> as an open-source journal allows the submission of manuscripts that
-                            have previously appeared as preprints. These are not considered duplicate publications.
-                            Preprints receive a DOI and are citable. When submitting a preprinted manuscript, include
-                            its link in the Supplementary Materials, following the <em>Neo Mycologist</em> formatting
-                            template.</p>
+                            have
+                            previously appeared as preprints. These are not considered duplicate publications. Preprints
+                            receive a
+                            DOI and are citable. When submitting a preprinted manuscript, include its link in the
+                            Supplementary
+                            Materials, following the <em>Neo Mycologist</em> formatting template.</p>
                         <p>After acceptance, the preprint must include the following statement:</p>
-                        <p>“This article has been accepted for publication in <em>Neo Mycologist</em>, published by the
-                            Brazilian Society of Mycology - SBMy.”</p>
+                        <p>“This article has been accepted for publication in <em>Neo Mycologist</em>.”</p>
                         <p>Once the final article is available online, update the preprint with:</p>
-                        <p>“The article was published in Neo Mycologist on <a href="https://doi.org/%5bArticle%20DOI%5d"
-                                target="_blank">date of publication], available online: [https://doi.org/[Article
-                                DOI]</a>.”</p>
+                        <p>“The article was published in Neo Mycologist on https://doi.org/%5bArticle%20DOI%5[date of
+                            publication],
+                            available online: https://doi.org/[Article_DOI].”</p>
                         <h3>Neo Mycologist Notes</h3>
                         <p>The journal features essay articles typically spanning 4 to 10 pages. Authors are encouraged
-                            to explore underrepresented topics in mycology. Essays should, when possible, reflect
-                            diverse perspectives and must be submitted through the standard process. Peer review is
-                            required. Extended reviews are also welcome.</p>
+                            to explore
+                            underrepresented topics in mycology. Essays should, when possible, reflect diverse
+                            perspectives and must
+                            be submitted through the standard process. Peer review is required. Extended reviews are
+                            also welcome.
+                        </p>
                     </div>
-                    <div id="nm-manuscript-preparation---general-guidelines" class="nm-subtab-content"
-                        style="display:none;">
+                    <div id="nm-author-guidelines" class="nm-subtab-content" style="display:none;">
                         <img src="img/17.svg" class="nm-decoration-icon" alt="Decoration">
-                        <h2>Manuscript Preparation – General Guidelines</h2>
+                        <h2>Author Guidelines</h2>
                         <p>To ensure efficient processing, manuscripts should be scientifically robust and correctly
-                            formatted. Authors should use the ‘Template_NeoMycology_2025’ or model their layout after
-                            recent journal articles.</p>
+                            formatted.
+                            Authors should use the template below or model their layout after recent journal articles.
+                        </p>
                         <ul>
-                            <li>Download template: <a href="https://www.mycosphere.org/Template_Mycosphere_2025.doc"
-                                    target="_blank">Click here</a> (update link if template name changes)</li>
+                            <li>Download template: <a
+                                    href="https://docs.google.com/document/d/1PBy56uIsDdNsmC2odTG8pXITUQH8mWG3/edit?usp=sharing&ouid=112422881351874849096&rtpof=true&sd=true"
+                                    target="_blank">Click here</a> </li>
                         </ul>
                         <ul>
                             <li>Use Times New Roman, 12 pt, single-spaced for all text and figure legends.</li>
@@ -1941,23 +1956,28 @@
                             <li>Ensure page numbers appear at the bottom right of each page.</li>
                         </ul>
                         <p>For new taxonomic names, register them in the appropriate databases and obtain MycoBank via
-                            [http://www.mycobank.org/</p>
-                        <p>](http://www.facesoffungi.org/)If phylogenetic trees are included, FASTA format alignment
-                            files must accompany the manuscript.</p>
+                            <a href="http://www.mycobank.org/" target="_blank">http://www.mycobank.org/</a> or <a
+                                href="http://www.facesoffungi.org/" target="_blank">http://www.facesoffungi.org/</a>.
+                        </p>
+                        <p>If phylogenetic trees are included, FASTA format alignment files must
+                            accompany the manuscript.</p>
                         <h3>Submitting Manuscripts</h3>
                         <p>Website-based submissions are accepted.</p>
-                        <p>For questions, contact <a href="mailto:neomycology@gmail.com"
-                                target="_blank">neomycologist@gmail.com</a>. Submissions that do not follow the
-                            ‘Template_NeoMycologist_2025’ will be returned for reformatting.</p>
+                        <p>For questions, contact <a href="mailto:inct-fungos@imd.ufrn.br"
+                                target="_blank">inct-fungos@imd.ufrn.br</a> (provisory address). Submissions that do not
+                            follow the
+                            <em>Neo Mycologist</em> template will be returned for reformatting.
+                        </p>
                         <h4>Electronic Submission Guidelines</h4>
                         <h5>Initial Submission</h5>
                         <p>Send the following:</p>
                         <p>1. A Word document including the full manuscript text, tables, and figures/plates.</p>
                         <p>2. A Cover letter including a list of three suggested reviewers with full names,
-                            institutional affiliations, and email addresses.</p>
+                            institutional
+                            affiliations, and email addresses.</p>
                         <blockquote><strong>Important:</strong> All tables and plates must be embedded within the
-                            manuscript where the authors would like them to appear in the final published version.
-                        </blockquote>
+                            manuscript where
+                            the authors would like them to appear in the final published version.</blockquote>
                         <h5>Revised Manuscripts</h5>
                         <p>Final versions must strictly follow formatting guidelines.</p>
                         <ul>
@@ -1972,7 +1992,8 @@
                         </ul>
                         <h5>Publication Charges</h5>
                         <p>A flat APC (Article Processing Charges) of 100 USD applies. To request a fee waiver, contact
-                            the Editor-in-Chief (Assistance). Proceeds support mycological research initiatives.</p>
+                            the
+                            Editor-in-Chief (Assistance). Proceeds support mycological research initiatives.</p>
                         <h5>Tables, Figures, and Legends</h5>
                         <ul>
                             <li>Use your word processor’s table tools—do not use tabs, spaces, graphics, or boxed
@@ -1986,66 +2007,92 @@
                         </ul>
                         <ul>
                             <li>Align text to the left and numerical data by decimal points. Use a zero before decimal
-                                points in numbers less than one (e.g., 0.3).</li>
+                                points in
+                                numbers less than one (e.g., 0.3).</li>
                         </ul>
                         <h5>References</h5>
-                        <p>References should conform to the style in ‘Template_NeoMycologist_2025’. List all sources
-                            alphabetically in the References section and cite them chronologically within the text.</p>
+                        <p>References should conform to the style in the template. List all sources alphabetically
+                            in the References section and cite them chronologically within the text.</p>
                     </div>
                     <div id="nm-review-process" class="nm-subtab-content" style="display:none;">
                         <img src="img/18.svg" class="nm-decoration-icon" alt="Decoration">
                         <h2>Review Process</h2>
                         <p>1. Submissions are checked for format and plagiarism.</p>
-                        <p>2. The EIC evaluates manuscript suitability.</p>
+                        <p>2. The Editor in Chief evaluates manuscript suitability.</p>
                         <p>3. Suitable papers are assigned to a handling editor.</p>
                         <p>4. The handling editor initiates peer review with at least two external reviewers.</p>
                         <p>5. Reviewers submit their recommendations.</p>
                         <p>6. The handling editor compiles feedback, suggests revisions or decisions, and sends the
-                            manuscript to the EIC.</p>
-                        <p>7. The EIC makes the final decision and forwards accepted papers to the managing editor for
-                            final proofing.</p>
+                            manuscript to
+                            the Editor in Chief.</p>
+                        <p>7. The Editor in Chief makes the final decision and forwards accepted papers to the managing
+                            editor for
+                            final
+                            proofing.</p>
                         <h3>Proofs</h3>
                         <p>Upon acceptance, authors must send the final Word file via email. Proofs are sent as a PDF
-                            file and must be reviewed and returned within seven business days. The editorial team will
-                            not be responsible for uncorrected errors after this window.</p>
+                            file and must
+                            be reviewed and returned within seven business days. The editorial team will not be
+                            responsible for
+                            uncorrected errors after this window.</p>
                         <h3>Copyright</h3>
                         <p>Authors are encouraged to share their published articles freely. Data can be reused or
-                            republished elsewhere without requesting permission. The journal operates under a Creative
-                            Commons license.</p>
+                            republished
+                            elsewhere without requesting permission. The journal operates under a Creative Commons
+                            license.</p>
                         <h3>Data Availability Policy</h3>
                         <p>Research data are fundamental outputs of the scientific process and must be preserved and
-                            made accessible for long-term use. In accordance with international standards in
-                            biodiversity research, all data supporting the results published in Neo Mycologist must be
-                            deposited in a reliable public repository that provides open access and long-term
-                            preservation. Manuscripts will not be considered without a valid link to the deposited data.
-                        </p>
+                            made accessible
+                            for long-term use. In accordance with international standards in biodiversity research, all
+                            data
+                            supporting the results published in Neo Mycologist must be deposited in a reliable public
+                            repository
+                            that provides open access and long-term preservation. Manuscripts will not be considered
+                            without a valid
+                            link to the deposited data.</p>
                         <p>Authors may use established international repositories (e.g. Dryad, TreeBASE, GenBank,
-                            Figshare, GBIF) or any other repository that ensures comparable accessibility and
-                            preservation. At submission, a provisional URL must be provided in the Data Availability
-                            section. Final acceptance requires the permanent URL of the archived dataset.</p>
+                            Figshare, GBIF) or
+                            any other repository that ensures comparable accessibility and preservation. At submission,
+                            a
+                            provisional URL must be provided in the Data Availability section. Final acceptance requires
+                            the
+                            permanent URL of the archived dataset.</p>
                         <p>All archived data must be accompanied by sufficient metadata to allow interpretation,
-                            reproduction of results, and full replication of the analyses. The deposited material must
-                            be adequate to independently verify all conclusions presented in the paper. Authors may
-                            archive additional material, but not less.</p>
+                            reproduction of
+                            results, and full replication of the analyses. The deposited material must be adequate to
+                            independently
+                            verify all conclusions presented in the paper. Authors may archive additional material, but
+                            not less.
+                        </p>
                         <p>This policy applies to both primary data generated by the authors and secondary data reused
-                            and analyzed in the study, including tabular data, code, images, maps, audio, video, and raw
-                            or processed datasets.</p>
+                            and analyzed
+                            in the study, including tabular data, code, images, maps, audio, video, and raw or processed
+                            datasets.
+                        </p>
                         <p>For sensitive data involving endangered species, protected locations, or culturally or
-                            politically sensitive information, authors may anonymize or generalize locality data when
-                            possible. In exceptional cases, editors may waive the archiving requirement. Any waiver must
-                            be clearly justified in the Data Availability Statement.</p>
+                            politically
+                            sensitive information, authors may anonymize or generalize locality data when possible. In
+                            exceptional
+                            cases, editors may waive the archiving requirement. Any waiver must be clearly justified in
+                            the Data
+                            Availability Statement.</p>
                     </div>
                     <div id="nm-ethical-publishing-guidelines" class="nm-subtab-content" style="display:none;">
                         <img src="img/13.svg" class="nm-decoration-icon" alt="Decoration">
                         <h2>Ethical Publishing Guidelines</h2>
                         <p>Researchers are expected to adhere to high standards of ethical conduct when publishing and
-                            sharing scientific knowledge—even when doing so may not align with personal or professional
-                            gain. Publishing scientific work in reputable journals is a crucial component of
-                            disseminating research. Therefore, editors, authors, and reviewers involved with <em>Neo
-                                Mycologist</em>, must maintain integrity throughout the publication process.</p>
+                            sharing
+                            scientific knowledge—even when doing so may not align with personal or professional gain.
+                            Publishing
+                            scientific work in reputable journals is a crucial component of disseminating research.
+                            Therefore,
+                            editors, authors, and reviewers involved with <em>Neo Mycologist</em>, must maintain
+                            integrity
+                            throughout the publication process.</p>
                         <p>In instances of ethical concerns or breaches, the MRF refers to the Committee on Publication
-                            Ethics (COPE) Code of Conduct and Best Practice Guidelines and will act in accordance with
-                            these standards.</p>
+                            Ethics
+                            (COPE) Code of Conduct and Best Practice Guidelines and will act in accordance with these
+                            standards.</p>
                         <h3>Editorial Responsibilities</h3>
                         <ul>
                             <li>Acknowledge receipt of submissions promptly and ensure timely, impartial review
@@ -2053,18 +2100,21 @@
                         </ul>
                         <ul>
                             <li>Make editorial decisions based on the manuscript’s scientific merit, originality, and
-                                relevance, not external factors.</li>
+                                relevance, not
+                                external factors.</li>
                         </ul>
                         <ul>
                             <li>Respect the autonomy and intellectual contributions of authors.</li>
                         </ul>
                         <ul>
                             <li>Disclose any conflicts of interest. If an editor is also an author, another editor will
-                                oversee the peer review to maintain impartiality.</li>
+                                oversee the
+                                peer review to maintain impartiality.</li>
                         </ul>
                         <ul>
                             <li>Refrain from using information from unpublished or under-review manuscripts for personal
-                                research.</li>
+                                research.
+                            </li>
                         </ul>
                         <ul>
                             <li>Avoid appointing reviewers that the authors have requested to exclude.</li>
@@ -2081,7 +2131,8 @@
                         <h3>Author Responsibilities</h3>
                         <ul>
                             <li>Collect, analyze, and report data with integrity; avoid infringing on copyright and
-                                secure necessary permissions for reuse of previously published material.</li>
+                                secure necessary
+                                permissions for reuse of previously published material.</li>
                         </ul>
                         <ul>
                             <li>Submit a clear, accurate, and objective description of their research and findings.</li>
@@ -2094,11 +2145,13 @@
                         </ul>
                         <ul>
                             <li>Consider submitting related work to the same or closely aligned journals to support
-                                content continuity for readers.</li>
+                                content
+                                continuity for readers.</li>
                         </ul>
                         <ul>
                             <li>Disclose any related manuscripts currently under review elsewhere at the time of
-                                submission and provide supporting documents and details.</li>
+                                submission and
+                                provide supporting documents and details.</li>
                         </ul>
                         <ul>
                             <li>Submit the manuscript to only one journal at a time.</li>
@@ -2133,14 +2186,16 @@
                         </ul>
                         <ul>
                             <li>Safeguard all data, insights, and discussions shared in the manuscript, and refrain from
-                                using any unpublished content for personal research.</li>
+                                using any
+                                unpublished content for personal research.</li>
                         </ul>
                         <ul>
                             <li>Notify the editor if any form of plagiarism is detected.</li>
                         </ul>
                         <ul>
                             <li>Do not retain copies of the manuscript post-review and ensure data handling complies
-                                with relevant privacy regulations.</li>
+                                with relevant
+                                privacy regulations.</li>
                         </ul>
                         <ul>
                             <li>Disclose any potential conflicts of interest.</li>
@@ -2148,51 +2203,53 @@
                     </div>
                 </div>
             </div>
-        </div>
+            <div id="outreach" class="tab-content">
+                <h2>Outreach</h2>
+                <h3>INCT-Fungos Brasil first presentation</h3>
+                <div class="video-container" style="display: flex; justify-content: center; margin-bottom: 30px;">
+                    <iframe src="https://drive.google.com/file/d/1WXEXYoN8w1eCJ2oFflW0Y4VfAqdINJ-d/preview" width="640"
+                        height="480"></iframe>
+                </div>
+                <div class="pdf-container" style="display: flex; justify-content: center; margin-bottom: 30px;">
+                    <iframe src="https://drive.google.com/file/d/1Vb2XKLS1IcBWWaLjxWwlgeZDT60ySgSF/preview" width="640"
+                        height="480" allow="autoplay"></iframe>
+                </div>
 
-        <div id="outreach" class="tab-content">
-            <h2>Outreach</h2>
-            <h3>INCT-Fungos Brasil first presentation</h3>
-            <div class="pdf-container" style="display: flex; justify-content: center; margin-bottom: 30px;">
-                <iframe src="https://drive.google.com/file/d/1Vb2XKLS1IcBWWaLjxWwlgeZDT60ySgSF/preview" width="640"
-                    height="480" allow="autoplay"></iframe>
+                <h3>Papo de Fungo podcast</h3>
+                <div class="video-container" style="display: flex; justify-content: center; margin-top: 20px;">
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/videoseries?list=PLj0_5GprLhT_ymnB35bj4heDpSNLLAEpn"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
             </div>
 
-            <h3>Papo de Fungo podcast</h3>
-            <div class="video-container" style="display: flex; justify-content: center; margin-top: 20px;">
-                <iframe width="560" height="315"
-                    src="https://www.youtube.com/embed/videoseries?list=PLj0_5GprLhT_ymnB35bj4heDpSNLLAEpn"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
+            <div id="surveys" class="tab-content">
+                <h2>Surveys</h2>
+                <div style="display: flex; justify-content: center;">
+                    <iframe
+                        src="https://docs.google.com/forms/d/e/1FAIpQLSd2QAKR_EOlftRl2IchDcR3IzsQhA0wJ-nABrr8z5fdjArQ8w/viewform?embedded=true"
+                        width="640" height="2536" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                </div>
             </div>
-        </div>
 
-        <div id="surveys" class="tab-content">
-            <h2>Surveys</h2>
-            <div style="display: flex; justify-content: center;">
-                <iframe
-                    src="https://docs.google.com/forms/d/e/1FAIpQLSd2QAKR_EOlftRl2IchDcR3IzsQhA0wJ-nABrr8z5fdjArQ8w/viewform?embedded=true"
-                    width="640" height="2536" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            <div id="calendar" class="tab-content">
+                <h2>Calendar - Public Events</h2>
+                <div style="display: flex; justify-content: center;">
+                    <iframe
+                        src="https://calendar.google.com/calendar/embed?src=c_b453f3f96ad9ea3e8f902f9170972fbc0ed88a0c467f51717f19d0efe79a7c76%40group.calendar.google.com&ctz=America%2FRecife"
+                        style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+                </div>
             </div>
-        </div>
 
-        <div id="calendar" class="tab-content">
-            <h2>Calendar - Public Events</h2>
-            <div style="display: flex; justify-content: center;">
-                <iframe
-                    src="https://calendar.google.com/calendar/embed?src=c_b453f3f96ad9ea3e8f902f9170972fbc0ed88a0c467f51717f19d0efe79a7c76%40group.calendar.google.com&ctz=America%2FRecife"
-                    style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+            <div id="contact" class="tab-content">
+                <h2>Contact</h2>
+                <div class="contact-info" style="text-align: center; font-size: 1.2em;">
+                    <p>&#9993; <a href="mailto:inct-fungos@imd.ufrn.br">inct-fungos@imd.ufrn.br</a></p>
+                    <p>&#9993; <a href="mailto:bruno.goto@ufrn.br">bruno.goto@ufrn.br</a></p>
+                </div>
             </div>
-        </div>
-
-        <div id="contact" class="tab-content">
-            <h2>Contact</h2>
-            <div class="contact-info" style="text-align: center; font-size: 1.2em;">
-                <p>&#9993; <a href="mailto:inct-fungos@imd.ufrn.br">inct-fungos@imd.ufrn.br</a></p>
-                <p>&#9993; <a href="mailto:bruno.goto@ufrn.br">bruno.goto@ufrn.br</a></p>
-            </div>
-        </div>
 
     </main>
 
@@ -2209,7 +2266,7 @@
                 </div>
             </div>
         </div>
-        <p>&copy; 2024 INCT-Fungos do Brasil. All rights reserved.</p>
+        <p>&copy; 2025 INCT-Fungos do Brasil. All rights reserved.</p>
     </footer>
 
     <script src="js/scripts.js"></script>
