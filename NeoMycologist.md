@@ -1,10 +1,10 @@
-# *Neo Mycologist*
+# *Fungal Insights*
 
-It is with great enthusiasm that the international scientific community anticipates the launch, in 2026, of *Neo Mycologist* – a new and vibrant scientific journal dedicated to the publication of innovative and disruptive studies in the fascinating Fungi-like organisms.
+It is with great enthusiasm that the international scientific community anticipates the launch, in 2026, of *Fungal Insights* – a new and vibrant scientific journal dedicated to the publication of innovative and disruptive studies in the fascinating Fungi-like organisms.
 
-*Neo Mycologist* arises from the need for an international forum that not only honors the foundations of mycology but also embraces the cutting edge of modern methodologies and interdisciplinary frontiers. Our goal is to be the premier platform for research that challenges the *status quo* and redefines our understanding of fungal biology and their planetary importance.
+*Fungal Insights* arises from the need for an international forum that not only honors the foundations of mycology but also embraces the cutting edge of modern methodologies and interdisciplinary frontiers. Our goal is to be the premier platform for research that challenges the *status quo* and redefines our understanding of fungal biology and their planetary importance.
 
-*Neo Mycologist* is an electronic, peer-reviewed journal edited by INCT-Fungi/CNPq and supported by UFRN and the Brazilian Society of Mycology (SBMy), dedicated to publishing high-quality research in fungal biology. This open-access platform serves as a resource for the global mycology community, ensuring broad dissemination and visibility. Authors retain full copyright of their work.
+*Fungal Insights* is an electronic, peer-reviewed journal edited by INCT-Fungi/CNPq and supported by UFRN and the Brazilian Society of Mycology (SBMy), dedicated to publishing high-quality research in fungal biology. This open-access platform serves as a resource for the global mycology community, ensuring broad dissemination and visibility. Authors retain full copyright of their work.
 
 **Key Features:**
 
@@ -18,19 +18,19 @@ It is with great enthusiasm that the international scientific community anticipa
 
 - Thematic and special issue volumes are featured periodically.
 
-The submission of manuscripts for publications in *Neo Mycologist* is made EXCLUSIVELY through the site [submission page](https://www.mycosphere.org/submissions.php) (the link will be available soon!) and must be prepared in accordance with the instructions.
+The submission of manuscripts for publications in *Fungal Insights* is made EXCLUSIVELY through the site [submission page](https://www.mycosphere.org/submissions.php) (the link will be available soon!) and must be prepared in accordance with the instructions.
 
 ## A Comprehensive and Forward-Looking Scope
 
 ### Scope
 
-*Neo Mycologist* is an international journal dedicated to publishing high-quality research across all areas of mycology, integrating classical and modern approaches. The journal welcomes studies on fungal diversity, systematics, evolution, genetics, ecology, physiology, biotechnology, bioinformatics, medical and plant-associated fungi.
+*Fungal Insights* is an international journal dedicated to publishing high-quality research across all areas of mycology, integrating classical and modern approaches. The journal welcomes studies on fungal diversity, systematics, evolution, genetics, ecology, physiology, biotechnology, bioinformatics, medical and plant-associated fungi.
 
 We particularly encourage manuscripts that combine morphological, molecular, ecological, and evolutionary perspectives, including descriptions of new taxa, phylogenetic and genomic analyses, fungal interactions, applied mycology, and emerging frontiers in fungal research.
 
-*Neo Mycologist* aims to serve as a platform for rigorous, forward-looking studies that advance our understanding of fungi and their roles in natural, agricultural, and clinical systems.
+*Fungal Insights* aims to serve as a platform for rigorous, forward-looking studies that advance our understanding of fungi and their roles in natural, agricultural, and clinical systems.
 
-Recognizing the immense complexity and global significance of fungi, *Neo Mycologist* features an ambitious and comprehensive editorial scope, committed to publishing high-quality research across the entire spectrum of mycology. We encourage submissions covering both classical and emerging areas, structured under the following major themes:
+Recognizing the immense complexity and global significance of fungi, *Fungal Insights* features an ambitious and comprehensive editorial scope, committed to publishing high-quality research across the entire spectrum of mycology. We encourage submissions covering both classical and emerging areas, structured under the following major themes:
 
 #### 1. Systematics, Taxonomy, and Phylogeny (Fungal Diversity)
 
@@ -86,11 +86,11 @@ Recognizing the immense complexity and global significance of fungi, *Neo Mycolo
 
 ## We Invite Innovation
 
-As a truly international journal, *Neo Mycologist* is committed to excellence, scientific rigor, and transparency in the peer-review process. We invite researchers, academics, and scientists from around the globe to submit their most innovative and disruptive work.
+As a truly international journal, *Fungal Insights* is committed to excellence, scientific rigor, and transparency in the peer-review process. We invite researchers, academics, and scientists from around the globe to submit their most innovative and disruptive work.
 
-Join us in shaping the future of mycology, bringing to light the potential and the invaluable role that fungi play on our planet. *Neo Mycologist* is more than a journal. It is a movement for a new and bold exploration of the Fungal Kingdom.
+Join us in shaping the future of mycology, bringing to light the potential and the invaluable role that fungi play on our planet. *Fungal Insights* is more than a journal. It is a movement for a new and bold exploration of the Fungal Kingdom.
 
-*Neo Mycologist* is a promising new Journal and will be Indexed in the following databses:
+*Fungal Insights* is a promising new Journal and will be Indexed in the following databses:
 
 - CAB International.
 
@@ -110,7 +110,7 @@ We eagerly await your contribution in 2026!
 
 ### General Policy
 
-Neo Mycologist invites submissions across a range of formats, including review articles (e.g. bibliometric analysis), original research papers, methodological studies, ecological and biotechnological studies, taxonomic contributions (e.g., monographs, reviews, species descriptions), and fungal-related checklists. All submissions must be written in English, the journal's official language.
+Fungal Insights invites submissions across a range of formats, including review articles (e.g. bibliometric analysis), original research papers, methodological studies, ecological and biotechnological studies, taxonomic contributions (e.g., monographs, reviews, species descriptions), and fungal-related checklists. All submissions must be written in English, the journal's official language.
 
 ### Plagiarism
 
@@ -118,14 +118,14 @@ Authors are advised to utilize plagiarism-checking tools before submission. Manu
 
 ### Preprints
 
-*Neo Mycologist* as an open-source journal allows the submission of manuscripts that have previously appeared as preprints. These are not considered duplicate publications. Preprints receive a DOI and are citable. When submitting a preprinted manuscript, include its link in the Supplementary Materials, following the *Neo Mycologist* formatting template.  
+*Fungal Insights* as an open-source journal allows the submission of manuscripts that have previously appeared as preprints. These are not considered duplicate publications. Preprints receive a DOI and are citable. When submitting a preprinted manuscript, include its link in the Supplementary Materials, following the *Fungal Insights* formatting template.  
 
 After acceptance, the preprint must include the following statement:  
-“This article has been accepted for publication in *Neo Mycologist*, published by the Brazilian Society of Mycology - SBMy.”  
+“This article has been accepted for publication in *Fungal Insights*, published by the Brazilian Society of Mycology - SBMy.”  
 Once the final article is available online, update the preprint with:  
-“The article was published in Neo Mycologist on [date of publication], available online: [https://doi.org/[Article DOI]](https://doi.org/%5bArticle%20DOI%5d).”
+“The article was published in Fungal Insights on [date of publication], available online: [https://doi.org/[Article DOI]](https://doi.org/%5bArticle%20DOI%5d).”
 
-### Neo Mycologist Notes
+### Fungal Insights Notes
 
 The journal features essay articles typically spanning 4 to 10 pages. Authors are encouraged to explore underrepresented topics in mycology. Essays should, when possible, reflect diverse perspectives and must be submitted through the standard process. Peer review is required. Extended reviews are also welcome.
 
@@ -217,7 +217,7 @@ Authors are encouraged to share their published articles freely. Data can be reu
 
 ### Data Availability Policy
 
-Research data are fundamental outputs of the scientific process and must be preserved and made accessible for long-term use. In accordance with international standards in biodiversity research, all data supporting the results published in Neo Mycologist must be deposited in a reliable public repository that provides open access and long-term preservation. Manuscripts will not be considered without a valid link to the deposited data.
+Research data are fundamental outputs of the scientific process and must be preserved and made accessible for long-term use. In accordance with international standards in biodiversity research, all data supporting the results published in Fungal Insights must be deposited in a reliable public repository that provides open access and long-term preservation. Manuscripts will not be considered without a valid link to the deposited data.
 
 Authors may use established international repositories (e.g. Dryad, TreeBASE, GenBank, Figshare, GBIF) or any other repository that ensures comparable accessibility and preservation. At submission, a provisional URL must be provided in the Data Availability section. Final acceptance requires the permanent URL of the archived dataset.
 
@@ -229,7 +229,7 @@ For sensitive data involving endangered species, protected locations, or cultura
 
 ## Ethical Publishing Guidelines
 
-Researchers are expected to adhere to high standards of ethical conduct when publishing and sharing scientific knowledge—even when doing so may not align with personal or professional gain. Publishing scientific work in reputable journals is a crucial component of disseminating research. Therefore, editors, authors, and reviewers involved with *Neo Mycologist*, must maintain integrity throughout the publication process.
+Researchers are expected to adhere to high standards of ethical conduct when publishing and sharing scientific knowledge—even when doing so may not align with personal or professional gain. Publishing scientific work in reputable journals is a crucial component of disseminating research. Therefore, editors, authors, and reviewers involved with *Fungal Insights*, must maintain integrity throughout the publication process.
 
 In instances of ethical concerns or breaches, the MRF refers to the Committee on Publication Ethics (COPE) Code of Conduct and Best Practice Guidelines and will act in accordance with these standards.
 

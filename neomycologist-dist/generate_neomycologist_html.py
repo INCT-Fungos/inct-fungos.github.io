@@ -5,9 +5,9 @@ def parse_markdown(md_content):
     # Split by H2
     sections = re.split(r'^(?=##\s+)', md_content, flags=re.MULTILINE)
     
-    # 1. Neo Mycologist (Intro - whatever is before first ##)
+    # 1. Fungal Insights (Intro - whatever is before first ##)
     # The first split will be the intro if the file doesn't start with ##
-    # In file: line 1 is "# *Neo Mycologist*". 
+    # In file: line 1 is "# *Fungal Insights*". 
     # line 23 is "## A Comprehensive..."
     
     # So sections[0] is the intro.
@@ -122,7 +122,7 @@ def generate_html_structure(subtabs):
     html = []
     
     # Banner
-    html.append('<div class="nm-banner-container"><img src="img/banner-NM.png" alt="Neo Mycologist Banner" class="nm-banner"></div>')
+    html.append('<div class="nm-banner-container"><img src="img/banner-NM.png" alt="Fungal Insights Banner" class="nm-banner"></div>')
      
     html.append('<div class="nm-container">')
     
@@ -188,7 +188,7 @@ def main():
         
     # Also generate CSS stub
     css_output = """
-/* Neo Mycologist Tab Styles */
+/* Fungal Insights Tab Styles */
 .nm-banner-container {
     width: 100%;
     margin-bottom: 20px;
