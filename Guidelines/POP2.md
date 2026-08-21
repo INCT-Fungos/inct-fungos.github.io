@@ -1,4 +1,4 @@
-![](https://inct-fungos.imd.ufrn.br/img/Fungos_BR.png)
+<p align="center"> <img src="https://inct-fungos.imd.ufrn.br/img/Fungos_BR.png" alt="Descrição" width="150" /> </p>
 
 # INCT Fungos do Brasil
 
@@ -10,8 +10,6 @@
 
 Estabelecer o procedimento padrão para os avaliadores do Comitê e Pontos Focais na recepção, conferência e validação das amostras de DNA recebidas dos pesquisadores da rede, garantindo que estejam aptas para envio à *facility* de sequenciamento nos EUA.
 
-
-
 ## 1. Recepção física e conferência de documentação
 
 Ao receber um lote de amostras de um laboratório da rede, o responsável pelo Ponto Focal deve iniciar imediatamente a conferência.
@@ -22,8 +20,6 @@ Ao receber um lote de amostras de um laboratório da rede, o responsável pelo P
 
 - Os tubos ou placas estão intactos, sem rachaduras ou vazamentos?
 
-
-
 ### Passo 2: Conferência Documental
 
 - A "Planilha 1: Envio de Amostras de DNA" foi enviada digitalmente?
@@ -31,8 +27,6 @@ Ao receber um lote de amostras de um laboratório da rede, o responsável pelo P
 - O número de amostras físicas bate exatamente com o número listado na planilha?
 
 - A identificação nos tubos corresponde exatamente aos códigos na planilha?
-
-
 
 ## 2. Checklist de qualidade do DNA (Validação Técnica)
 
@@ -49,8 +43,6 @@ O Comitê deve analisar os dados fornecidos pelo usuário na planilha para cada 
 | **Razão 260/230**                 | ≥ 1.8                            | Rejeitar. Risco alto de inibidores. Solicitar limpeza (cleanup).                                                          |
 | **Integridade** **do DNA em gel** | DNA integro em gel 0.8%          | Rejeitar amostras severamente degradadas.                                                                                 |
 
-
-
 ## 3. Consolidação em Placas de 96 Poços
 
 Após a validação, as amostras aprovadas devem ser transferidas para placas de PCR de 96 poços para o envio internacional.
@@ -65,8 +57,6 @@ Após a validação, as amostras aprovadas devem ser transferidas para placas de
 
 5. **Lotes:** Agrupe as amostras em múltiplos de 50 a 96 por placa. Placas com menos de 50 amostras não são otimizadas para o fluxo robótico da *facility*.
 
-
-
 ## 4. Preparação para Envio Internacional
 
 - Exportar a planilha final consolidada com o mapa da placa.
@@ -77,6 +67,6 @@ Após a validação, as amostras aprovadas devem ser transferidas para placas de
 
 - Endereçar para: **Facility - [Instruções de Endereçamento em breve ]**.
 
-
+- 
 
 ![](/home/jpmslima/coding/inct-fungos.github.io/img/banner-bottom.png)

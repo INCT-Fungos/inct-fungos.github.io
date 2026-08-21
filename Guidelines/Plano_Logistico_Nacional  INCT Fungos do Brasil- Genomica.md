@@ -1,4 +1,6 @@
-![](https://inct-fungos.imd.ufrn.br/img/Fungos_BR.png)
+
+
+<p align="center"> <img src="https://inct-fungos.imd.ufrn.br/img/Fungos_BR.png" alt="Descrição" width="150" /> </p>
 
 # INCT Fungos do Brasil
 
@@ -66,8 +68,4 @@ Para viabilizar o fluxo, o INCT contará com centros de apoio estratégico:
 
 - **Mês 5:** Ponto Focal consolida placas, emite licenças e despacha para os EUA.
 
-
-
 ![](/home/jpmslima/coding/inct-fungos.github.io/img/banner-bottom.png)
-
-

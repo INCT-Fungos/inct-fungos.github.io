@@ -1,6 +1,4 @@
-![](https://inct-fungos.imd.ufrn.br/img/Fungos_BR.png)
-
-
+<p align="center"> <img src="https://inct-fungos.imd.ufrn.br/img/Fungos_BR.png" alt="Descrição" width="150" /> </p>
 
 # INCT Fungos do Brasil
 
@@ -12,15 +10,11 @@
 
 ## 1. Verificação da Pureza das Culturas
 
-> ***ATENÇÃO:*** *Este é* *um* *passo* *importante antes de qualquer extração de DNA. O sequenciamento genômico é extremamente s**ensível e detectará qualquer contaminante presente na cultura. Um genoma contaminado com DNA de outro microrganismo (bactéria, levedura ou outro fungo) compromete completamente a montagem e a análise, resultando em desperdício de recursos e necessidade de* *resequenciamento**.*
-
-
+> ***ATENÇÃO:*** *Este é um passo importante antes de qualquer extração de DNA. O sequenciamento genômico é extremamente sensível e detectará qualquer contaminante presente na cultura. Um genoma contaminado com DNA de outro microrganismo (bactéria, levedura ou outro fungo) compromete completamente a montagem e a análise, resultando em desperdício de recursos e necessidade de resequenciamento.*
 
 ### 1.1. Obtenção de culturas monospóricas (Fortemente Recomendado)
 
 Para garantir a pureza genética da amostra, é **fortemente recomendado** que o DNA seja extraído a partir de **culturas** **monospóricas** (derivadas de um único esporo). Esse procedimento assegura que todo o material genético pertence a um único indivíduo, eliminando a possibilidade de mistura de genótipos distintos — mesmo dentro da mesma espécie. Culturas originadas de fragmentos de micélio ou de múltiplos esporos podem conter variantes genéticas que dificultam a montagem do genoma.
-
-
 
 ### 1.2. Checagem visual e microbiológica antes da extração
 
@@ -30,8 +24,6 @@ Antes de iniciar a extração de DNA, o pesquisador deve realizar uma inspeção
 | ------------------------ | ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Meio Sólido (Placa)**  | Colônia uniforme em morfologia, cor e textura. Ausência de colônias satélites ou zonas com aspecto diferente. | Colônias bacterianas (pontos brilhantes, mucoides); crescimento de outro fungo com morfologia distinta; bordas irregulares com coloração diferente.                                   |
 | **Meio Líquido (Caldo)** | Crescimento micelial homogêneo (pellets ou tapete). Meio claro entre as massas miceliais.                     | **Turbidez do meio** (indicativo clássico de contaminação bacteriana); biofilme na superfície; mudança de cor ou odor atípico do meio; presença de estruturas diferentes do esperado. |
-
-
 
 ### 1.3. Procedimentos em Caso de Suspeita de Contaminação
 
@@ -45,21 +37,15 @@ Se houver qualquer suspeita de contaminação, o pesquisador **não deve prosseg
 
 4. Após obter uma nova cultura limpa, aguardar o crescimento completo e repetir a checagem visual antes de extrair.
 
-
-
 ### 1.4. Confirmação Opcional por Microscopia
 
 Para maior segurança, recomenda-se observar uma pequena porção da cultura em microscópio óptico (aumento de 400x a 1000x) para confirmar a ausência de células bacterianas (bastonetes ou cocos) entre as hifas fúngicas.
-
-
 
 ## 2. Diretrizes para extração de DNA
 
 A obtenção de DNA de qualidade molecular (alto peso molecular, íntegro) é o segundo passo mais crítico para o sucesso do sequenciamento genômico. Os pesquisadores devem adotar protocolos rigorosos para garantir a integridade e pureza do material.
 
 **Método de Extração:** Não exigimos um kit ou protocolo comercial específico, mas o pesquisador **deve informar obrigatoriamente** o método utilizado na planilha de envio (ex: *CTAB, Kit Qiagen DNeasy Plant, Kit Zymo Research*, fenol-clorofórmio, etc.). Isso auxilia na identificação de possíveis inibidores residuais caso haja falha no sequenciamento.
-
-
 
 ### Recomendações Gerais para Extração:
 
@@ -70,8 +56,6 @@ A obtenção de DNA de qualidade molecular (alto peso molecular, íntegro) é o 
 | **Fungos** **melanizados**     | Para fungos melanizados ou ricos em polissacarídeos, considere etapas adicionais de purificação (ex: precipitação com CTAB/NaCl ou uso de colunas de purificação adicionais). |
 | **RNase**                      | Trate com RNase A para eliminar RNA, que pode interferir na quantificação e na preparação da biblioteca.                                                                      |
 | **Armazenamento pós-extração** | Armazene o DNA a -20 °C (curto prazo) ou -80 °C (longo prazo). Evite ciclos de congelamento/descongelamento repetidos.                                                        |
-
-
 
 ## 3. Condições Mínimas de Qualidade e Quantidade do DNA
 
@@ -88,13 +72,9 @@ Para que a amostra seja aceita pelo Comitê e enviada à facility nos EUA, ela d
 | **Integridade (Tamanho)**  | > 50% dos fragmentos maiores que 2 kb      | Verificado por Gel de Agarose (0.8% a 1%) ou Bioanalyzer/TapeStation. O DNA não pode estar severamente degradado/arrastado no gel. |
 | **Quantificação Oficial**  | Ensaio Fluorométrico (ex: Qubit)           | A quantificação final informada na planilha deve ser feita por fluorometria. O NanoDrop superestima a concentração de DNA.         |
 
-
-
 ## 4. Instruções para acondicionamento local
 
 As amostras devem ser armazenadas em microtubos de 1.5 mL ou 2.0 mL estéreis, livres de DNase e RNase. Os tubos devem ser claramente identificados no topo e na lateral com o **Código da Amostra** (conforme registrado na planilha de envio), utilizando caneta permanente resistente a álcool e congelamento. As amostras devem ser mantidas a -20 °C (ou -80 °C) até o momento do envio para o Ponto Focal/Hub Regional. 
-
-
 
 ## 5. Como Proceder se o Laboratório não possuir **Qubit** **ou** NanoDrop?
 

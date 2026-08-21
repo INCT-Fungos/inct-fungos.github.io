@@ -1,4 +1,4 @@
-![](https://inct-fungos.imd.ufrn.br/img/Fungos_BR.png)
+<p align="center"> <img src="https://inct-fungos.imd.ufrn.br/img/Fungos_BR.png" alt="Descrição" width="150" /> </p>
 
 # INCT Fungos do Brasil
 
@@ -9,8 +9,6 @@
 ### Objetivo:
 
 Orientar o Comitê Gestor na coleta de intenções de sequenciamento junto à rede, organização das demandas (priorização científica) e estimativa de custos (cotação) junto à *facility* nos EUA.
-
-
 
 ## 1. Levantamento de Intenções de Sequenciamento
 
@@ -32,13 +30,9 @@ Os pesquisadores deverão preencher informações biológicas e taxonômicas cru
 
 - Justificativa resumida do interesse científico.
 
-
-
 ## 2. Análise e Seleção pelo Comitê
 
 Com a planilha consolidada, o Comitê deverá avaliar as propostas com base em critérios pré-estabelecidos pelo INCT Fungos do Brasil.
-
-
 
 ### Critérios Sugeridos para Priorização:
 
@@ -49,8 +43,6 @@ Com a planilha consolidada, o Comitê deverá avaliar as propostas com base em c
 3. **Tamanho do Genoma vs. Orçamento:** O tamanho do genoma dita a quantidade de dados (Gigabases - Gb) necessários para atingir a cobertura ideal (ex: 50x a 100x). Genomas muito grandes consomem mais recursos.
 
 4. **Capacidade de Execução:** O laboratório proponente possui capacidade de extrair DNA na qualidade exigida ou precisará de suporte logístico (Hub Regional)?
-
-
 
 ## **3. Cotação e Orçamento com a** *Facility*
 
@@ -66,13 +58,9 @@ Uma vez selecionadas as amostras, o Comitê deve estruturar a solicitação de c
 
 - **Volume de Dados (*Output*):** Informar a quantidade de Gb desejada por amostra ou o tamanho médio do genoma e a cobertura desejada.
 
-
-
 ## 4. Aprovação e Início do Fluxo de Extração
 
 Após a aprovação do orçamento, o Comitê comunicará os laboratórios selecionados, autorizando o início da extração de DNA conforme as diretrizes do **POP 1 (Manual do Usuário)** e acionando o **Plano de Logística Nacional**.
-
-
 
 
 
