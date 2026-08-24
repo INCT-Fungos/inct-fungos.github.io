@@ -22,6 +22,7 @@
 
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/neomycologist.css">
+    <link rel="stylesheet" href="css/search.css">
 </head>
 
 <body>
@@ -49,6 +50,7 @@
 
             <button class="tab-link" onclick="openTab(event, 'dataportal')">DataPortal</button>
             <button class="tab-link" onclick="openTab(event, 'fungalinsights')">Fungal Insights</button>
+            <button class="tab-link" onclick="openTab(event, 'guidelines')">Research Guidelines</button>
             <button class="tab-link" onclick="openTab(event, 'outreach')">Outreach</button>
             <button class="tab-link" onclick="openTab(event, 'surveys')">Surveys</button>
             <button class="tab-link" onclick="openTab(event, 'calendar')">Calendar</button>
@@ -56,7 +58,13 @@
         </div>
 
         <div class="lang-switch">
-            <a href="index.html">PT</a> |
+            <button class="nav-search-btn" onclick="openSearchModal()" title="Search">
+                <svg width="14" height="14" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                </svg>
+                <span>Search</span>
+            </button>
+                        <a href="index.html">PT</a> |
             <a href="index_en.html" class="active">EN</a> |
             <a href="index_es.html">ES</a>
         </div>
@@ -2249,7 +2257,509 @@
                     </div>
                 </div>
             </div>
-            <div id="outreach" class="tab-content">
+        </div>
+        <div id="guidelines" class="tab-content">
+            <div class="nm-container">
+                <div class="nm-sidebar">
+                    <div class="nm-nav-buttons">
+                        <button class="nm-nav-btn active" onclick="openNeoTab(event, 'guidelines-logistics')">Logistics</button>
+                        <button class="nm-nav-btn" onclick="openNeoTab(event, 'guidelines-sop1')">SOP1</button>
+                        <button class="nm-nav-btn" onclick="openNeoTab(event, 'guidelines-sop2')">SOP2</button>
+                        <button class="nm-nav-btn" onclick="openNeoTab(event, 'guidelines-sop3')">SOP3</button>
+                    </div>
+                </div>
+                <div class="nm-content-area">
+                    <div id="guidelines-logistics" class="nm-subtab-content" style="display:block;">
+<div class="pdf-download-card" style="background: linear-gradient(135deg, #ebf8ff, #f7fafc); border: 1px solid #cbd5e0; border-left: 5px solid #004a91; border-radius: 8px; padding: 16px 20px; margin-bottom: 25px; display: flex; align-items: center; justify-content: space-between; gap: 15px; flex-wrap: wrap; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+    <div>
+        <h4 style="margin: 0 0 4px 0; color: #004a91; font-size: 1.1rem;">📄 Official Document (PDF)</h4>
+        <p style="margin: 0; color: #4a5568; font-size: 0.95rem;">View or download the original document in PDF format</p>
+    </div>
+    <a href="Guidelines/Logistics_EN.pdf" target="_blank" download class="pdf-btn" style="background-color: #004a91; color: white; padding: 10px 18px; border-radius: 6px; text-decoration: none; font-weight: 600; white-space: nowrap; display: inline-flex; align-items: center; gap: 8px; transition: background-color 0.2s;">
+        <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/></svg> Download PDF
+    </a>
+</div>
+<p align="center"> <img src="img/Fungos_BR.png" alt="Descrição" width="150" style="max-width:100%; height:auto; border-radius:6px; margin:15px 0;"> </p>
+
+<h1>INCT Fungi of Brazil</h1>
+<h2>National Logistics Plan</h2>
+<blockquote style="background:#fff8e1; border-left:4px solid #f6ad55; padding:12px 16px; margin:15px 0; border-radius:4px; font-style:normal;">
+<p><strong>Disclaimer:</strong> <em>This document was translated from brazilian portuguese with the assistance of generative AI (Gemini).</em></p>
+</blockquote>
+<h3>DNA Extraction, Validation, and Shipping Workflow for Sequencing</h3>
+<h4>Objective:</h4>
+<p>To establish an efficient, collaborative network ensuring that all INCT Fungi of Brazil laboratories—regardless of local infrastructure—can extract and ship high-quality genomic DNA to the sequencing facility in the USA.</p>
+<h3>1. Logistics Workflow Chart</h3>
+<p>The workflow is designed to optimize resources and guarantee the rigorous quality control required by the facility (<em>PCR-free library prep</em>).</p>
+<p><img alt="" src="Guidelines/2lBMwc.png" style="max-width:100%; height:auto; border-radius:6px; margin:15px 0;"></p>
+<h3>2. Network Laboratory Classification</h3>
+<p>For logistical purposes, network laboratories are classified into three categories based on available infrastructure. This classification allows the Committee to assess the required support and realistically plan the sample flow.</p>
+<table style="width:100%; border-collapse:collapse; margin:20px 0; background:#fff; border-radius:8px; overflow:hidden; box-shadow:0 2px 5px rgba(0,0,0,0.05);">
+<thead>
+<tr>
+<th><strong>Level</strong></th>
+<th><strong>Designation</strong></th>
+<th><strong>Available Infrastructure</strong></th>
+<th><strong>Role in the Workflow</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Level 1</strong></td>
+<td>Self-sufficient</td>
+<td>DNA extraction, Qubit (fluorometry), NanoDrop (spectrophotometry), agarose gel</td>
+<td>Extracts DNA, conducts all quality and purity analyses (SOP 1), fills out Spreadsheet 1, and ships validated samples directly to the <strong>National Focal Point</strong>.</td>
+</tr>
+<tr>
+<td><strong>Level 2</strong></td>
+<td>Partially Dependent</td>
+<td>DNA extraction and agarose gel, but <strong>without</strong> Qubit and/or NanoDrop</td>
+<td>Extracts DNA following SOP 1, checks preliminary integrity on gel, and ships (frozen) samples to the <strong>Regional Support Hub</strong> for final quantification and validation.</td>
+</tr>
+<tr>
+<td><strong>Level 3</strong></td>
+<td>Fully Dependent</td>
+<td><strong>Lacks</strong> infrastructure for both DNA extraction and quantification</td>
+<td>Maintains and cultures strains of interest, ensures culture purity (monosporic cultures), and ships <strong>live cultures</strong> (or freeze-dried/frozen mycelium) to the <strong>Regional Support Hub</strong> or a Level 1/2 partner lab to perform extraction and quantification.</td>
+</tr>
+</tbody>
+</table>
+<h4>Level 3 Laboratory Details:</h4>
+<p>These laboratories play a fundamental role in the network by housing strains of taxonomic, ecological, or biotechnological interest, even without the necessary equipment for DNA preparation. Their contribution is enabled by the collaborative framework of the INCT. The workflow for these laboratories is as follows:</p>
+<ol>
+<li>
+<p>The Level 3 Laboratory researcher fills out <strong>Spreadsheet 2 (Sequencing Request)</strong> as usual, indicating in the infrastructure column that full support is required.</p>
+</li>
+<li>
+<p>Following Committee approval, the researcher prepares a pure culture (monosporic, visually verified per SOP 1) and ships it to the Regional Hub or designated partner laboratory.</p>
+</li>
+<li>
+<p>The Regional Hub/partner carries out DNA extraction, quantification (Qubit), purity assessment (NanoDrop), and integrity check (gel), fills out Spreadsheet 1, and forwards everything to the National Focal Point.</p>
+</li>
+<li>
+<p>The originating researcher remains the scientific lead for the sample and must provide all associated metadata (genus, species, strain, genome size).</p>
+</li>
+</ol>
+<h3>3. Support and Consolidation Structure</h3>
+<p>To enable this workflow, the INCT relies on strategic support centers:</p>
+<h4>Regional Support Hubs:</h4>
+<ul>
+<li>
+<p><strong>Definition:</strong> Strategically located anchor laboratories (e.g., one in the Southeast, one in the Northeast, one in the South/Center-West) equipped with robust infrastructure and trained personnel.</p>
+</li>
+<li>
+<p><strong>Role:</strong> Receive samples from Level 2 Laboratories within their geographical region. The Hub performs official quantification via Qubit and purity analysis via NanoDrop. If approved, the Hub completes "Spreadsheet 1" and forwards the sample to the National Focal Point. If rejected, the Hub guides the originating lab through a new extraction.</p>
+</li>
+</ul>
+<h4>National Focal Point:</h4>
+<ul>
+<li>
+<p><strong>Definition:</strong> The central laboratory responsible for international interface.</p>
+</li>
+<li>
+<p><strong>Role:</strong> Receive all approved samples (from Level 1 Labs and Regional Hubs). Apply <strong>SOP 2 (Committee Checklist)</strong> for document verification. Consolidate samples into 96-well PCR plates (optimizing batch sizes). Manage export permits (SisGen, Ibama, Federal Revenue) and handle physical shipment on dry ice to the US facility.</p>
+</li>
+</ul>
+<h3>4. Macro Execution Schedule (Per Batch)</h3>
+<ul>
+<li>
+<p><strong>Month 1:</strong> Committee distributes Spreadsheet 2 (Sequencing Request).</p>
+</li>
+<li>
+<p><strong>Month 2:</strong> Committee evaluates requests, obtains facility quotes, and authorizes the start of extractions.</p>
+</li>
+<li>
+<p><strong>Month 3:</strong> Laboratories extract DNA. Level 2 Labs send samples to Regional Hubs. Hubs validate samples.</p>
+</li>
+<li>
+<p><strong>Month 4:</strong> Level 1 Labs and Hubs ship final samples to the National Focal Point.</p>
+</li>
+<li>
+<p><strong>Month 5:</strong> National Focal Point consolidates plates, issues permits, and dispatches shipments to the USA.</p>
+</li>
+</ul>
+<p><img alt="" src="img/banner-bottom.png" style="max-width:100%; height:auto; border-radius:6px; margin:15px 0;"></p>
+                    </div>
+                    <div id="guidelines-sop1" class="nm-subtab-content" style="display:none;">
+<div class="pdf-download-card" style="background: linear-gradient(135deg, #ebf8ff, #f7fafc); border: 1px solid #cbd5e0; border-left: 5px solid #004a91; border-radius: 8px; padding: 16px 20px; margin-bottom: 25px; display: flex; align-items: center; justify-content: space-between; gap: 15px; flex-wrap: wrap; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+    <div>
+        <h4 style="margin: 0 0 4px 0; color: #004a91; font-size: 1.1rem;">📄 Official Document (PDF)</h4>
+        <p style="margin: 0; color: #4a5568; font-size: 0.95rem;">View or download the original document in PDF format</p>
+    </div>
+    <a href="Guidelines/SOP1_EN.pdf" target="_blank" download class="pdf-btn" style="background-color: #004a91; color: white; padding: 10px 18px; border-radius: 6px; text-decoration: none; font-weight: 600; white-space: nowrap; display: inline-flex; align-items: center; gap: 8px; transition: background-color 0.2s;">
+        <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/></svg> Download PDF
+    </a>
+</div>
+<p align="center"> <img src="img/Fungos_BR.png" alt="Descrição" width="150" style="max-width:100%; height:auto; border-radius:6px; margin:15px 0;"> </p>
+
+<h1>INCT Fungi of Brazil</h1>
+<h1>SOP 1: DNA Extraction, Quality Control, and Shipping</h1>
+<blockquote style="background:#fff8e1; border-left:4px solid #f6ad55; padding:12px 16px; margin:15px 0; border-radius:4px; font-style:normal;">
+<p><strong>Disclaimer:</strong> <em>This document was translated from brazilian portuguese with the assistance of generative AI (Gemini).</em></p>
+</blockquote>
+<h2>User Manual</h2>
+<h3>Objective:</h3>
+<p>To guide INCT Fungi of Brazil researchers on extraction protocols, purification procedures, and minimum quality/quantity specifications for submitting genomic DNA intended for Illumina PCR-free library sequencing.</p>
+<h2>1. Culture Purity Verification</h2>
+<blockquote style="background:#fff8e1; border-left:4px solid #f6ad55; padding:12px 16px; margin:15px 0; border-radius:4px; font-style:normal;">
+<p><strong>CAUTION:</strong> This is a critical prerequisite prior to DNA extraction. Whole-genome sequencing is highly sensitive and will detect any contaminating organism. Contamination by bacteria, yeasts, or foreign fungi compromises genome assembly and analysis, leading to wasted resources and required resequencing.</p>
+</blockquote>
+<h3>1.1. Monosporic Cultures (Strongly Recommended)</h3>
+<p>To ensure genetic homogeneity, DNA extraction should be performed from monosporic cultures (derived from a single spore). This ensures all material originates from a single individual and eliminates intra-strain genetic polymorphism. Cultures derived from mycelial fragments or multi-spore isolates may contain genomic variants that impair de novo assembly.</p>
+<h3>1.2. Visual and Microbiological Inspection</h3>
+<p>Prior to extraction, thoroughly inspect the culture:</p>
+<table style="width:100%; border-collapse:collapse; margin:20px 0; background:#fff; border-radius:8px; overflow:hidden; box-shadow:0 2px 5px rgba(0,0,0,0.05);">
+<thead>
+<tr>
+<th><strong>Culture Type</strong></th>
+<th><strong>What to Check</strong></th>
+<th><strong>Signs of Contamination (DO NOT extract)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Solid Media (Plate)</strong></td>
+<td>Uniform colony morphology, color, and texture. Absence of satellite colonies or atypical zones.</td>
+<td>Bacterial colonies (shiny, mucoid spots); distinct fungal morphotypes; irregular colored borders.</td>
+</tr>
+<tr>
+<td><strong>Liquid Media (Broth)</strong></td>
+<td>Homogeneous mycelial pellets or mat. Clear broth between mycelial masses.</td>
+<td>Turbid medium (classic bacterial contamination); surface biofilm; discoloration or off-odors; atypical structures.</td>
+</tr>
+</tbody>
+</table>
+<h3>1.3. Remediation for Suspected Contamination</h3>
+<p>If contamination is suspected, abort DNA extraction and proceed with:</p>
+<ul>
+<li>
+<p>Subculturing onto fresh media using hyphal tip isolation from a clean zone.</p>
+</li>
+<li>
+<p>Re-isolating a single spore for a new monosporic culture.</p>
+</li>
+<li>
+<p>Performing serial dilution of hyphal fragments and replating if the fungus does not sporulate.</p>
+</li>
+<li>
+<p>Allowing complete regrowth and repeating visual verification prior to extraction.</p>
+</li>
+</ul>
+<h3>1.4. Optional Microscopic Confirmation</h3>
+<p>When feasible, inspect culture mounts under optical microscopy (400x to 1000x) to confirm the absence of bacterial cells (rods or cocci) among hyphae.</p>
+<h2>2. DNA Extraction Guidelines</h2>
+<p>Isolating high-molecular-weight, intact DNA is essential for sequencing success. Rigorous extraction protocols must be maintained.</p>
+<ul>
+<li><strong>Extraction Method:</strong> Specific commercial kits are not mandated, but the exact protocol used must be declared in the submission spreadsheet (e.g., CTAB, Qiagen DNeasy Plant Kit, Zymo Research Kit, Phenol-Chloroform, etc.) to aid troubleshooting if sequencing issues arise.</li>
+</ul>
+<p><strong>General Recommendations:</strong></p>
+<table style="width:100%; border-collapse:collapse; margin:20px 0; background:#fff; border-radius:8px; overflow:hidden; box-shadow:0 2px 5px rgba(0,0,0,0.05);">
+<thead>
+<tr>
+<th><strong>Aspect</strong></th>
+<th><strong>Recommendation</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Starting Material</strong></td>
+<td>Use young (3–7 days for most filamentous fungi), healthy cultures to minimize secondary metabolites and polysaccharides.</td>
+</tr>
+<tr>
+<td><strong>Cell Lysis</strong></td>
+<td>Avoid prolonged vortexing during lysis to prevent DNA shearing. Prefer liquid nitrogen grinding or short-pulse bead beating.</td>
+</tr>
+<tr>
+<td><strong>Melanized Fungi</strong></td>
+<td>For melanized or polysaccharide-rich species, include additional clean-up steps (e.g., CTAB/NaCl precipitation or column purification).</td>
+</tr>
+<tr>
+<td><strong>RNase Treatment</strong></td>
+<td>Treat with RNase A to remove RNA, which interferes with accurate quantification and library prep.</td>
+</tr>
+<tr>
+<td><strong>Post-Extraction Storage</strong></td>
+<td>Store at -20°C (short-term) or -80°C (long-term). Avoid repeated freeze-thaw cycles.</td>
+</tr>
+</tbody>
+</table>
+<h2>3. Minimum DNA Quality and Quantity Standards</h2>
+<table style="width:100%; border-collapse:collapse; margin:20px 0; background:#fff; border-radius:8px; overflow:hidden; box-shadow:0 2px 5px rgba(0,0,0,0.05);">
+<thead>
+<tr>
+<th><strong>Parameter</strong></th>
+<th><strong>Minimum Requirement</strong></th>
+<th><strong>Notes</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Total DNA Amount</strong></td>
+<td>≥ 500 ng</td>
+<td>Required for PCR-free library preparation.</td>
+</tr>
+<tr>
+<td><strong>Minimum Concentration</strong></td>
+<td>≥ 10 ng/µL</td>
+<td>Higher concentrations preferred when possible.</td>
+</tr>
+<tr>
+<td><strong>Sample Volume</strong></td>
+<td>20 µL to 50 µL</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>Suspension Buffer</strong></td>
+<td>Ultrapure water or EDTA-FREE buffer</td>
+<td>Standard TE buffer is prohibited; EDTA inhibits downstream enzymatic steps.</td>
+</tr>
+<tr>
+<td><strong>Purity (A260/A280)</strong></td>
+<td>1.6 to 2.0</td>
+<td>Measured via NanoDrop or equivalent spectrophotometer.</td>
+</tr>
+<tr>
+<td><strong>Purity (A260/A230)</strong></td>
+<td>≥ 1.8</td>
+<td>Measured via NanoDrop. Lower values indicate carbohydrate, salt, or phenol carryover.</td>
+</tr>
+<tr>
+<td><strong>Integrity (Size)</strong></td>
+<td>&gt; 50% of fragments &gt; 2 kb</td>
+<td>Verified by 0.8%–1% Agarose Gel or Bioanalyzer/TapeStation. Smeared/degraded DNA is unacceptable.</td>
+</tr>
+<tr>
+<td><strong>Official Quantification</strong></td>
+<td>Fluorometric Assay (e.g., Qubit)</td>
+<td>Final reported concentration must be fluorometric. NanoDrop overestimates DNA concentration.</td>
+</tr>
+</tbody>
+</table>
+<h2>4. Local Packaging and Handling</h2>
+<p>Store samples in sterile, DNase/RNase-free 1.5 mL or 2.0 mL microcentrifuge tubes. Clearly label tube caps and sides with the <strong>Sample ID</strong> (matching the submission spreadsheet) using an alcohol- and freeze-resistant permanent marker. Maintain at -20°C or -80°C until dispatch to the Focal Point/Regional Hub.</p>
+<h2>5. Labs Without Qubit or NanoDrop Access</h2>
+<p>The INCT Fungi of Brazil operates as a collaborative network. If your laboratory lacks fluorometric (Qubit) or spectrophotometric (NanoDrop) equipment, follow the National Logistics Plan: extract DNA, perform preliminary agarose gel validation, and ship samples to your designated Regional Support Hub for full quality validation before submission to the National Focal Point.</p>
+<h2>6. Required Documentation</h2>
+<p>Every submission must include a completed <strong>Spreadsheet 1: DNA Sample Submission</strong>, delivered digitally to the Committee with a hard copy accompanying the physical shipment.</p>
+<p><img alt="" src="img/banner-bottom.png" style="max-width:100%; height:auto; border-radius:6px; margin:15px 0;"></p>
+                    </div>
+                    <div id="guidelines-sop2" class="nm-subtab-content" style="display:none;">
+<div class="pdf-download-card" style="background: linear-gradient(135deg, #ebf8ff, #f7fafc); border: 1px solid #cbd5e0; border-left: 5px solid #004a91; border-radius: 8px; padding: 16px 20px; margin-bottom: 25px; display: flex; align-items: center; justify-content: space-between; gap: 15px; flex-wrap: wrap; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+    <div>
+        <h4 style="margin: 0 0 4px 0; color: #004a91; font-size: 1.1rem;">📄 Official Document (PDF)</h4>
+        <p style="margin: 0; color: #4a5568; font-size: 0.95rem;">View or download the original document in PDF format</p>
+    </div>
+    <a href="Guidelines/SOP2_EN.pdf" target="_blank" download class="pdf-btn" style="background-color: #004a91; color: white; padding: 10px 18px; border-radius: 6px; text-decoration: none; font-weight: 600; white-space: nowrap; display: inline-flex; align-items: center; gap: 8px; transition: background-color 0.2s;">
+        <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/></svg> Download PDF
+    </a>
+</div>
+<p align="center"> <img src="img/Fungos_BR.png" alt="Descrição" width="150" style="max-width:100%; height:auto; border-radius:6px; margin:15px 0;"> </p>
+
+<h1>INCT Fungi of Brazil</h1>
+<h1>SOP 2: Sample Reception and Quality Checklist</h1>
+<blockquote style="background:#fff8e1; border-left:4px solid #f6ad55; padding:12px 16px; margin:15px 0; border-radius:4px; font-style:normal;">
+<p><strong>Disclaimer:</strong> <em>This document was translated from brazilian portuguese with the assistance of generative AI (Gemini).</em></p>
+</blockquote>
+<h2>Steering Committee Manual</h2>
+<h3>Objective:</h3>
+<p>To establish standard procedures for Committee reviewers and Focal Points when receiving, checking, and validating DNA samples from network researchers, ensuring compliance before shipment to the US sequencing facility.</p>
+<h2>1. Physical Reception and Document Verification</h2>
+<p>Upon receiving a sample batch from a network laboratory, the Focal Point manager must immediately begin verification.</p>
+<h4>Step 1: Package Integrity Check</h4>
+<ul>
+<li>
+<p>Did the package arrive frozen (dry ice/ice packs still frozen)?</p>
+</li>
+<li>
+<p>Are tubes or plates intact, without cracks or leaks?</p>
+</li>
+</ul>
+<h4>Step 2: Document Check</h4>
+<ul>
+<li>
+<p>Was "Spreadsheet 1: DNA Sample Submission" sent digitally?</p>
+</li>
+<li>
+<p>Does the physical tube count match the spreadsheet exactly?</p>
+</li>
+<li>
+<p>Do tube labels correspond exactly to the spreadsheet codes?</p>
+</li>
+</ul>
+<h2>2. DNA Quality Checklist (Technical Validation)</h2>
+<p>The Committee must evaluate user-submitted data in the spreadsheet for each sample. If a sample fails any parameter below, it must be flagged as <strong>"REJECTED"</strong> or <strong>"PENDING RE-EXTRACTION"</strong>.</p>
+<table style="width:100%; border-collapse:collapse; margin:20px 0; background:#fff; border-radius:8px; overflow:hidden; box-shadow:0 2px 5px rgba(0,0,0,0.05);">
+<thead>
+<tr>
+<th><strong>Evaluation Criterion</strong></th>
+<th><strong>Acceptable Parameter</strong></th>
+<th><strong>Action in Case of Non-Compliance</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Extraction Method Reported?</strong></td>
+<td>Yes</td>
+<td>Request information from researcher.</td>
+</tr>
+<tr>
+<td><strong>Suspension Buffer</strong></td>
+<td>Ultrapure water or EDTA-free buffer</td>
+<td>Reject. Request re-extraction (precipitation and resuspension carries high risk of quality loss).</td>
+</tr>
+<tr>
+<td><strong>Total Volume</strong></td>
+<td>20 µL to 50 µL</td>
+<td>If &lt; 20 µL, evaluate total mass. If &gt; 50 µL, request concentration (if feasible) or re-extraction.</td>
+</tr>
+<tr>
+<td><strong>Total DNA Amount</strong></td>
+<td>≥ 500 ng</td>
+<td>Reject. Facility strictly requires this minimum for PCR-free prep.</td>
+</tr>
+<tr>
+<td><strong>Quantification Method</strong></td>
+<td>Qubit (or equivalent fluorometer)</td>
+<td>If measured solely by NanoDrop, Focal Point/Hub must re-quantify via Qubit.</td>
+</tr>
+<tr>
+<td><strong>260/280 Ratio</strong></td>
+<td>1.6 to 2.0</td>
+<td>Reject. Request clean-up or re-extraction.</td>
+</tr>
+<tr>
+<td><strong>260/230 Ratio</strong></td>
+<td>≥ 1.8</td>
+<td>Reject. High inhibitor risk. Request clean-up.</td>
+</tr>
+<tr>
+<td><strong>DNA Integrity (Gel)</strong></td>
+<td>Intact DNA on 0.8% gel</td>
+<td>Reject severely degraded samples.</td>
+</tr>
+</tbody>
+</table>
+<h2>3. Consolidation into 96-Well Plates</h2>
+<p>Following validation, approved samples must be transferred into 96-well PCR plates for international shipment.</p>
+<ul>
+<li>
+<p><strong>Mapping:</strong> Complete the plate map (A1 to H12) linking original sample IDs to well positions.</p>
+</li>
+<li>
+<p><strong>Pipetting:</strong> Ensure the sample is thoroughly homogenized prior to plate loading.</p>
+</li>
+<li>
+<p><strong>Sealing:</strong> Seal plates tightly using foil seals.</p>
+</li>
+<li>
+<p><strong>Protection:</strong> Secure a rigid plastic cover over the foil seal or cushion with paper towels secured by rubber bands.</p>
+</li>
+<li>
+<p><strong>Batching:</strong> Group samples in batches of 50 to 96 per plate. Plates containing fewer than 50 samples are not optimized for robotic processing at the facility.</p>
+</li>
+</ul>
+<h2>4. International Shipping Preparation</h2>
+<ul>
+<li>
+<p>Export the finalized plate map spreadsheet.</p>
+</li>
+<li>
+<p>Ensure active export authorizations (such as SisGen) are documented in the submission form.</p>
+</li>
+<li>
+<p>Pack plates in insulated styrofoam coolers with sufficient dry ice for international transit.</p>
+</li>
+<li>
+<p>Address to: Facility – [US Address].</p>
+</li>
+<li></li>
+</ul>
+<p><img alt="" src="img/banner-bottom.png" style="max-width:100%; height:auto; border-radius:6px; margin:15px 0;"></p>
+                    </div>
+                    <div id="guidelines-sop3" class="nm-subtab-content" style="display:none;">
+<div class="pdf-download-card" style="background: linear-gradient(135deg, #ebf8ff, #f7fafc); border: 1px solid #cbd5e0; border-left: 5px solid #004a91; border-radius: 8px; padding: 16px 20px; margin-bottom: 25px; display: flex; align-items: center; justify-content: space-between; gap: 15px; flex-wrap: wrap; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+    <div>
+        <h4 style="margin: 0 0 4px 0; color: #004a91; font-size: 1.1rem;">📄 Official Document (PDF)</h4>
+        <p style="margin: 0; color: #4a5568; font-size: 0.95rem;">View or download the original document in PDF format</p>
+    </div>
+    <a href="Guidelines/SOP3_EN.pdf" target="_blank" download class="pdf-btn" style="background-color: #004a91; color: white; padding: 10px 18px; border-radius: 6px; text-decoration: none; font-weight: 600; white-space: nowrap; display: inline-flex; align-items: center; gap: 8px; transition: background-color 0.2s;">
+        <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/></svg> Download PDF
+    </a>
+</div>
+<p align="center"> <img src="img/Fungos_BR.png" alt="Descrição" width="150" style="max-width:100%; height:auto; border-radius:6px; margin:15px 0;"> </p>
+
+<h1>INCT Fungi of Brazil</h1>
+<h1>SOP 3: Planning, Demand Survey, and Price Quotation</h1>
+<blockquote style="background:#fff8e1; border-left:4px solid #f6ad55; padding:12px 16px; margin:15px 0; border-radius:4px; font-style:normal;">
+<p><strong>Disclaimer:</strong> <em>This document was translated from brazilian portuguese with the assistance of generative AI (Gemini).</em></p>
+</blockquote>
+<h2>Recommendation for Genomic Coordination and Steering Committee</h2>
+<h3>Objective:</h3>
+<p>To guide the Steering Committee in collecting sequencing requests across the network, organizing project demands (scientific prioritization), and estimating costs (price quotation) with the US sequencing facility.</p>
+<h2>1. Survey of Sequencing Requests</h2>
+<p>Before requesting DNA extraction, the Committee must map the strains network researchers intend to sequence. This allows for logistical planning, cost optimization, and prioritization of high-impact scientific samples.</p>
+<p><strong>Action:</strong> Distribute "Spreadsheet 2: Sequencing Requests and Demands" to all associated laboratories.</p>
+<p>Researchers must provide essential biological and taxonomic details:</p>
+<ul>
+<li>
+<p>Genus and Species (if identified).</p>
+</li>
+<li>
+<p>Indication if it is a novel species (<em>sp. nov.</em>).</p>
+</li>
+<li>
+<p>Indication if it is a Type strain.</p>
+</li>
+<li>
+<p>Estimated genome size (in Mb) – Essential for coverage calculation.</p>
+</li>
+<li>
+<p>Brief justification of scientific interest.</p>
+</li>
+</ul>
+<h2>2. Analysis and Selection by the Committee</h2>
+<p>Once the spreadsheet is consolidated, the Committee will evaluate proposals based on criteria pre-established by the INCT Fungi of Brazil.</p>
+<p><strong>Suggested Prioritization Criteria:</strong></p>
+<ul>
+<li>
+<p><strong>Taxonomic Relevance:</strong> Type strains and novel species receive top priority for establishing reference genomes.</p>
+</li>
+<li>
+<p><strong>Biotechnological/Clinical/Agricultural/Environmental Impact:</strong> Strains with applied potential or economic/health significance.</p>
+</li>
+<li>
+<p><strong>Genome Size vs. Budget:</strong> Genome size dictates the data volume (Gigabases - Gb) required to achieve optimal coverage (e.g., 50x to 100x). Very large genomes consume more resources.</p>
+</li>
+<li>
+<p><strong>Execution Capacity:</strong> Does the submitting lab possess the capacity to extract DNA at the required quality, or will it require logistical support (Regional Hub)?</p>
+</li>
+</ul>
+<h2>3. Quotation and Budgeting with the Facility</h2>
+<p>Once samples are selected, the Committee will structure the quote request for the facility.</p>
+<p><strong>Required Information for the Facility:</strong></p>
+<ul>
+<li>
+<p><strong>Total number of samples:</strong> Batches of 50 to 96 samples are ideal. Batches larger than 96 require multiple robotic runs, adding approximately 1 week to Turnaround Time (TAT).</p>
+</li>
+<li>
+<p><strong>Library Type:</strong> PCR-free library prep.</p>
+</li>
+<li>
+<p><strong>Platform and Insert Size:</strong> Specify whether Illumina (e.g., NovaSeq, PE 150bp) or long-read technology (PacBio/Nanopore) is required, depending on project goals (draft vs. finished genome).</p>
+</li>
+<li>
+<p><strong>Data Output:</strong> Specify desired Gb per sample or average genome size and desired coverage depth.</p>
+</li>
+</ul>
+<h2>4. Approval and Extraction Workflow Kick-off</h2>
+<p>Upon budget approval, the Committee will notify selected laboratories, authorizing the start of DNA extractions in accordance with SOP 1 guidelines (User Manual) and activating the National Logistics Plan.</p>
+<p><img alt="" src="img/banner-bottom.png" style="max-width:100%; height:auto; border-radius:6px; margin:15px 0;"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<div id="outreach" class="tab-content">
                 <h2>Outreach</h2>
                 <h3>INCT-Fungos Brasil first presentation</h3>
                 <div class="video-container" style="display: flex; justify-content: center; margin-bottom: 30px;">
@@ -2316,6 +2826,7 @@
     </footer>
 
     <script src="js/scripts.js"></script>
+    <script src="js/search.js"></script>
 
 </body>
 

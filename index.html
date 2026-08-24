@@ -22,6 +22,7 @@
 
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/neomycologist.css">
+    <link rel="stylesheet" href="css/search.css">
 </head>
 
 <body>
@@ -49,6 +50,7 @@
 
             <button class="tab-link" onclick="openTab(event, 'dataportal')">DataPortal</button>
             <button class="tab-link" onclick="openTab(event, 'fungalinsights')">Fungal Insights</button>
+            <button class="tab-link" onclick="openTab(event, 'guidelines')">Research Guidelines</button>
             <button class="tab-link" onclick="openTab(event, 'outreach')">Divulgação</button>
             <button class="tab-link" onclick="openTab(event, 'surveys')">Pesquisas</button>
             <button class="tab-link" onclick="openTab(event, 'calendar')">Calendário</button>
@@ -56,7 +58,13 @@
         </div>
 
         <div class="lang-switch">
-            <a href="index.html" class="active">PT</a> |
+            <button class="nav-search-btn" onclick="openSearchModal()" title="Buscar">
+                <svg width="14" height="14" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                </svg>
+                <span>Buscar</span>
+            </button>
+                        <a href="index.html" class="active">PT</a> |
             <a href="index_en.html">EN</a> |
             <a href="index_es.html">ES</a>
         </div>
@@ -2268,7 +2276,495 @@
             </div>
         </div>
 
-        <div id="outreach" class="tab-content">
+                <div id="guidelines" class="tab-content">
+            <div class="nm-container">
+                <div class="nm-sidebar">
+                    <div class="nm-nav-buttons">
+                        <button class="nm-nav-btn active" onclick="openNeoTab(event, 'guidelines-logistica')">Logística</button>
+                        <button class="nm-nav-btn" onclick="openNeoTab(event, 'guidelines-pop1')">POP1</button>
+                        <button class="nm-nav-btn" onclick="openNeoTab(event, 'guidelines-pop2')">POP2</button>
+                        <button class="nm-nav-btn" onclick="openNeoTab(event, 'guidelines-pop3')">POP3</button>
+                    </div>
+                </div>
+                <div class="nm-content-area">
+                    <div id="guidelines-logistica" class="nm-subtab-content" style="display:block;">
+<div class="pdf-download-card" style="background: linear-gradient(135deg, #ebf8ff, #f7fafc); border: 1px solid #cbd5e0; border-left: 5px solid #004a91; border-radius: 8px; padding: 16px 20px; margin-bottom: 25px; display: flex; align-items: center; justify-content: space-between; gap: 15px; flex-wrap: wrap; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+    <div>
+        <h4 style="margin: 0 0 4px 0; color: #004a91; font-size: 1.1rem;">📄 Documento Oficial (PDF)</h4>
+        <p style="margin: 0; color: #4a5568; font-size: 0.95rem;">Visualizar ou baixar a versão original em formato PDF</p>
+    </div>
+    <a href="Guidelines/Plano_Logistico_Nacional%20%20INCT%20Fungos%20do%20Brasil-%20Genomica.pdf" target="_blank" download class="pdf-btn" style="background-color: #004a91; color: white; padding: 10px 18px; border-radius: 6px; text-decoration: none; font-weight: 600; white-space: nowrap; display: inline-flex; align-items: center; gap: 8px; transition: background-color 0.2s;">
+        <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/></svg> Baixar PDF
+    </a>
+</div>
+<p align="center"> <img src="img/Fungos_BR.png" alt="Descrição" width="150" style="max-width:100%; height:auto; border-radius:6px; margin:15px 0;"> </p>
+
+<h1>INCT Fungos do Brasil</h1>
+<h2>Plano de Logística Nacional</h2>
+<h3>Fluxo de Extração, Validação e Envio de DNA para Sequenciamento</h3>
+<h4>Objetivo:</h4>
+<p>Estabelecer uma rede colaborativa e eficiente para garantir que todos os laboratórios do INCT Fungos do Brasil, independentemente de sua infraestrutura local, consigam extrair e enviar DNA genômico de alta qualidade para a facility de sequenciamento nos EUA.</p>
+<h3>1. Organograma do Fluxo Logístico</h3>
+<p>O fluxo de trabalho foi desenhado para otimizar recursos e garantir o controle de qualidade rigoroso exigido pela facility (<em>PCR-free library prep</em>).</p>
+<p><img alt="" src="Guidelines/2lBMwc.png" style="max-width:100%; height:auto; border-radius:6px; margin:15px 0;"></p>
+<h3>2. Classificação dos Laboratórios da Rede</h3>
+<p>Para fins logísticos, os laboratórios da rede são classificados em três categorias baseadas em sua infraestrutura disponível. Essa classificação permite ao Comitê dimensionar o suporte necessário e planejar o fluxo de amostras de forma realista.</p>
+<table style="width:100%; border-collapse:collapse; margin:20px 0; background:#fff; border-radius:8px; overflow:hidden; box-shadow:0 2px 5px rgba(0,0,0,0.05);">
+<thead>
+<tr>
+<th><strong>Nível</strong></th>
+<th><strong>Denominação</strong></th>
+<th><strong>Infraestrutura Disponível</strong></th>
+<th><strong>Responsabilidade no Fluxo</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Nível 1</strong></td>
+<td>Autossuficiente</td>
+<td>Extração de DNA, Qubit (fluorometria), NanoDrop (espectrofotometria), gel de agarose</td>
+<td>Extrai o DNA, realiza todas as análises de qualidade e pureza (POP 1), preenche a Planilha 1 e envia as amostras validadas diretamente ao <strong>Ponto Focal Nacional</strong>.</td>
+</tr>
+<tr>
+<td><strong>Nível 2</strong></td>
+<td>Parcialmente Dependente</td>
+<td>Extração de DNA e gel de agarose, mas <strong>sem</strong> Qubit e/ou NanoDrop</td>
+<td>Extrai o DNA seguindo o POP 1, verifica a integridade preliminar em gel e envia as amostras (congeladas) ao <strong>Hub Regional de Apoio</strong> para quantificação e validação final.</td>
+</tr>
+<tr>
+<td><strong>Nível 3</strong></td>
+<td>Totalmente Dependente</td>
+<td><strong>Não possui</strong> infraestrutura para extração de DNA nem para quantificação</td>
+<td>Mantém e cultiva as linhagens de interesse, garante a pureza das culturas (culturas monospóricas) e envia as <strong>culturas vivas</strong> (ou micélio liofilizado/congelado) ao <strong>Hub Regional de Apoio</strong> ou a um laboratório parceiro Nível 1/2 que realizará a extração e quantificação.</td>
+</tr>
+</tbody>
+</table>
+<h4>Detalhamento do Laboratório Nível 3:</h4>
+<p>Esses laboratórios desempenham um papel fundamental na rede por abrigarem linhagens de interesse taxonômico, ecológico ou biotecnológico, mesmo sem possuírem os equipamentos necessários para a preparação do DNA. Sua contribuição é viabilizada pela estrutura colaborativa do INCT. O fluxo para esses laboratórios é o seguinte:</p>
+<ol>
+<li>
+<p>O pesquisador do Laboratório Nível 3 preenche a <strong>Planilha 2 (Intenção de Sequenciamento)</strong> normalmente, indicando na coluna de infraestrutura que necessita de apoio total.</p>
+</li>
+<li>
+<p>Após aprovação pelo Comitê, o pesquisador prepara a cultura pura (monospórica, verificada visualmente conforme POP 1) e a envia ao Hub Regional ou laboratório parceiro designado.</p>
+</li>
+<li>
+<p>O Hub Regional/parceiro realiza a extração de DNA, quantificação (Qubit), avaliação de pureza (NanoDrop) e integridade (gel), preenche a Planilha 1 e encaminha ao Ponto Focal Nacional.</p>
+</li>
+<li>
+<p>O pesquisador de origem permanece como responsável científico pela amostra e deve fornecer todos os metadados (gênero, espécie, cepa, tamanho do genoma).</p>
+</li>
+</ol>
+<h3>3. Estrutura de Apoio e Consolidação</h3>
+<p>Para viabilizar o fluxo, o INCT contará com centros de apoio estratégico:</p>
+<h4>Hubs Regionais de Apoio:</h4>
+<ul>
+<li>
+<p><strong>O que são:</strong> Laboratórios âncora estrategicamente localizados (ex: um no Sudeste, um no Nordeste, um no Sul/Centro-Oeste) com infraestrutura robusta e pessoal treinado.</p>
+</li>
+<li>
+<p><strong>Função:</strong> Receber as amostras dos Laboratórios Nível 2 de sua região geográfica. O Hub realizará a quantificação oficial via Qubit e a análise de pureza via NanoDrop. Se a amostra for aprovada, o Hub preenche a "Planilha 1" e repassa a amostra para o Ponto Focal Nacional. Se reprovada, o Hub orienta o laboratório de origem sobre nova extração.</p>
+</li>
+</ul>
+<h4>Ponto Focal Nacional:</h4>
+<ul>
+<li>
+<p><strong>O que é:</strong> O laboratório central responsável pela interface internacional.</p>
+</li>
+<li>
+<p><strong>Função:</strong> Receber todas as amostras aprovadas (dos Labs Nível 1 e dos Hubs Regionais). Aplicar o <strong>POP 2 (Checklist do Comitê)</strong> para conferência documental. Consolidar as amostras em placas de PCR de 96 poços (otimizando o tamanho dos lotes). Gerenciar a emissão de licenças de exportação (SisGen, Ibama, Receita Federal) e realizar o envio físico em gelo seco para a facility nos EUA.</p>
+</li>
+</ul>
+<h3>4. Cronograma Macro de Execução (Por Lote)</h3>
+<ul>
+<li>
+<p><strong>Mês 1:</strong> Comitê distribui a Planilha 2 (Intenção de Sequenciamento).</p>
+</li>
+<li>
+<p><strong>Mês 2:</strong> Comitê seleciona demandas, cota com a facility e autoriza o início das extrações.</p>
+</li>
+<li>
+<p><strong>Mês 3:</strong> Laboratórios extraem DNA. Labs Nível 2 enviam para os Hubs Regionais. Hubs validam.</p>
+</li>
+<li>
+<p><strong>Mês 4:</strong> Labs Nível 1 e Hubs enviam amostras finais para o Ponto Focal Nacional.</p>
+</li>
+<li>
+<p><strong>Mês 5:</strong> Ponto Focal consolida placas, emite licenças e despacha para os EUA.</p>
+</li>
+</ul>
+<p><img alt="" src="img/banner-bottom.png" style="max-width:100%; height:auto; border-radius:6px; margin:15px 0;"></p>
+                    </div>
+                    <div id="guidelines-pop1" class="nm-subtab-content" style="display:none;">
+<div class="pdf-download-card" style="background: linear-gradient(135deg, #ebf8ff, #f7fafc); border: 1px solid #cbd5e0; border-left: 5px solid #004a91; border-radius: 8px; padding: 16px 20px; margin-bottom: 25px; display: flex; align-items: center; justify-content: space-between; gap: 15px; flex-wrap: wrap; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+    <div>
+        <h4 style="margin: 0 0 4px 0; color: #004a91; font-size: 1.1rem;">📄 Documento Oficial (PDF)</h4>
+        <p style="margin: 0; color: #4a5568; font-size: 0.95rem;">Visualizar ou baixar a versão original em formato PDF</p>
+    </div>
+    <a href="Guidelines/POP1.pdf" target="_blank" download class="pdf-btn" style="background-color: #004a91; color: white; padding: 10px 18px; border-radius: 6px; text-decoration: none; font-weight: 600; white-space: nowrap; display: inline-flex; align-items: center; gap: 8px; transition: background-color 0.2s;">
+        <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/></svg> Baixar PDF
+    </a>
+</div>
+<p align="center"> <img src="img/Fungos_BR.png" alt="Descrição" width="150" style="max-width:100%; height:auto; border-radius:6px; margin:15px 0;"> </p>
+
+<h1>INCT Fungos do Brasil</h1>
+<h1>POP 1: Extração, análise de qualidade <strong>e</strong> envio de DNA</h1>
+<h2>Manual do Usuário</h2>
+<p><strong>Objetivo:</strong> Orientar os pesquisadores da rede INCT Fungos do Brasil sobre os procedimentos de extração, purificação e os critérios mínimos de qualidade e quantidade para o envio de amostras de DNA genômico destinadas ao sequenciamento (<em>PCR-free library</em> <em>prep. Illumina</em>).</p>
+<h2>1. Verificação da Pureza das Culturas</h2>
+<blockquote style="background:#fff8e1; border-left:4px solid #f6ad55; padding:12px 16px; margin:15px 0; border-radius:4px; font-style:normal;">
+<p><strong><em>ATENÇÃO:</em></strong> <em>Este é um passo importante antes de qualquer extração de DNA. O sequenciamento genômico é extremamente sensível e detectará qualquer contaminante presente na cultura. Um genoma contaminado com DNA de outro microrganismo (bactéria, levedura ou outro fungo) compromete completamente a montagem e a análise, resultando em desperdício de recursos e necessidade de resequenciamento.</em></p>
+</blockquote>
+<h3>1.1. Obtenção de culturas monospóricas (Fortemente Recomendado)</h3>
+<p>Para garantir a pureza genética da amostra, é <strong>fortemente recomendado</strong> que o DNA seja extraído a partir de <strong>culturas</strong> <strong>monospóricas</strong> (derivadas de um único esporo). Esse procedimento assegura que todo o material genético pertence a um único indivíduo, eliminando a possibilidade de mistura de genótipos distintos — mesmo dentro da mesma espécie. Culturas originadas de fragmentos de micélio ou de múltiplos esporos podem conter variantes genéticas que dificultam a montagem do genoma.</p>
+<h3>1.2. Checagem visual e microbiológica antes da extração</h3>
+<p>Antes de iniciar a extração de DNA, o pesquisador deve realizar uma inspeção rigorosa da cultura:</p>
+<table style="width:100%; border-collapse:collapse; margin:20px 0; background:#fff; border-radius:8px; overflow:hidden; box-shadow:0 2px 5px rgba(0,0,0,0.05);">
+<thead>
+<tr>
+<th><strong>Tipo de Cultivo</strong></th>
+<th><strong>O que verificar</strong></th>
+<th><strong>Sinais de Contaminação (NÃO extrair)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Meio Sólido (Placa)</strong></td>
+<td>Colônia uniforme em morfologia, cor e textura. Ausência de colônias satélites ou zonas com aspecto diferente.</td>
+<td>Colônias bacterianas (pontos brilhantes, mucoides); crescimento de outro fungo com morfologia distinta; bordas irregulares com coloração diferente.</td>
+</tr>
+<tr>
+<td><strong>Meio Líquido (Caldo)</strong></td>
+<td>Crescimento micelial homogêneo (pellets ou tapete). Meio claro entre as massas miceliais.</td>
+<td><strong>Turbidez do meio</strong> (indicativo clássico de contaminação bacteriana); biofilme na superfície; mudança de cor ou odor atípico do meio; presença de estruturas diferentes do esperado.</td>
+</tr>
+</tbody>
+</table>
+<h3>1.3. Procedimentos em Caso de Suspeita de Contaminação</h3>
+<p>Se houver qualquer suspeita de contaminação, o pesquisador <strong>não deve prosseguir</strong> com a extração de DNA. As seguintes ações são recomendadas:</p>
+<ol>
+<li>
+<p>Repicar a cultura em meio novo a partir de uma região aparentemente pura (ponta de hifa).</p>
+</li>
+<li>
+<p>Realizar nova cultura monospórica a partir de esporos isolados.</p>
+</li>
+<li>
+<p>Caso o fungo não esporule, realizar diluição seriada de fragmentos de hifa e replaqueamento.</p>
+</li>
+<li>
+<p>Após obter uma nova cultura limpa, aguardar o crescimento completo e repetir a checagem visual antes de extrair.</p>
+</li>
+</ol>
+<h3>1.4. Confirmação Opcional por Microscopia</h3>
+<p>Para maior segurança, recomenda-se observar uma pequena porção da cultura em microscópio óptico (aumento de 400x a 1000x) para confirmar a ausência de células bacterianas (bastonetes ou cocos) entre as hifas fúngicas.</p>
+<h2>2. Diretrizes para extração de DNA</h2>
+<p>A obtenção de DNA de qualidade molecular (alto peso molecular, íntegro) é o segundo passo mais crítico para o sucesso do sequenciamento genômico. Os pesquisadores devem adotar protocolos rigorosos para garantir a integridade e pureza do material.</p>
+<p><strong>Método de Extração:</strong> Não exigimos um kit ou protocolo comercial específico, mas o pesquisador <strong>deve informar obrigatoriamente</strong> o método utilizado na planilha de envio (ex: <em>CTAB, Kit Qiagen DNeasy Plant, Kit Zymo Research</em>, fenol-clorofórmio, etc.). Isso auxilia na identificação de possíveis inibidores residuais caso haja falha no sequenciamento.</p>
+<h3>Recomendações Gerais para Extração:</h3>
+<table style="width:100%; border-collapse:collapse; margin:20px 0; background:#fff; border-radius:8px; overflow:hidden; box-shadow:0 2px 5px rgba(0,0,0,0.05);">
+<thead>
+<tr>
+<th><strong>Aspecto</strong></th>
+<th><strong>Recomendação</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Material de partida</strong></td>
+<td>Utilize culturas jovens (3-7 dias para a maioria dos fungos filamentosos) e saudáveis para minimizar a presença de metabólitos secundários e polissacarídeos.</td>
+</tr>
+<tr>
+<td><strong>Lise celular</strong></td>
+<td>Evite o excesso de agitação mecânica (vortex) prolongada durante a lise para não fragmentar o DNA. Prefira maceração com nitrogênio líquido ou beads com pulsos curtos.</td>
+</tr>
+<tr>
+<td><strong>Fungos</strong> <strong>melanizados</strong></td>
+<td>Para fungos melanizados ou ricos em polissacarídeos, considere etapas adicionais de purificação (ex: precipitação com CTAB/NaCl ou uso de colunas de purificação adicionais).</td>
+</tr>
+<tr>
+<td><strong>RNase</strong></td>
+<td>Trate com RNase A para eliminar RNA, que pode interferir na quantificação e na preparação da biblioteca.</td>
+</tr>
+<tr>
+<td><strong>Armazenamento pós-extração</strong></td>
+<td>Armazene o DNA a -20 °C (curto prazo) ou -80 °C (longo prazo). Evite ciclos de congelamento/descongelamento repetidos.</td>
+</tr>
+</tbody>
+</table>
+<h2>3. Condições Mínimas de Qualidade e Quantidade do DNA</h2>
+<p>Para que a amostra seja aceita pelo Comitê e enviada à facility nos EUA, ela deve cumprir <strong>estritamente</strong> os seguintes parâmetros:</p>
+<table style="width:100%; border-collapse:collapse; margin:20px 0; background:#fff; border-radius:8px; overflow:hidden; box-shadow:0 2px 5px rgba(0,0,0,0.05);">
+<thead>
+<tr>
+<th><strong>Parâmetro</strong></th>
+<th><strong>Requisito Mínimo</strong></th>
+<th><strong>Observações</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Quantidade de DNA</strong></td>
+<td>≥ 500 ng (total)</td>
+<td>Necessário para preparo de biblioteca PCR-free.</td>
+</tr>
+<tr>
+<td><strong>Concentração Mínima</strong></td>
+<td>≥ 10 ng/µL</td>
+<td>Recomendamos enviar mais concentrado se possível.</td>
+</tr>
+<tr>
+<td><strong>Volume da Amostra</strong></td>
+<td>20 µL a 50 µL</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>Tampão de Suspensão</strong></td>
+<td>Água ultrapura ou Tampão <strong>LIVRE DE EDTA</strong></td>
+<td><strong>Proibido o uso de tampão TE padrão</strong>. O EDTA inibe reações enzimáticas subsequentes.</td>
+</tr>
+<tr>
+<td><strong>Pureza (Razão 260/280)</strong></td>
+<td>Entre 1.6 e 2.0</td>
+<td>Medido via NanoDrop ou espectrofotômetro similar.</td>
+</tr>
+<tr>
+<td><strong>Pureza (Razão 260/230)</strong></td>
+<td>≥ 1.8</td>
+<td>Medido via NanoDrop. Valores baixos indicam contaminação por carboidratos, sais ou fenol.</td>
+</tr>
+<tr>
+<td><strong>Integridade (Tamanho)</strong></td>
+<td>&gt; 50% dos fragmentos maiores que 2 kb</td>
+<td>Verificado por Gel de Agarose (0.8% a 1%) ou Bioanalyzer/TapeStation. O DNA não pode estar severamente degradado/arrastado no gel.</td>
+</tr>
+<tr>
+<td><strong>Quantificação Oficial</strong></td>
+<td>Ensaio Fluorométrico (ex: Qubit)</td>
+<td>A quantificação final informada na planilha deve ser feita por fluorometria. O NanoDrop superestima a concentração de DNA.</td>
+</tr>
+</tbody>
+</table>
+<h2>4. Instruções para acondicionamento local</h2>
+<p>As amostras devem ser armazenadas em microtubos de 1.5 mL ou 2.0 mL estéreis, livres de DNase e RNase. Os tubos devem ser claramente identificados no topo e na lateral com o <strong>Código da Amostra</strong> (conforme registrado na planilha de envio), utilizando caneta permanente resistente a álcool e congelamento. As amostras devem ser mantidas a -20 °C (ou -80 °C) até o momento do envio para o Ponto Focal/Hub Regional. </p>
+<h2>5. Como Proceder se o Laboratório não possuir <strong>Qubit</strong> <strong>ou</strong> NanoDrop?</h2>
+<p>O INCT Fungos do Brasil opera em rede. Caso o seu laboratório não possua infraestrutura para quantificação fluorométrica (Qubit) ou avaliação de pureza (NanoDrop), siga o <strong>Plano de Logística Nacional</strong>. Você deverá extrair o DNA, realizar a verificação inicial em gel de agarose e enviar a amostra para o seu <strong>Hub Regional de Apoio</strong> para a validação final de qualidade antes do envio ao Ponto Focal.</p>
+<h2>6. Documentação Necessária</h2>
+<p>Toda amostra deve ser acompanhada do preenchimento da <strong>Planilha 1: Envio de Amostras de DNA</strong>. Esta planilha deve ser enviada digitalmente ao Comitê e uma cópia impressa deve acompanhar o pacote físico.</p>
+<p><img alt="" src="img/banner-bottom.png" style="max-width:100%; height:auto; border-radius:6px; margin:15px 0;"></p>
+                    </div>
+                    <div id="guidelines-pop2" class="nm-subtab-content" style="display:none;">
+<div class="pdf-download-card" style="background: linear-gradient(135deg, #ebf8ff, #f7fafc); border: 1px solid #cbd5e0; border-left: 5px solid #004a91; border-radius: 8px; padding: 16px 20px; margin-bottom: 25px; display: flex; align-items: center; justify-content: space-between; gap: 15px; flex-wrap: wrap; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+    <div>
+        <h4 style="margin: 0 0 4px 0; color: #004a91; font-size: 1.1rem;">📄 Documento Oficial (PDF)</h4>
+        <p style="margin: 0; color: #4a5568; font-size: 0.95rem;">Visualizar ou baixar a versão original em formato PDF</p>
+    </div>
+    <a href="Guidelines/POP2.pdf" target="_blank" download class="pdf-btn" style="background-color: #004a91; color: white; padding: 10px 18px; border-radius: 6px; text-decoration: none; font-weight: 600; white-space: nowrap; display: inline-flex; align-items: center; gap: 8px; transition: background-color 0.2s;">
+        <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/></svg> Baixar PDF
+    </a>
+</div>
+<p align="center"> <img src="img/Fungos_BR.png" alt="Descrição" width="150" style="max-width:100%; height:auto; border-radius:6px; margin:15px 0;"> </p>
+
+<h1>INCT Fungos do Brasil</h1>
+<h1>POP 2: Checklist de recepção e de amostras</h1>
+<h2>Manual para o Comitê Gestor</h2>
+<h3>Objetivo:</h3>
+<p>Estabelecer o procedimento padrão para os avaliadores do Comitê e Pontos Focais na recepção, conferência e validação das amostras de DNA recebidas dos pesquisadores da rede, garantindo que estejam aptas para envio à <em>facility</em> de sequenciamento nos EUA.</p>
+<h2>1. Recepção física e conferência de documentação</h2>
+<p>Ao receber um lote de amostras de um laboratório da rede, o responsável pelo Ponto Focal deve iniciar imediatamente a conferência.</p>
+<h3>Passo 1: Verificação da Integridade do Pacote</h3>
+<ul>
+<li>
+<p>O pacote chegou congelado (presença de gelo seco/gelo reciclável ainda congelado)?</p>
+</li>
+<li>
+<p>Os tubos ou placas estão intactos, sem rachaduras ou vazamentos?</p>
+</li>
+</ul>
+<h3>Passo 2: Conferência Documental</h3>
+<ul>
+<li>
+<p>A "Planilha 1: Envio de Amostras de DNA" foi enviada digitalmente?</p>
+</li>
+<li>
+<p>O número de amostras físicas bate exatamente com o número listado na planilha?</p>
+</li>
+<li>
+<p>A identificação nos tubos corresponde exatamente aos códigos na planilha?</p>
+</li>
+</ul>
+<h2>2. Checklist de qualidade do DNA (Validação Técnica)</h2>
+<p>O Comitê deve analisar os dados fornecidos pelo usuário na planilha para cada amostra. Se a amostra não cumprir qualquer um dos critérios abaixo, ela deve ser sinalizada como <strong>"REJEITADA"</strong> ou <strong>"PENDENTE DE NOVA EXTRAÇÃO"</strong>.</p>
+<table style="width:100%; border-collapse:collapse; margin:20px 0; background:#fff; border-radius:8px; overflow:hidden; box-shadow:0 2px 5px rgba(0,0,0,0.05);">
+<thead>
+<tr>
+<th><strong>Critério de Avaliação</strong></th>
+<th><strong>Parâmetro Aceitável</strong></th>
+<th><strong>Ação em caso de não conformidade</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Método de Extração Informado?</strong></td>
+<td>Sim</td>
+<td>Solicitar informação ao pesquisador.</td>
+</tr>
+<tr>
+<td><strong>Tampão de Suspensão</strong></td>
+<td>Água ou tampão EDTA-free</td>
+<td>Rejeitar. Solicitar nova extração (não é possível apenas precipitar e ressuspender com segurança sem perda de qualidade).</td>
+</tr>
+<tr>
+<td><strong>Volume total</strong></td>
+<td>20 µL a 50 µL</td>
+<td>Se &lt; 20 µL, avaliar se a massa total atende. Se &gt; 50 µL, solicitar concentração (se possível) ou nova extração.</td>
+</tr>
+<tr>
+<td><strong>Quantidade total de DNA</strong></td>
+<td>≥ 500 ng</td>
+<td>Rejeitar. A facility exige este mínimo para PCR-free.</td>
+</tr>
+<tr>
+<td><strong>Método de Quantificação</strong></td>
+<td>Qubit (ou similar fluorométrico)</td>
+<td>Se quantificado apenas por NanoDrop, o Ponto Focal/Hub deve requantificar via Qubit.</td>
+</tr>
+<tr>
+<td><strong>Razão 260/280</strong></td>
+<td>1.6 a 2.0</td>
+<td>Rejeitar. Solicitar nova purificação ou extração.</td>
+</tr>
+<tr>
+<td><strong>Razão 260/230</strong></td>
+<td>≥ 1.8</td>
+<td>Rejeitar. Risco alto de inibidores. Solicitar limpeza (cleanup).</td>
+</tr>
+<tr>
+<td><strong>Integridade</strong> <strong>do DNA em gel</strong></td>
+<td>DNA integro em gel 0.8%</td>
+<td>Rejeitar amostras severamente degradadas.</td>
+</tr>
+</tbody>
+</table>
+<h2>3. Consolidação em Placas de 96 Poços</h2>
+<p>Após a validação, as amostras aprovadas devem ser transferidas para placas de PCR de 96 poços para o envio internacional.</p>
+<ol>
+<li>
+<p><strong>Mapeamento:</strong> Preencha o mapa da placa (A1 a H12) associando o código original da amostra à sua nova posição.</p>
+</li>
+<li>
+<p><strong>Pipetagem:</strong> Assegure-se de que a amostra esteja homogeneizada antes de pipetar para a placa.</p>
+</li>
+<li>
+<p><strong>Vedação:</strong> Utilize selos de alumínio (<em>foil seals</em>) para selar a placa firmemente.</p>
+</li>
+<li>
+<p><strong>Proteção:</strong> Coloque uma tampa de plástico rígido sobre o selo de alumínio ou proteja com papel toalha fixado com elásticos.</p>
+</li>
+<li>
+<p><strong>Lotes:</strong> Agrupe as amostras em múltiplos de 50 a 96 por placa. Placas com menos de 50 amostras não são otimizadas para o fluxo robótico da <em>facility</em>.</p>
+</li>
+</ol>
+<h2>4. Preparação para Envio Internacional</h2>
+<ul>
+<li>
+<p>Exportar a planilha final consolidada com o mapa da placa.</p>
+</li>
+<li>
+<p>Garantir que a licença (SisGen) para exportação de material genético estejam vigentes e informada na planilha de solicitação.</p>
+</li>
+<li>
+<p>Acondicionar as placas em caixas de isopor com gelo seco suficiente para o trânsito internacional.</p>
+</li>
+<li>
+<p>Endereçar para: <strong>Facility - [Instruções de Endereçamento em breve ]</strong>.</p>
+</li>
+<li></li>
+</ul>
+<p><img alt="" src="img/banner-bottom.png" style="max-width:100%; height:auto; border-radius:6px; margin:15px 0;"></p>
+                    </div>
+                    <div id="guidelines-pop3" class="nm-subtab-content" style="display:none;">
+<div class="pdf-download-card" style="background: linear-gradient(135deg, #ebf8ff, #f7fafc); border: 1px solid #cbd5e0; border-left: 5px solid #004a91; border-radius: 8px; padding: 16px 20px; margin-bottom: 25px; display: flex; align-items: center; justify-content: space-between; gap: 15px; flex-wrap: wrap; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+    <div>
+        <h4 style="margin: 0 0 4px 0; color: #004a91; font-size: 1.1rem;">📄 Documento Oficial (PDF)</h4>
+        <p style="margin: 0; color: #4a5568; font-size: 0.95rem;">Visualizar ou baixar a versão original em formato PDF</p>
+    </div>
+    <a href="Guidelines/POP3.pdf" target="_blank" download class="pdf-btn" style="background-color: #004a91; color: white; padding: 10px 18px; border-radius: 6px; text-decoration: none; font-weight: 600; white-space: nowrap; display: inline-flex; align-items: center; gap: 8px; transition: background-color 0.2s;">
+        <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/></svg> Baixar PDF
+    </a>
+</div>
+<p align="center"> <img src="img/Fungos_BR.png" alt="Descrição" width="150" style="max-width:100%; height:auto; border-radius:6px; margin:15px 0;"> </p>
+
+<h1>INCT Fungos do Brasil</h1>
+<h1>POP 3: Planejamento, Levantamento de Demandas e Cotação</h1>
+<h2>Recomendação para coordenação e comitê gestor em genômica</h2>
+<h3>Objetivo:</h3>
+<p>Orientar o Comitê Gestor na coleta de intenções de sequenciamento junto à rede, organização das demandas (priorização científica) e estimativa de custos (cotação) junto à <em>facility</em> nos EUA.</p>
+<h2>1. Levantamento de Intenções de Sequenciamento</h2>
+<p>Antes de solicitar a extração de DNA, o Comitê deve mapear as linhagens que os pesquisadores da rede têm interesse em sequenciar. Isso permite organizar a logística, otimizar os custos e priorizar amostras de maior impacto científico.</p>
+<h3>Ação:</h3>
+<p>Distribuir a <strong>"Planilha 2: Intenção de Sequenciamento e Demandas"</strong> para todos os laboratórios associados.</p>
+<p>Os pesquisadores deverão preencher informações biológicas e taxonômicas cruciais:</p>
+<ul>
+<li>
+<p>Gênero e Espécie (se identificada).</p>
+</li>
+<li>
+<p>Se trata-se de uma espécie nova (sp. nov.).</p>
+</li>
+<li>
+<p>Se é uma linhagem Tipo (<em>Type strain</em>).</p>
+</li>
+<li>
+<p>Estimativa do tamanho do genoma (em Mb) – <em>Essencial para cálculo de cobertura</em>.</p>
+</li>
+<li>
+<p>Justificativa resumida do interesse científico.</p>
+</li>
+</ul>
+<h2>2. Análise e Seleção pelo Comitê</h2>
+<p>Com a planilha consolidada, o Comitê deverá avaliar as propostas com base em critérios pré-estabelecidos pelo INCT Fungos do Brasil.</p>
+<h3>Critérios Sugeridos para Priorização:</h3>
+<ol>
+<li>
+<p><strong>Relevância Taxonômica:</strong> Cepas Tipo e espécies novas têm prioridade máxima para estabelecimento de genomas de referência.</p>
+</li>
+<li>
+<p><strong>Impacto Biotecnológico/Clínico/Agrícola/ambiental:</strong> Linhagens com potencial de aplicação ou impacto econômico/saúde.</p>
+</li>
+<li>
+<p><strong>Tamanho do Genoma vs. Orçamento:</strong> O tamanho do genoma dita a quantidade de dados (Gigabases - Gb) necessários para atingir a cobertura ideal (ex: 50x a 100x). Genomas muito grandes consomem mais recursos.</p>
+</li>
+<li>
+<p><strong>Capacidade de Execução:</strong> O laboratório proponente possui capacidade de extrair DNA na qualidade exigida ou precisará de suporte logístico (Hub Regional)?</p>
+</li>
+</ol>
+<h2><strong>3. Cotação e Orçamento com a</strong> <em>Facility</em></h2>
+<p>Uma vez selecionadas as amostras, o Comitê deve estruturar a solicitação de cotação para a facility.</p>
+<h3>Informações necessárias para a <em>Facility</em>:</h3>
+<ul>
+<li>
+<p><strong>Número total de amostras:</strong> Lembre-se que o ideal é enviar lotes de 50 a 96 amostras. Lotes maiores que 96 exigirão múltiplas corridas no robô, adicionando cerca de 1 semana ao <em>Turnaround Time (TAT)</em>.</p>
+</li>
+<li>
+<p><strong>Tipo de Biblioteca:</strong> PCR-free library prep.</p>
+</li>
+<li>
+<p><strong>Plataforma e Tamanho do <em>Insert</em>:</strong> Especificar se é Illumina (ex: NovaSeq, PE 150 bp) ou tecnologia de leitura longa (PacBio/Nanopore), dependendo do objetivo (rascunho vs. genoma fechado).</p>
+</li>
+<li>
+<p><strong>Volume de Dados (<em>Output</em>):</strong> Informar a quantidade de Gb desejada por amostra ou o tamanho médio do genoma e a cobertura desejada.</p>
+</li>
+</ul>
+<h2>4. Aprovação e Início do Fluxo de Extração</h2>
+<p>Após a aprovação do orçamento, o Comitê comunicará os laboratórios selecionados, autorizando o início da extração de DNA conforme as diretrizes do <strong>POP 1 (Manual do Usuário)</strong> e acionando o <strong>Plano de Logística Nacional</strong>.</p>
+<p><img alt="" src="img/banner-bottom.png" style="max-width:100%; height:auto; border-radius:6px; margin:15px 0;"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<div id="outreach" class="tab-content">
             <h2>Outreach</h2>
             <h3>Primeira apresentação do INCT-Fungos Brasil</h3>
             <div class="video-container" style="display: flex; justify-content: center; margin-bottom: 30px;">
@@ -2335,6 +2831,7 @@
     </footer>
 
     <script src="js/scripts.js"></script>
+    <script src="js/search.js"></script>
 
 </body>
 
