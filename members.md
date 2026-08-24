@@ -11,7 +11,6 @@
 | [**Marcela Eugenia da Silva Caceres**](lattes.cnpq.br/3801791273361463) | Doutorado | UFS | Liquenologia. |
 | [**Marcos Antônio Soares**](http://lattes.cnpq.br/3256599670262972) | Doutorado | UFMT | Ecologia de comunidades de microrganismos, Biotecnologia aplicada. |
 | [**Reginaldo Gonçalves de Lima Neto**](http://lattes.cnpq.br/9993875563206244) | Doutorado | UFPE | Micologia Médica. |
-| [**Sebastian Faustino Pereira**](http://lattes.cnpq.br/9535930866943798) | Doutorado | UFRN | Comunicação, Educação, Tecnologias. |
 
 ## Administrative Staff
 

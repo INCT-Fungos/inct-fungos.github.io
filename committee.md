@@ -95,19 +95,5 @@ Professor Adjunto da Área Acadêmica de Medicina Tropical do Centro de Ciência
 [Group Page]()
 
 ---
-![Faustino](/img/Faustino.gif)
-### Sebastian Faustino Pereira
 
-#### Bio
-Doutorado em Educação pela UFRN (2010), Mestrado em Ciências Sociais pela mesma instituição (2006), Especialização em Jornalismo Cultural (FIP/PB, 2003) e Graduação em Comunicação Social (Habilitação Jornalismo) pela Universidade Estadual da Paraíba (2002). Professor Associado do Departamento de Comunicação (UFRN). Autor dos livros: Homo Midas e o político mitiático na folia do rei nu (2009); Comunicação e Educação: diálogos possíveis (2012, organizador); e publicação dos artigos: Comunicação e educação: a rádio na escola e a escola no rádio na obra Pedagogia Crítica da Mídia (2009) e Rádio Escolar como experiência dialógica na obra Comunicação e Educação: diálogos possíveis (2012), e Nestor Garcia Canclini, na obra Clássicos da Comunicação - Os teóricos: de Peirce a Canclini (Editora Vozes). Professor do Mestrado Profissional em Gestão de Processos Institucionais - MPGPI/UFRN. Chefe do Departamento de Comunicação Social 2012-2014 e reeleito 2014-2016. Eleito Vice-Diretor do Centro de Ciências Humanas, Letras e Artes quadriênio 2015-2019. Superintende de Comunicação da UFRN (desde junho de 2019).Membro do Grupo de Trabalho de Combatre à Desinformação do Supremo Tribunal Federal - STF (desde 2024).Eleito Representante das emissoras de televisão universitária no Comitê de Participação Social, Diversidade e Inclusão - CPADI, da EBC (2025-2026). Representante Adjunto da Região Nordeste no Colegiado de Gestores das Instituições de Ensino Superior - COGECOM (2024-2025). Representante da UFRN no Fórum do Sistema Brasileiro de Televisão Digital - SBTVD.
-
-#### Links
-
-[Lattes]( http://lattes.cnpq.br/9535930866943798)
-
-[OrcID](https://orcid.org/0009-0003-3331-8373)
-
-[Group Page](https://tvu.ufrn.br/pagina.php?a=equipe)
-
----
 
