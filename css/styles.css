@@ -625,6 +625,28 @@ footer p {
     font-style: italic;
 }
 
+.publications-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.publications-list .inst-card {
+    text-align: left;
+}
+
+.publications-list .inst-card h4 {
+    font-style: italic;
+    margin-bottom: 12px;
+}
+
+.publications-list .inst-card p {
+    margin: 6px 0;
+    color: #444;
+}
+
 .country-section {
     display: flex;
     flex-wrap: wrap;
